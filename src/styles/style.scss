@@ -2,15 +2,15 @@
 @use "variables";
 @use "main-banner";
 
-body {
-  margin: 0;
-  background: url("/src/assets/images/main-banner-3.png?format=avif");
-}
+// body {
+//   margin: 0;
+//   background: url("/src/assets/images/main-banner-3.png?format=avif");
+// }
 
-header, footer {
-  padding: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-gray);
-}
+// header, footer {
+//   padding: 100px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background: var(--color-gray);
+// }

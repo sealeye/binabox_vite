@@ -20,11 +20,11 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@bro-academy/vite-plugin-image-optimizer": "file:packages/vite-plugin-image-optimizer",
-    "@bro-academy/vite-plugin-svg-sprite": "file:packages/vite-plugin-svg-sprite",
+    "@bro-academy/vite-plugin-image-optimizer": "^0.0.2",
+    "@bro-academy/vite-plugin-svg-sprite": "^0.0.3",
     "@html-eslint/eslint-plugin": "^0.40.3",
     "@html-eslint/parser": "^0.40.0",
-    "@vituum/vite-plugin-nunjucks": "^1.1.0",
+    "@vituum/vite-plugin-twig": "^1.1.0",
     "@vituum/vite-plugin-postcss": "^1.1.0",
     "eslint": "^9.26.0",
     "husky": "^9.1.7",
@@ -38,7 +38,7 @@
     "vituum": "^1.2.0"
   },
   "lint-staged": {
-    "*.njk": "eslint --fix",
+    "*.twig": "eslint --fix",
     "*.scss": "stylelint --fix"
   },
   "volta": {

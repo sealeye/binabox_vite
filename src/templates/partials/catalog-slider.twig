@@ -1,0 +1,21 @@
+<section class="catalog">
+  <div class="catalog__header">
+    <h2 class="catalog__title">{{ catalog_slider.title }}</h2>
+    <div class="catalog__controls">
+      <a href="#" class="catalog__view-all button button--secondary">{{ catalog_slider.button }}</a>
+      <div class="catalog__navigation">
+        <button class="catalog__nav-btn catalog__nav-btn--prev button button--secondary">&#8592;</button>
+        <button class="catalog__nav-btn catalog__nav-btn--next button button--primary">&#8594;</button>
+      </div>
+    </div>
+  </div>
+  <div class="catalog__grid">
+    <ul>
+      {% for item in cards %}
+        <li>
+          {% include 'item-card.twig' %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

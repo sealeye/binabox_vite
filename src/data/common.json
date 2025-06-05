@@ -1,5 +1,20 @@
 {
-  "common": {
-    "siteTitle": "Pixmart Website"
-  }
+  "nav": [
+    {
+      "url": "index.html",
+      "text": "Home"
+    },
+    {
+      "url": "/blog-page.html",
+      "text": "Blog"
+    },
+    {
+      "url": "/catalog.html",
+      "text": "Catalog"
+    },
+    {
+      "url": "/contucts.html",
+      "text": "Contuct Us"
+    }
+  ]
 }
