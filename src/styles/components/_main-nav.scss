@@ -1,21 +1,16 @@
-.main-nav{
+.main-nav {
 
-}
+    &__list {}
 
-.main-nav__list{
+    &__item {}
 
-}
+    &__link {
+        font-size: 16px;
+        line-height: 24px;
+        color: #F5F8FB;
+    }
 
-.main-nav__item{
-
-}
-
-.main-nav__link{
-  font-size: 16px;
-  line-height: 24px;
-  color: #F5F8FB;
-}
-
-.main-nav__link--active {
-  border-bottom: 1px solid #0265DC;
+    &__link--active {
+        border-bottom: 1px solid #0265DC;
+    }
 }

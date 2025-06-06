@@ -1,18 +1,15 @@
-.breadcrumbs{
+.breadcrumbs {
 
-}
+    &__item {}
 
-.breadcrumbs__item{
+    &__link {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        color: #F5F8FB;
+    }
 
-}
-
-.breadcrumbs__link{
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 600;
-  color: #F5F8FB;
-}
-
-.breadcrumbs__link--active {
-  color: #E7EEF7A8;
+    &__link--active {
+        color: #E7EEF7A8;
+    }
 }

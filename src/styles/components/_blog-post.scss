@@ -1,51 +1,35 @@
-.blog-post{
+.blog-post {
+    &__illustration {}
 
-}
+    &__illustration--wide {}
 
-.blog-post__illustration{
+    &__illustration-image {}
 
-}
+    &__illustration-caption {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #F8F7FF;
+    }
 
-.blog-post__illustration--wide{
+    &__main-title {}
 
-}
+    &__desc {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        color: #EFF5FAD1;
+    }
 
-.blog-post__illustration-image{
+    &__label {}
 
-}
+    &__text {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+    }
 
-.blog-post__illustration-caption{
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  color: #F8F7FF;
-}
+    &__unordered-list {}
 
-.blog-post__main-title{
-
-}
-
-.blog-post__desc {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 600;
-  color: #EFF5FAD1;
-}
-
-.blog-post__label{
-
-}
-
-.blog-post__text{
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 400;
-}
-
-.blog-post__unordered-list{
-
-}
-
-.blog-post__subtitle{
-
+    &__subtitle {}
 }

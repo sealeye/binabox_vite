@@ -1,38 +1,24 @@
-.sidebar{
+.sidebar {
+    &__section {
+        background-color: #1D1C28;
+    }
 
-}
+    &__section-title {}
 
-.sidebar__section{
-  background-color: #1D1C28;
-}
+    &__section-list {}
 
-.sidebar__section-title{
+    &__section-list-item {}
 
-}
+    &__section-link {
+        font-size: 14px;
+        line-height: 20px;
+        color: #F5F8FB;
+        font-weight: 600;
+    }
 
-.sidebar__section-list{
+    &__section-tags {}
 
-}
+    &__section-tags-item {}
 
-.sidebar__section-list-item{
-
-}
-
-.sidebar__section-link{
-  font-size: 14px;
-  line-height: 20px;
-  color: #F5F8FB;
-  font-weight: 600;
-}
-
-.sidebar__section-tags{
-
-}
-
-.sidebar__section-tags-item{
-
-}
-
-.sidebar__section-tags-link{
-
+    &__section-tags-link {}
 }

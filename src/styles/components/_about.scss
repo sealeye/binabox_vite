@@ -1,22 +1,14 @@
-.about{
+.about {
+    &__title {}
 
-}
+    &__text {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+        color: #EFF5FAD1;
+    }
 
-.about__title{
+    &__list {}
 
-}
-
-.about__text{
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 500;
-  color: #EFF5FAD1;
-}
-
-.about__list{
-
-}
-
-.about__button{
-
+    &__button {}
 }

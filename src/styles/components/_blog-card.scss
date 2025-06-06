@@ -1,44 +1,34 @@
-.blog-card{
-  background-color: #1D1C28;
-}
+.blog-card {
+    background-color: #1D1C28;
 
-.blog-card__image{
+    &__image {}
 
-}
+    &__label {}
 
-.blog-card__label {
+    &__date,
+    &__name {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        color: #EFF5FAD1;
+    }
 
-}
+    &__name {}
 
-.blog-card__date,
-.blog-card__name {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 600;
-  color: #EFF5FAD1;
-}
+    &__date {}
 
-.blog-card__name{
+    &__heading {
+        font-family: "Bakbak One", "Arial", "Helvetica", sans-serif;
+        font-size: 36px;
+        line-height: 44px;
+        color: #F5F8FB;
+    }
 
-}
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+        color: #EFF5FAD1;
+    }
 
-.blog-card__date{
-
-}
-
-.blog-card__heading{
-  font-family: "Bakbak One", "Arial", "Helvetica", sans-serif;
-  font-size: 36px;
-  line-height: 44px;
-  color: #F5F8FB;
-}
-
-.blog-card__text{
-  font-size: 16px;
-  line-height: 24px;
-  color: #EFF5FAD1;
-}
-
-.blog-card__button{
-
+    &__button {}
 }

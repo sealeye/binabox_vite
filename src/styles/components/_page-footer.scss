@@ -1,40 +1,30 @@
-.page-footer{
-  background-color: #1A1925;
-  color: #F5F8FB;
-}
+.page-footer {
+    background-color: #1A1925;
+    color: #F5F8FB;
 
-.page-footer__logo{
+    &__logo {}
 
-}
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
 
-.page-footer__text{
-  font-size: 14px;
-  line-height: 20px;
-}
+    &__nav {}
 
-.page-footer__nav{
+    &__nav-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
 
-}
+    &__nav-list {}
 
-.page-footer__nav-title{
-  font-size: 20px;
-  line-height: 28px;
-}
+    &__nav-list-item {}
 
-.page-footer__nav-list{
+    &__nav-list-link {
+        font-size: 12px;
+        line-height: 16px;
+        color: #F5F8FB;
+    }
 
-}
-
-.page-footer__nav-list-item{
-
-}
-
-.page-footer__nav-list-link{
-  font-size: 12px;
-  line-height: 16px;
-  color: #F5F8FB;
-}
-
-.page-footer__social-list{
-
+    &__social-list {}
 }

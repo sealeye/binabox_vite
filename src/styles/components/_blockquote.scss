@@ -1,17 +1,22 @@
-.blockquote{
-  background-color: #002754;
-  border-radius: 16px;
-  font-family: "Bakbak One", "Arial", "Helvetica", sans-serif;
-  font-size: 28px;
-  line-height: 36px;
-  font-weight: 400;
-  color: #F8F7FF;
-}
+.blockquote {
+    background-color: #002754;
+    border-radius: 16px;
 
-.blockquote cite {
-  font-size: 14px;
-  line-height: 20px;
-  color: #F8F7FF;
-  font-weight: 600;
-  font-style: normal;
+    &__text {
+        font-family: "Bakbak One", "Arial", "Helvetica", sans-serif;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 400;
+        color: #F8F7FF;
+    }
+
+    &__cite {
+        font-size: 14px;
+        line-height: 20px;
+        color: #F8F7FF;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    &__rating {}
 }
