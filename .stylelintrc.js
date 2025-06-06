@@ -10,7 +10,8 @@ export default {
           `"${selector}" selector should be written by the BEM naming methodology: https://en.bem.info/methodology/naming-convention/#alternative-naming-schemes`,
       },
     ],
-    "no-empty-source": null,
+    // "no-empty-source": null,
+    "block-no-empty": null,
     "selector-pseudo-element-no-unknown": true,
     "media-feature-name-no-unknown": [
       true,
@@ -22,7 +23,7 @@ export default {
     "alpha-value-notation": "number",
     "color-hex-length": "long",
     "color-named": "never",
-    "color-hex-alpha": "never",
+    // "color-hex-alpha": "never",
     "font-weight-notation": "numeric",
     "selector-max-universal": 1,
     "declaration-block-no-redundant-longhand-properties": null,
