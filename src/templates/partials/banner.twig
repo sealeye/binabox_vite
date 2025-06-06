@@ -1,18 +1,18 @@
 <section class="banner">
-  <h1 class="banner__heading">WITH <span class="banner__highlight">{{ banner_title }}</span> EXPLORE NFT COLLECTION!</h1>
+  <h1 class="banner__heading">{{ banner.title.start }} <span class="banner__highlight">{{ banner.title.highlight }}</span> {{ banner.title.end }}</h1>
   <p class="banner__text">
-          We are the best way to check for the rarity of your NFT
-          <span class="banner__highlight">{{ banner_title }}</span>
+          {{ banner.desc }}
   </p>
   <div class="banner__stats">
-    <p class="banner__stat-label">Total IT Team</p>
-    <p class="banner__stat-value">2200+</p>
-    <p class="banner__stat-label">Profiles Whitelisted</p>
-    <p class="banner__stat-value">1000+</p>
+   {% for item in banner.stat %}
+    <p class="banner__stat-label">{{ item.num }}</p>
+    <p class="banner__stat-value">{{ item.text }}</p>
+    {% endfor %}
   </div>
   <div class="banner__button-group">
-    <a class="banner__button" href="#">Connect Wallet</a>
-    <a class="banner__button" href="#">Whitelist Now</a>
+  {% for item in banner.buttons %}
+    <a class="banner__button" href="{{ item.action }}">{{ item.text }}</a>
+     {% endfor %}
   </div>
 </section>
 

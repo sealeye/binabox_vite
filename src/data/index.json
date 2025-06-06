@@ -1,25 +1,11 @@
 {
   "site_title": "Binabox homepage",
   "path": "index.html",
-  "nav": [
-    {
-      "url": "index.html",
-      "text": "Home"
-    },
-    {
-      "url": "/blog/",
-      "text": "Blog"
-    },
-    {
-      "url": "/catalog/",
-      "text": "Catalog"
-    }
-  ],
   "banner": {
     "title": {
       "start": "WITH",
       "highlight": "BINABOX",
-      "end": "EXPLORE NFT COLLECTION"
+      "end": "EXPLORE NFT COLLECTION!"
     },
     "desc": "We are the best way to check the rarity of NFT collection",
     "stat": [
@@ -45,7 +31,10 @@
   },
   "catalog_section": {
     "title": "Catalog",
-    "button": "See all"
+    "link": {
+      "text": "See all",
+      "action": "#"
+    }
   },
   "catalog_cards": [
     {
@@ -54,6 +43,7 @@
       "price": "199",
       "name": "Name product",
       "image": "img/catalog-item-photo-1-2x.webp",
+      "image_alt": "img_alt",
       "link": "#"
     },
     {
@@ -95,6 +85,7 @@
   "blog_items": [
     {
       "img": "img/catalog-item-photo-1-2x.webp",
+      "img_alt": "alt",
       "label": "NFT card",
       "author": "Tony Nguyen",
       "date": "2022-06-20",
@@ -130,7 +121,10 @@
   "about_section": {
     "title": "About us",
     "desc": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat",
-    "button": "Read more"
+    "button": {
+      "text": "Read more",
+      "action": "#"
+    }
   },
   "about_list": [
     {
@@ -156,15 +150,45 @@
   "team_list": [
     {
       "img": "img/team-member-1.webp",
+      "img_alt": "alt",
       "name": "Jason Smith",
       "position": "Co - Founder",
-      "social_links": ["link", "link", "link"]
+      "socials": [
+        "facebook.com/f",
+        "link",
+        "link"
+      ]
     },
     {
       "img": "img/team-member-1.webp",
       "name": "Jason Smith",
       "position": "Co - Founder",
-      "social_links": ["link", "link", "link"]
+      "social_links": [
+        "link",
+        "link",
+        "link"
+      ]
+    }
+  ],
+  "faq_section": {
+    "title": "FAQs"
+  },
+  "faq_list": [
+    {
+      "question": "What are the NFTs?",
+      "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "question": "How do i get NFTs?",
+      "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "question": "How can we buy your NFTs?",
+      "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "question": "Who are the team behind the project?",
+      "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
     }
   ]
 }

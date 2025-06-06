@@ -5,15 +5,15 @@
   <nav class="main-nav">
     <ul class="main-nav__list">
       {% for item in nav %}
-      <li>
-        {# <a href="{{ item.url }}"
-          class="main-nav__link {% if item.url !== path %}main-nav__link--active{% endif %}">
-          {{ item.text }}</a> #}
+      <li class="main-nav__list-item">
+        <a href="{{ item.url }}"
+          class="main-nav__link {% if item.url == path %} main-nav__link--active {% endif %}">
+          {{ item.text }}</a> 
       </li>
       {% endfor %}
     </ul>
-    <input type="search" placeholder="Search..."/>
-    <a class="button button--secondary page-header__btn" href="#" target="_blank" rel="noopener noreferrer">Discord</a>
-    <a class="button button--primary page-header__btn" href="#" target="_blank" rel="noopener noreferrer">Connect</a>
+    {# <input type="search" placeholder="Search..."/> #}
+    <a class="button page-header__button" href="#" target="_blank" rel="noopener noreferrer">Discord</a>
+    <a class="button button--primary page-header__button" href="#" target="_blank" rel="noopener noreferrer">Connect</a>
   </nav>
 </header>
