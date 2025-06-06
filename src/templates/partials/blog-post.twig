@@ -1,56 +1,68 @@
 <article class="blog-post">
-      <figure class="blog-post__illustration blog-post__illustration--wide">
-        <img class="blog-post__illustration-image" src="#" alt="#">
-        <figcaption class="blog-post__illustration-caption">Photo caption</figcaption>
-      </figure>
-      <h3 class="blog-post__main-title">The Basilisks NFT</h3>
-      <p class="blog-post__label button button--primary">Gaming</p>
-      <div>
-        <p>Tony Nguyen</p>
-        <time datetime="#">20 Jun 2022</time>
-      </div>
-      <p class="blog-post__text">The Basilisks that <span class="hightlight">players</span> collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the <span>Basilisks they have</span> gathered to battle other players to win ether (ETH).</p>
-      <p class="blog-post__text">In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks.  Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.</p>
-      <ul class="blog-post__unordered-list">
-        <li>The Basilisks that players collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the Basilisks they have gathered to battle other players to win ether (ETH).</li>
-        <li>In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks.  Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.</li>
-      </ul>
-      <ol class="blog-post__unordered-list">
-        <li>List name 1</li>
-        <li>List name 1</li>
-        <li>List name 1</li>
-        <li>List name 1</li>
-      </ol>
-      <blockquote class="blockquote">
-        “The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers”
-        8.5/10
-        Markout Corporation
-      </blockquote>
-      <figure class="blog-post__illustration">
-        <img class="blog-post__illustration-image" src="#" alt="#">
-        <figcaption class="blog-post__illustration-caption">Photo caption</figcaption>
-      </figure>
-      <figure class="blog-post__illustration">
-        <img class="blog-post__illustration-image" src="#" alt="#">
-        <figcaption class="blog-post__illustration-caption">Photo caption</figcaption>
-      </figure>
 
-      <h4 class="blog-post__subtitle">NFTs are digital assets that represent real-world objects</h4>
-      <p class="blog-post__text">Setting up your avatar and personalizing your nickname on Binance is quick and easy. Users can go to binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of you who own NFT assets, you can select the NFT you want to use from your collection as your avatar to personalize your profile. For users who do not own any NFT avatars, check out the NFT avatar collections page to get started.</p>
-      <p class="blog-post__text">Alternatively, if you’re on nft.binance.com, go to User Center > Settings > Basic > Set Avatar and Nickname, and you’ll be redirected to the main site. Binance NFT Creators have the option of setting their Avatars on nft.binance.com. Once you set your new unique nickname, it will be standardized and used across the Binance ecosystem.</p>
+	<figure class="blog-post__illustration blog-post__illustration--wide">
+		<img class="blog-post__illustration-image" src="{{ post.main_image.src }}" alt="{{ post.main_image.alt }}">
+		<figcaption class="blog-post__illustration-caption">{{ post.main_image.caption }}</figcaption>
+	</figure>
 
-      <h4 class="blog-post__subtitle">NFT Avatar Generators</h4>
-      <p class="blog-post__text">You can find a range of NFT marketplaces where you can buy existing NFTs or list your own NFTs for sale.</p>
-      <p class="blog-post__text">Tags:</p>
-      <ul>
-        <li><a class="button button--small" href="#">NFT</a></li>
-        <li><a class="button button--small" href="#">ICO</a></li>
-        <li><a class="button button--small" href="#">Crypto</a></li>
-      </ul>
-      <p class="blog-post__text">Share:</p>
-      <ul>
-        <li><a class="button button--small" href="#"></a></li>
-        <li><a class="button button--small" href="#"></a></li>
-        <li><a class="button button--small" href="#"></a></li>
-      </ul>
-    </article>
+	<h3 class="blog-post__main-title">{{ post.title }}</h3>
+	<p class="blog-post__label button button--primary">{{ post.category }}</p>
+
+	<div class="blog-post__meta">
+		<p>{{ post.author }}</p>
+		<time datetime="{{ post.date_iso }}">{{ post.date_human }}</time>
+	</div>
+
+	<p class="blog-post__text">The Basilisks that
+		<span class="hightlight">players</span>
+		collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the
+		<span>Basilisks they have</span>
+		gathered to battle other players to win ether (ETH).</p>
+	<p class="blog-post__text">In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks.  Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.</p>
+
+	<ul class="blog-post__unordered-list">
+		{% for item in post.bullets %}
+			<li>{{ item }}</li>
+		{% endfor %}
+	</ul>
+
+	<ol class="blog-post__unordered-list">
+		{% for item in post.ordered %}
+			<li>{{ item }}</li>
+		{% endfor %}
+	</ol>
+
+	{% include 'ui/blockquote.twig' with { item: post.blockquote } %}
+
+	{% for image in post.additional_images %}
+		<figure class="blog-post__illustration">
+			<img class="blog-post__illustration-image" src="{{ image.src }}" alt="{{ image.alt }}">
+			<figcaption class="blog-post__illustration-caption">{{ image.caption }}</figcaption>
+		</figure>
+	{% endfor %}
+
+	{% for section in post.sections %}
+		<h4 class="blog-post__subtitle">{{ section.title }}</h4>
+		{% for paragraph in section.text %}
+			<p class="blog-post__text">{{ paragraph }}</p>
+		{% endfor %}
+	{% endfor %}
+
+	<p class="blog-post__text">Tags:</p>
+	<ul>
+		{% for tag in post.tags %}
+			<li>
+				<a class="button button--small" href="{{ tag.url }}">{{ tag.text }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+
+	<p class="blog-post__text">Share:</p>
+	<ul>
+		{% for item in post.share %}
+			<li>
+				<a class="button button--small" href="{{ item.url }}">{{ item.label }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+</article>

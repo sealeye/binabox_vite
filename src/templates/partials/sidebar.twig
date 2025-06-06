@@ -1,25 +1,27 @@
-    <aside class="sidebar">
-      <div class="sidebar__section">
-        <h3 class="sidebar__section-title">Categories</h3>
-        <ul class="sidebar__section-list">
-          <li class="sidebar__section-list-item"><a class="sidebar__section-link" href="#">Our blog (12)</a></li>
-          <li class="sidebar__section-list-item"><a class="sidebar__section-link" href="#">Metaverse (24)</a></li>
-          <li class="sidebar__section-list-item"><a class="sidebar__section-link" href="#">Gaming (24)</a></li>
-          <li class="sidebar__section-list-item"><a class="sidebar__section-link" href="#">Art (24)</a></li>
-          <li class="sidebar__section-list-item"><a class="sidebar__section-link" href="#">Robot (24)</a></li>
-          <li class="sidebar__section-list-item"><a class="sidebar__section-link" href="#">Lauchpad (24)</a></li>
-          <li class="sidebar__section-list-item"><a class="sidebar__section-link" href="#">Crypto (430)</a></li>
-        </ul>
-      </div>
-      <div class="sidebar__section">
-        <h3 class="sidebar__section-title">Tag</h3>
-        <ul class="sidebar__section-tags">
-          <li class="sidebar__section-tags-item"><a class="sidebar__section-tags-link button button--small" href="">NFT</a></li>
-          <li class="sidebar__section-tags-item"><a class="sidebar__section-tags-link button button--small" href="#">ICO</a></li>
-          <li class="sidebar__section-tags-item"><a class="sidebar__section-tags-link button button--small" href="#">Robot</a></li>
-          <li class="sidebar__section-tags-item"><a class="sidebar__section-tags-link button button--small" href="#">Crypto</a></li>
-          <li class="sidebar__section-tags-item"><a class="sidebar__section-tags-link button button--small" href="#">Lauchpad</a></li>
-          <li class="sidebar__section-tags-item"><a class="sidebar__section-tags-link button button--small" href="#">Metaverse</a></li>
-        </ul>
-      </div>
-    </aside>
+<aside class="sidebar">
+  <div class="sidebar__section">
+    <h3 class="sidebar__section-title">{{ sidebar.categories_title }}</h3>
+    <ul class="sidebar__section-list">
+      {% for category in sidebar.categories %}
+        <li class="sidebar__section-list-item">
+          <a class="sidebar__section-link" href="{{ category.url }}">
+            {{ category.name }} ({{ category.count }})
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="sidebar__section">
+    <h3 class="sidebar__section-title">{{ sidebar.tags_title }}</h3>
+    <ul class="sidebar__section-tags">
+      {% for tag in sidebar.tags %}
+        <li class="sidebar__section-tags-item">
+          <a class="sidebar__section-tags-link button button--small" href="{{ tag.url }}">
+            {{ tag.name }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</aside>

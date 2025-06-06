@@ -1,0 +1,154 @@
+{
+  "site_title": "Binabox Blog post",
+  "inner_header": {
+    "title": "Our blog"
+  },
+  "breadcrumbs": [
+    {
+      "text": "Home",
+      "link": "#"
+    },
+    {
+      "text": "Our blog",
+      "link": "#"
+    },
+    {
+      "text": "The Basilisks NFT",
+      "link": "#"
+    }
+  ],
+  "sidebar": {
+    "categories_title": "Categories",
+    "categories": [
+      {
+        "name": "Our blog",
+        "count": 12,
+        "url": "#"
+      },
+      {
+        "name": "Metaverse",
+        "count": 24,
+        "url": "#"
+      },
+      {
+        "name": "Gaming",
+        "count": 24,
+        "url": "#"
+      },
+      {
+        "name": "Art",
+        "count": 24,
+        "url": "#"
+      },
+      {
+        "name": "Robot",
+        "count": 24,
+        "url": "#"
+      },
+      {
+        "name": "Lauchpad",
+        "count": 24,
+        "url": "#"
+      },
+      {
+        "name": "Crypto",
+        "count": 430,
+        "url": "#"
+      }
+    ],
+    "tags_title": "Tag",
+    "tags": [
+      {
+        "name": "NFT",
+        "url": "#"
+      },
+      {
+        "name": "ICO",
+        "url": "#"
+      },
+      {
+        "name": "Robot",
+        "url": "#"
+      },
+      {
+        "name": "Crypto",
+        "url": "#"
+      },
+      {
+        "name": "Lauchpad",
+        "url": "#"
+      },
+      {
+        "name": "Metaverse",
+        "url": "#"
+      }
+    ]
+  },
+  "post": {
+    "main_image": {
+      "src": "img/post-main.webp",
+      "alt": "Main image alt",
+      "caption": "Photo caption"
+    },
+    "title": "The Basilisks NFT",
+    "category": "Gaming",
+    "author": "Tony Nguyen",
+    "date_iso": "2022-06-20",
+    "date_human": "20 Jun 2022",
+    "intro": [
+      "The Basilisks that <span class='highlight'>players</span> collect are represented with NFTs...",
+      "In Balthazar Dragons, players are immersed in a 3D open world..."
+    ],
+    "bullets": [
+      "The Basilisks that players collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the Basilisks they have gathered to battle other players to win ether (ETH).",
+      "In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks.  Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO."
+    ],
+    "ordered": [
+      "List name 1", 
+      "List name 2", 
+      "List name 3"
+    ],
+    "blockquote": {
+      "text": "The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers",
+      "rating": "8.5",
+      "author": "Markout Corporation"
+    },
+    "additional_images": [
+      {
+        "src": "img/post-image-1.webp",
+        "alt": "Secondary image 1",
+        "caption": "Photo caption"
+      },
+      {
+        "src": "img/post-image-2.webp",
+        "alt": "Secondary image 2",
+        "caption": "Photo caption"
+      }
+    ],
+    "sections": [
+      {
+        "title": "NFTs are digital assets that represent real-world objects",
+        "text": [
+          "Setting up your avatar and personalizing your nickname on Binance is quick and easy. Users can go to binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of you who own NFT assets, you can select the NFT you want to use from your collection as your avatar to personalize your profile. For users who do not own any NFT avatars, check out the NFT avatar collections page to get started.",
+          "Alternatively, if you’re on nft.binance.com, go to User Center > Settings > Basic > Set Avatar and Nickname, and you’ll be redirected to the main site. Binance NFT Creators have the option of setting their Avatars on nft.binance.com. Once you set your new unique nickname, it will be standardized and used across the Binance ecosystem."
+        ]
+      },
+      {
+        "title": "NFT Avatar Generators",
+        "text": [
+          "You can find a range of NFT marketplaces where you can buy existing NFTs or list your own NFTs for sale."
+        ]
+      }
+    ],
+    "tags": [
+      { "text": "NFT", "url": "#" },
+      { "text": "ICO", "url": "#" },
+      { "text": "Crypto", "url": "#" }
+    ],
+    "share": [
+      { "url": "#", "label": "Twitter" },
+      { "url": "#", "label": "Facebook" },
+      { "url": "#", "label": "Telegram" }
+    ]
+  }
+}
