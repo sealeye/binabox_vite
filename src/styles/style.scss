@@ -1,9 +1,9 @@
-@use "global/global";
-@use "global/variables";
+@use 'global/variables';
+@use "mixin/breakpoints";
+@use "global/global"; 
 @use 'ui/button';
 @use 'ui/label';
 @use 'ui/titles';
-@use "mixin/breakpoints";
 @use "components/about";
 @use "components/blockquote";
 @use "components/blog-card";
@@ -24,4 +24,4 @@
 @use "components/sidebar";
 @use "components/social-list";
 @use "components/team-card";
-@use "components/team";
+@use "components/team"; 

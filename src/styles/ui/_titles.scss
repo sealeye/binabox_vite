@@ -1,12 +1,16 @@
+@use '../global/variables' as *;
+
+ç
+
 .page-title {
-  font-family: "Bakbak One", "Arial", "Helvetica", sans-serif;
+  font-family: $accent-font;
   font-size: 52px;
   line-height: 56px;
   letter-spacing: -0.5px;
 }
 
 .main-title{
-  font-family: "Bakbak One", "Arial", "Helvetica", sans-serif;
+  font-family: $accent-font;
   font-size: 36px;
   line-height: 48px;
   letter-spacing: -0.5px;

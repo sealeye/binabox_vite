@@ -1,6 +1,8 @@
+@use 'variables' as *;
+
 body {
-  font-family: "Poppins", "Arial", sans-serif;
-  background-color: #0D0D15;
+  font-family: $base-font; 
+  background-color: #0D0D15; 
   color: #F5F8FB;
   font-size: 16px;
   line-height: 24px;
