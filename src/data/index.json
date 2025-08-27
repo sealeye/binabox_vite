@@ -1,5 +1,15 @@
 {
   "index": {
-    "title": "Hello World!"
+    "hero": {
+      "heading": {
+        "part_1": "WITH ",
+        "part_2": "BINABOX",
+        "part_3": "EXPLORE NFT COLLECTION"
+      },
+      "text": "We are the best way to check the rarity of NFT collection",
+      "defenition": {},
+      "connect_button": "",
+      "whitelist_button": "Whitelist now"
+    }
   }
 }

@@ -1,5 +1,9 @@
 {
-  "common": {
-    "siteTitle": "Pixmart Website"
+  "header": {
+    "default_button": {
+      "text": "Discord",
+      "link": "discord.com"
+    },
+    "pramary_button": "Connect"
   }
 }

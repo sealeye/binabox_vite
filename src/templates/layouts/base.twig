@@ -23,16 +23,10 @@
         <link rel="stylesheet" href="/src/styles/style.scss">
     </head>
     <body>
-        <header>
-            <h1>Header</h1>
-        </header>
+        {% include "../partials/header.twig" %}
         <main>
-            {% block content %}
-            default content
-            {% endblock %}
+            {% block content %}{% endblock %}
         </main>
-        <footer>
-            <h2>Footer</h2>
-        </footer>
+        {% include "../partials/footer.twig" %}
     </body>
 </html>
