@@ -1,0 +1,26 @@
+.input {
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+        color: #F5F8FB;
+    }
+
+    &__field {
+        border: 2px solid #D0D7FB2B;
+        border-radius: 0;
+        background-color: transparent;
+
+        font-size: 14px;
+        line-height: 20px;
+        color: #F5F8FB;
+
+        &:hover {
+            border-color: #3892F3;
+        }
+
+        &:focus {
+            border-color: #3892F3;
+            outline: 1px solid #3892F3;
+        }
+    }
+}

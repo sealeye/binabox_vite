@@ -1,6 +1,6 @@
 {% extends 'src/templates/layouts/base.twig' %}
 
 {% block content %}
-    {% include 'src/templates/partials/inner-header.twig' %}
+    {% include 'src/templates/partials/inner-header.twig' with { header: contacts.header } %}
     {% include 'src/templates/partials/contacts-form.twig' %}
 {% endblock %}

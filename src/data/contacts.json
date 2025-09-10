@@ -1,20 +1,18 @@
 {
-  "site_title": "Binabox Contacts",
-  "inner_header": {
-    "title": "Our blog"
-  },
-  "breadcrumbs": [
-    {
-      "text": "Home",
-      "link": "#"
-    },
-    {
-      "text": "Our blog",
-      "link": "#"
-    },
-    {
-      "text": "The Basilisks NFT",
-      "link": "#"
+  "contacts": {
+    "site_title": "Binabox Contacts",
+    "header": {
+      "title": "Contact Us",
+      "breadcrumbs": [
+        {
+          "text": "Home",
+          "link": "#"
+        },
+        {
+          "text": "Contact Us",
+          "link": "#"
+        }
+      ]
     }
-  ]
+  }
 }

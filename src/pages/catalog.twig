@@ -1,5 +1,6 @@
 {% extends 'src/templates/layouts/base.twig' %}
 
 {% block content %}
-    {% include 'src/templates/partials/filter-form.twig' %}
+    {% include 'src/templates/partials/inner-header.twig' with { header: catalog.header } %}
+    {% include 'src/templates/partials/filter-form.twig'  %}
 {% endblock %}

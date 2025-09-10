@@ -1,0 +1,26 @@
+.radio {
+    &__label {
+        font-size: 14px;
+        line-height: 20px;
+        color: #F5F8FB;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 2px solid #D4D9F242;
+            box-sizing: border-box;
+        }
+    }
+
+    input:checked+label:before {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 5px solid #0265DC;
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "catalog": {
+    "site_title": "Binabox Catalog",
+    "header": {
+      "title": "Catalog",
+      "breadcrumbs": [
+        {
+          "text": "Home",
+          "link": "#"
+        },
+        {
+          "text": "Catalog",
+          "link": "#"
+        }
+      ]
+    }
+  }
+}

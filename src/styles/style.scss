@@ -4,6 +4,8 @@
 @use 'ui/button';
 @use 'ui/label';
 @use 'ui/titles';
+@use 'ui/input';
+@use 'ui/radio';
 @use "components/about";
 @use "components/blockquote";
 @use "components/blog-card";
@@ -25,3 +27,4 @@
 @use "components/social-list";
 @use "components/team-card";
 @use "components/team"; 
+@use "components/contacts-form"; 

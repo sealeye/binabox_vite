@@ -1,3 +1,44 @@
-<form action="#" method="post">
-    
-</form>
+<section class="contacts-form">
+	<h2 class="contacts-form__title">Get in touch</h2>
+	<p class="contacts-form__desc">Browse through the most frequently asked questions</p>
+	<form action="#" method="post">
+		<label class="input">
+			<span class="input__text">Name</span>
+            <input type="text" class="input__field">
+        </label>
+		<label class="input">
+			<span class="input__text">Last name</span>
+            <input type="text" class="input__field">
+        </label>
+		<label class="input">
+			<span class="input__text">Date of birth</span>
+            <input type="date" class="input__field">
+        </label>
+
+        <fieldset>
+            <p class="radio">
+                <input type="radio" class="radio__input visually-hidden" id="male" name="sex" value="male" checked>
+                <label for="male" class="radio__label">Male</label>
+            </p>
+            <p class="radio">
+                <input type="radio" class="radio__input visually-hidden" id="female" name="sex" value="female">
+                <label for="female" class="radio__label">Female</label>
+            </p>
+        </fieldset>
+
+		<label class="input">
+			<span class="input__text">Email</span>
+            <input type="email" class="input__field">
+        </label>
+		<label class="input">
+			<span class="input__text">Phone Number</span>
+            <input type="tel" class="input__field">
+        </label>
+
+        <label class="input">
+			<span class="input__text">Message</span>
+            <textarea class="input__field"></textarea>
+        </label>
+	</form>
+</section>
+
