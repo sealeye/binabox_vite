@@ -1,0 +1,14 @@
+<form action="#" method="">
+	{% for item in catalog.filter %}
+		<details class="filter-fieldset">
+			<summary class="filter-fieldset__title">{{ item.title }}</summary>
+			<ul class="filter-fieldset__list">
+				{% for input in item.list %}
+					<li class="filter-fieldset__list-item">
+                        {% include 'ui/input.twig' %}
+					</li>
+				{% endfor %}
+			</ul>
+		</details>
+	{% endfor %}
+</form>

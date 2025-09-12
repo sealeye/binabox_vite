@@ -2,5 +2,6 @@
 
 {% block content %}
     {% include 'src/templates/partials/inner-header.twig' with { header: catalog.header } %}
-    {% include 'src/templates/partials/filter-form.twig'  %}
+    {% include 'src/templates/partials/catalog-filter.twig'  %}
+    {% include 'src/templates/partials/catalog-items.twig'  %}
 {% endblock %}

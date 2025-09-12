@@ -13,6 +13,49 @@
           "link": "#"
         }
       ]
+    },
+    "filter": [
+      {
+        "title": "Clothing",
+        "type": "checkbox",
+        "list": [ "Combatant", "Ninja", "King", "Queen","Robot" ]
+      },
+      {
+        "title": "Eyes",
+        "type": "radio",
+        "list": [ "Yellow", "Green", "Mix", "Orange" ]
+      },
+      {
+        "title": "Face",
+        "type": "radio",
+        "list": []
+      },
+      {
+        "title": "Skin",
+        "type": "radio",
+        "list": []
+      },
+      {
+        "title": "Background",
+        "type": "radio",
+        "list": []
+      },
+      {
+        "title": "Special",
+        "type": "radio",
+        "list": [ "Yellow", "Green", "Mix", "Orange" ]
+      }
+    ],
+    "filter_results": {
+      "button": "Clear all",
+      "list": ["NFT", "ICO", "Crypto"]
+    },
+    "filter_select": ["Sort by", "Newest", "Most popular", "Increasing in price", "Lowering the price"],
+    "search": {
+      "type": "search",
+      "placeholder": "Search NFT",
+      "id": "catalog-search",
+      "label": ""
     }
   }
 }

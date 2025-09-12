@@ -1,24 +1,25 @@
 .button{
+  font-family: inherit;
   font-size: 18px;
   line-height: 28px;
-  color: #F5F8FB;
+  color: var(--text-color);
   font-weight: 500;
 
   /* padding: 10px 24px; */
-  border: 2px solid #D0D7FB2B;
+  border: 2px solid var(--border-color);
   text-align: center;
   background-color: transparent;
 
   &:hover {
     background-color: #BFC5EE1F;
     border-color: #BFC5EE1F;
-    color: #F5F8FB;
+    color: var(--text-color);
   }
 
   &:focus {
     background-color: #BFC5EE1F;
-    border-color: #3892F3;
-    outline: 2px solid #3892F3;
+    border-color: var(--focus-color);
+    outline: 2px solid var(--focus-color);
     border-radius: 0;
   }
 
@@ -26,31 +27,31 @@
     background-color: #BFC5EE1F;
     border-color: #BFC5EE1F;
     border-radius: 0;
-    color: #F5F8FB;
+    color: var(--text-color);
     outline: none;
   }
 
   &:disabled,
   &.disabled {
-    background-color: #D0D7FB2B;
-    background-color: #D0D7FB2B;
+    background-color: var(--border-color);
+    background-color: var(--border-color);
     color: #E5ECFB5C;
   }
 }
 
 .button--primary{
-  background-color: #0265DC;
-  border-color: #0265DC;
+  background-color: var(--checked-color);
+  border-color: var(--checked-color);
 
   &:hover {
-    background-color: #3892F3;
-    border-color: #3892F3;
+    background-color: var(--focus-color);
+    border-color: var(--focus-color);
   }
 
   &:focus {
     background-color: #0265DC;
-    // border-color: #3892F3;
-    // outline: 2px solid #3892F3;
+    // border-color: var(--focus-color);
+    // outline: 2px solid var(--focus-color);
   }
 
   &:active {
@@ -63,6 +64,27 @@
     // background-color: #D0D7FB2B;
     // background-color: #D0D7FB2B;
     // color: #E5ECFB5C;
+  }
+}
+
+.button--light {
+  background-color: #FFFFFF;
+  color: #0D0D15;
+  border-color: transparent;
+
+  &:hover {
+    background-color: #F4F7FA;
+    color: #0D0D15;
+  }
+
+  &:focus {
+    background-color: #FFFFFF;
+  }
+
+  &:active {
+    background-color: #E5ECFB5C;
+    border-color: transparent;
+    color: #fff;
   }
 }
 

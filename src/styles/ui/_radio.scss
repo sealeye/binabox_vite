@@ -16,11 +16,6 @@
     }
 
     input:checked+label:before {
-        content: '';
-        display: block;
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        border: 5px solid #0265DC;
+        border: 5px solid var(--checked-color)
     }
 }

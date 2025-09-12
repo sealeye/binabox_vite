@@ -6,6 +6,7 @@
 @use 'ui/titles';
 @use 'ui/input';
 @use 'ui/radio';
+@use 'ui/checkbox';
 @use "components/about";
 @use "components/blockquote";
 @use "components/blog-card";
@@ -28,3 +29,5 @@
 @use "components/team-card";
 @use "components/team"; 
 @use "components/contacts-form"; 
+@use "components/catalog-filter"; 
+@use "components/filter-fieldset"; 

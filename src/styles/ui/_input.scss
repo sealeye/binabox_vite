@@ -1,5 +1,5 @@
 .input {
-    &__text {
+    &__label {
         font-size: 14px;
         line-height: 20px;
         color: #F5F8FB;
@@ -14,13 +14,25 @@
         line-height: 20px;
         color: #F5F8FB;
 
+        &:placeholder {
+            color: var(--placeholder-color);
+        }
+
         &:hover {
-            border-color: #3892F3;
+            border-color: var(--focus-color);
         }
 
         &:focus {
-            border-color: #3892F3;
-            outline: 1px solid #3892F3;
+            border-color: var(--focus-color);
+            outline: 1px solid var(--focus-color);
+        }
+
+        &:invalid {
+            border-color: var(--error-color);
+        }
+
+        &:disabled {
+            background-color: #BFC5EE1F;
         }
     }
 }
