@@ -7,6 +7,7 @@
         placeholder="{{ item.placeholder }}"
         class="input__field {{ item.type }}__field 
             {% if item.type == 'radio' or item.type == 'checkbox' %}visually-hidden{% endif %}"
+        {% if item.required == true %}required{% endif %}    
     >
 	<label for="{{ input|lower|replace({' ': '-'}) }}" class="{{ item.type }}__label input__label">
         {{ item.label }}

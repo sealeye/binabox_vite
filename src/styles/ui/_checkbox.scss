@@ -83,7 +83,7 @@
             border-color: #D0D7FB2B;
         }
 
-        &:invalid+label:before {
+        &:user-invalid+label:before {
             border-color: var(--error-color)
         }
     }

@@ -13,6 +13,12 @@
           "link": "#"
         }
       ]
+    },
+    "form": {
+      "terms_button": {
+        "type": "checkbox",
+        "requred": true
+      }
     }
   }
 }

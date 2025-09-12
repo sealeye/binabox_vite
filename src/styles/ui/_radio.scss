@@ -15,7 +15,49 @@
         }
     }
 
-    input:checked+label:before {
-        border: 5px solid var(--checked-color)
+    input {
+        &:checked {
+            &+label:before {
+                border: 5px solid #0265DC;
+            }
+
+            &:hover+label:before {
+                border-color: #3892F3;
+            }
+
+            &:active+label:before  {
+                border-color: #B5DEFF;
+            }
+
+            &:focus+label:before {
+                border-color: var(--checked-color);
+            }
+            &:disabled+label:before  {
+                background-color: #D0D7FB2B;
+            }
+        }
+
+        &:hover+label:before {
+            background-color: #1D1C28;
+        }
+
+        &:active+label:before {
+            border: 5px solid var(--checked-color)
+        }
+
+        &:focus+label:before {
+            border-color: #E7EEF7A8;
+            outline: 2px solid #3892F3;
+            outline-offset: 1px;
+        }
+
+        &:disabled+label:before {
+            background-color: #D0D7FB2B;
+            border-color: #D0D7FB2B;
+        }
+
+        &:user-invalid+label:before {
+            border-color: var(--error-color)
+        }
     }
 }

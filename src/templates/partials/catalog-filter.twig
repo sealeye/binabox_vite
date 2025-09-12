@@ -1,4 +1,4 @@
-<form action="#" method="">
+<form action="#" method="post" class="catalog-filter">
 	{% for item in catalog.filter %}
 		<details class="filter-fieldset">
 			<summary class="filter-fieldset__title">{{ item.title }}</summary>
@@ -11,4 +11,5 @@
 			</ul>
 		</details>
 	{% endfor %}
+    <button type="submit" class="catalog-filter__button button button--primary">Apply</button>
 </form>

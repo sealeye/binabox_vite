@@ -12,7 +12,12 @@
       </li>
       {% endfor %}
     </ul>
-    {# <input type="search" placeholder="Search..."/> #}
+    <form action="#" method="post" class="search-form">
+      <label class="input search-form__label">
+        <input type="search" class="input__field button search-form__input" placeholder="Search">
+      </label>
+      <button type="submit" class="visually-hidden">Send</button>
+    </form>
     <a class="button page-header__button" href="#" target="_blank" rel="noopener noreferrer">Discord</a>
     <a class="button button--primary page-header__button" href="#" target="_blank" rel="noopener noreferrer">Connect</a>
   </nav>

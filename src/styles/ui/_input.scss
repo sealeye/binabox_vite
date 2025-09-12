@@ -10,6 +10,7 @@
         border-radius: 0;
         background-color: transparent;
 
+        font-family: inherit;
         font-size: 14px;
         line-height: 20px;
         color: #F5F8FB;
@@ -27,7 +28,7 @@
             outline: 1px solid var(--focus-color);
         }
 
-        &:invalid {
+        &:user-invalid {
             border-color: var(--error-color);
         }
 
