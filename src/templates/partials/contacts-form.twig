@@ -4,17 +4,33 @@
 	<form action="#" method="post">
 		<label class="input">
 			<span class="input__text">Name</span>
-			<input type="text" class="input__field" placeholder="Enter your name" required>
+			<input 
+                type="text" 
+                class="input__field" 
+                placeholder="Enter your name" 
+                required 
+                pattern="^[A-Za-z]{2,30}$">
 		</label>
 
 		<label class="input">
 			<span class="input__text">Last name</span>
-			<input type="text" class="input__field" placeholder="Enter your last name" required>
+			<input 
+                type="text" 
+                class="input__field" 
+                placeholder="Enter your last name" 
+                required 
+                pattern="^[A-Za-z]{2,30}(-[A-Za-z]{2,30})?$">
 		</label>
 
 		<label class="input">
 			<span class="input__text">Date of birth</span>
-			<input type="date" class="input__field" placeholder="dd/mm/yyyy" required>
+			<input 
+                type="date" 
+                class="input__field" 
+                placeholder="dd/mm/yyyy" 
+                required 
+                min="1925-01-01" 
+                max="2007-12-31" >
 		</label>
 
 		<fieldset>
@@ -30,12 +46,22 @@
 
 		<label class="input">
 			<span class="input__text">Email</span>
-			<input type="email" class="input__field" placeholder="Enter your email" required>
+			<input 
+                type="email" 
+                class="input__field" 
+                placeholder="Enter your email" 
+                required 
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.">
 		</label>
 
 		<label class="input">
 			<span class="input__text">Phone Number</span>
-			<input type="tel" class="input__field" placeholder="Enter your number" required>
+			<input 
+                type="tel" 
+                class="input__field" 
+                placeholder="Enter your number" 
+                required 
+                pattern="^\+?[0-9\s\-]{7,15}$">
 		</label>
 
 		<label class="input">
