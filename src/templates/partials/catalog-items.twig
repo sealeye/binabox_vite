@@ -1,5 +1,5 @@
 <section class="catalog-items">
-	<form action="" class="catalog-items-form">
+	<form action="#" class="catalog-items-form">
 		<select name="" id="" class="select catalog-items-form__select button">
 			{% for item in catalog.filter_select %}
 				<option value="{{ item|lower|replace({' ': '-'}) }}">{{ item }}</option>

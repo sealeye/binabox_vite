@@ -4,15 +4,17 @@
 	<form action="#" method="post">
 		<label class="input">
 			<span class="input__text">Name</span>
-			<input type="text" class="input__field">
+			<input type="text" class="input__field" placeholder="Enter your name" required>
 		</label>
+
 		<label class="input">
 			<span class="input__text">Last name</span>
-			<input type="text" class="input__field">
+			<input type="text" class="input__field" placeholder="Enter your last name" required>
 		</label>
+
 		<label class="input">
 			<span class="input__text">Date of birth</span>
-			<input type="date" class="input__field">
+			<input type="date" class="input__field" placeholder="dd/mm/yyyy" required>
 		</label>
 
 		<fieldset>
@@ -28,16 +30,17 @@
 
 		<label class="input">
 			<span class="input__text">Email</span>
-			<input type="email" class="input__field">
+			<input type="email" class="input__field" placeholder="Enter your email" required>
 		</label>
+
 		<label class="input">
 			<span class="input__text">Phone Number</span>
-			<input type="tel" class="input__field">
+			<input type="tel" class="input__field" placeholder="Enter your number" required>
 		</label>
 
 		<label class="input">
 			<span class="input__text">Message</span>
-			<textarea class="input__field"></textarea>
+			<textarea class="input__field" placeholder="Text your message here" required></textarea>
 		</label>
 
 		<p class="input checkbox">
@@ -46,6 +49,7 @@
 				By clicking on the ‘Send Message’ button I agree to <a href="#">all the terms of the security policy</a>
 			</label>
 		</p>
+
 		<button class="button button--primary contacts-form__button" type="submit">
 			Send Message
 		</button>
