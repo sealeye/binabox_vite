@@ -15,6 +15,8 @@
         }
       ]
     },
+    "title": "Get in touch",
+    "description": "Browse through the most frequently asked questions",
     "form": {
       "terms_button": {
         "type": "checkbox",
