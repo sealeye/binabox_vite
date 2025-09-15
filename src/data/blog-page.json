@@ -1,6 +1,7 @@
 {
   "blog_page": {
     "site_title": "Binabox Blog post",
+    "path": "blog-page.html",
     "header": {
       "title": "Our blog",
       "breadcrumbs": [

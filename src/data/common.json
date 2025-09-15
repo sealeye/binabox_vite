@@ -5,15 +5,15 @@
       "text": "Home"
     },
     {
-      "url": "/blog-page.html",
+      "url": "blog-page.html",
       "text": "Blog"
     },
     {
-      "url": "/catalog.html",
+      "url": "catalog.html",
       "text": "Catalog"
     },
     {
-      "url": "/contacts.html",
+      "url": "contacts.html",
       "text": "Contact Us"
     }
   ],

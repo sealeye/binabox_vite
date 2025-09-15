@@ -1,6 +1,7 @@
 {
   "catalog": {
     "site_title": "Binabox Catalog",
+    "path": "catalog.html",
     "header": {
       "title": "Catalog",
       "breadcrumbs": [

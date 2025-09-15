@@ -1,6 +1,7 @@
 {
   "contacts": {
     "site_title": "Binabox Contacts",
+    "path": "contacts.html",
     "header": {
       "title": "Contact Us",
       "breadcrumbs": [
