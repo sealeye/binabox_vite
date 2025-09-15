@@ -1,8 +1,8 @@
 <aside class="sidebar">
   <div class="sidebar__section">
-    <h3 class="sidebar__section-title">{{ sidebar.categories_title }}</h3>
+    <h3 class="sidebar__section-title">{{ blog_page.sidebar.categories_title }}</h3>
     <ul class="sidebar__section-list">
-      {% for category in sidebar.categories %}
+      {% for category in blog_page.sidebar.categories %}
         <li class="sidebar__section-list-item">
           <a class="sidebar__section-link" href="{{ category.url }}">
             {{ category.name }} ({{ category.count }})
@@ -13,9 +13,9 @@
   </div>
 
   <div class="sidebar__section">
-    <h3 class="sidebar__section-title">{{ sidebar.tags_title }}</h3>
+    <h3 class="sidebar__section-title">{{ blog_page.sidebar.tags_title }}</h3>
     <ul class="sidebar__section-tags">
-      {% for tag in sidebar.tags %}
+      {% for tag in blog_page.sidebar.tags %}
         <li class="sidebar__section-tags-item">
           <a class="sidebar__section-tags-link button button--small" href="{{ tag.url }}">
             {{ tag.name }}
