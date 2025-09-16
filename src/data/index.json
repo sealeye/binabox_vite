@@ -45,42 +45,38 @@
     {
       "label": "New",
       "state": "new",
-      "price": "199",
-      "name": "Name product",
-      "image": "item-1.png",
+      "price": "1990",
+      "name": "Echo of Bones",
+      "image": "item-2.png",
       "image_alt": "img_alt",
       "link": "#"
     },
     {
-      "label": "Sold out",
+      "label": "New",
       "state": "new",
-      "price": "2999",
-      "name": "Name Product",
-      "image": "item-2.png",
-      "link": "#"
-    },
-    {
-      "label": "Sold out",
-      "state": "sold-out",
-      "price": "2999",
-      "name": "Name Product",
+      "price": "299.99",
+      "name": "Nyx the Watcher",
       "image": "item-3.png",
       "link": "#"
     },
     {
       "label": "Sold out",
       "state": "sold-out",
-      "price": "2999",
-      "name": "Name Product",
+      "price": "20",
+      "name": "Blade of Silence",
       "image": "item-4.png",
       "link": "#"
     },
     {
-      "label": "Sold out",
-      "state": "sold-out",
-      "price": "2999",
-      "name": "Name Product",
+      "price": "1.000.000",
+      "name": "Data Core: Alpha",
       "image": "item-5.png",
+      "link": "#"
+    },
+    {
+      "price": "199.5",
+      "name": "Phantom Console",
+      "image": "item-6.png",
       "link": "#"
     }
   ],
@@ -89,38 +85,71 @@
   },
   "blog_items": [
     {
-      "img": "img/catalog-item-photo-1-2x.webp",
+      "img": "item-1.png",
       "img_alt": "alt",
-      "label": "NFT card",
-      "author": "Tony Nguyen",
-      "date": "2022-06-20",
-      "visible_date": "20 Jun 2022",
-      "title": "Sonic live",
-      "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices necnulla imperdiet...",
+      "label": "NFT",
+      "author": "Nova Riven",
+      "date": "2022-12-04",
+      "visible_date": "4 Dec 2022",
+      "title": "Neural Drift",
+      "text": "I woke up inside the void. My body stayed in the past — only thoughts were allowed through the wires.",
       "button_text": "Read more",
-      "link": "index.html"
+      "link": "#"
     },
     {
-      "img": "img/catalog-item-photo-1-2x.webp",
-      "label": "NFT card",
-      "author": "Tony Nguyen",
-      "date": "2022-06-20",
-      "visible_date": "20 Jun 2022",
-      "title": "Sonic live",
-      "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices necnulla imperdiet...",
+      "img": "item-2.png",
+      "label": "DROP",
+      "author": "Kairo Null",
+      "date": "2022-12-06",
+      "visible_date": "06 Dec 2022",
+      "title": "Deadframe",
+      "text": "He just stood there, waiting. Not for a person — for a signal. Like the memory of the network took shape.",
       "button_text": "Read more",
-      "link": "index.html"
+      "link": "#"
     },
     {
-      "img": "img/catalog-item-photo-1-2x.webp",
-      "label": " card",
+      "img": "item-3.png",
+      "label": "NFT",
+      "author": "Synthya Void",
+      "date": "2022-12-07",
+      "visible_date": "07 Dec 2022",
+      "title": "Glitch Panther",
+      "text": "Cats always knew more than they showed. Especially the ones that vanish into code.",
+      "button_text": "Read more",
+      "link": "#"
+    },
+    {
+      "img": "item-7.png",
+      "label": "RARE",
+      "author": "Dr. Wex Omega",
+      "date": "2022-12-08",
+      "visible_date": "08 Dec 2022",
+      "title": "Primal.exe",
+      "text": "We tried to resurrect the past. What we got was rage compressed into an algorithm.",
+      "button_text": "Read more",
+      "link": "#"
+    },
+    {
+      "img": "item-9.png",
+      "label": "NFT",
       "author": "Tony Nguyen",
       "date": "2022-06-20",
       "visible_date": "20 Jun 2022",
-      "title": "Sonic live fhkdshksdhjkd",
-      "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices necnulla imperdiet...",
+      "title": "White Protocol",
+      "text": "At first, it was just a signal — clean, white, hypnotic. We didn't know it was alive.",
       "button_text": "Read more",
-      "link": "index.html"
+      "link": "#"
+    },
+    {
+      "img": "item-6.png",
+      "label": "Artifact",
+      "author": "Echo Zero",
+      "date": "2022-12-09",
+      "visible_date": "09 Dec 2022",
+      "title": "Retrocore",
+      "text": "This console comes from a game no one remembers how to play. But it's still powered on.",
+      "button_text": "Read more",
+      "link": "#"
     }
   ],
   "about_section": {
@@ -154,24 +183,79 @@
   },
   "team_list": [
     {
-      "img": "img/team-member-1.webp",
+      "img": "team-1.jpg",
       "img_alt": "alt",
-      "name": "Jason Smith",
-      "position": "Co - Founder",
+      "name": "Nova Riven",
+      "position": "Creative Architect",
       "socials": [
-        "facebook.com/f",
-        "link",
-        "link"
+        "facebook.com/user",
+        "t.me/user",
+        "linkedin.com/user",
+        "instagram.com/user"
       ]
     },
     {
-      "img": "img/team-member-1.webp",
-      "name": "Jason Smith",
-      "position": "Co - Founder",
-      "social_links": [
-        "link",
-        "link",
-        "link"
+      "img": "team-2.jpg",
+      "name": "Echo Zero",
+      "position": "Tech Whisperer",
+      "socials": [
+        "twitter.com/user",
+        "t.me/user",
+        "linkedin.com/user",
+        "instagram.com/user"
+      ]
+    },
+    {
+      "img": "team-3.jpg",
+      "name": "Kairo Null",
+      "position": "Lore Engineer",
+      "socials": [
+        "twitter.com/user",
+        "facebook.com/user",
+        "t.me/user",
+        "linkedin.com/user"
+      ]
+    },
+    {
+      "img": "team-4.jpg",
+      "name": "Dr. Wex Omega",
+      "position": "Visual Disruptor",
+      "socials": [
+        "twitter.com/user",
+        "facebook.com/user",
+        "t.me/user",
+        "linkedin.com/user",
+        "instagram.com/user"
+      ]
+    },
+    {
+      "img": "team-5.jpg",
+      "name": "Synthya Void",
+      "position": "UX Seer",
+      "socials": ["twitter.com/user"]
+    },
+    {
+      "img": "team-6.jpg",
+      "name": "Mirlo Drift",
+      "position": "Community Catalyst",
+      "socials": [
+        "twitter.com/user",
+        "facebook.com/user",
+        "t.me/user",
+        "linkedin.com/user",
+        "instagram.com/user"
+      ]
+    },
+    {
+      "img": "team-7.jpg",
+      "name": "Axon Rune",
+      "position": "Security Ghost",
+      "socials": [
+        "twitter.com/user",
+        "facebook.com/user",
+        "t.me/user",
+        "linkedin.com/user",
+        "instagram.com/user"
       ]
     }
   ],

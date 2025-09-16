@@ -1,7 +1,9 @@
+{% from 'ui/picture.twig' import picture %}
+
 <article class="blog-post">
 
 	<figure class="blog-post__illustration blog-post__illustration--wide">
-		<img class="blog-post__illustration-image" src="{{ blog_page.post.main_image.src }}" alt="{{ post.main_image.alt }}">
+		{{ picture('blog-post__illustration-image', blog_page.post.main_image.src, post.main_image.alt) }}
 		<figcaption class="blog-post__illustration-caption">{{ blog_page.post.main_image.caption }}</figcaption>
 	</figure>
 
@@ -36,7 +38,7 @@
 
 	{% for image in blog_page.post.additional_images %}
 		<figure class="blog-post__illustration">
-			<img class="blog-post__illustration-image" src="{{ image.src }}" alt="{{ image.alt }}">
+			{{ picture('blog-post__illustration-image', image.src, image.alt) }}
 			<figcaption class="blog-post__illustration-caption">{{ image.caption }}</figcaption>
 		</figure>
 	{% endfor %}

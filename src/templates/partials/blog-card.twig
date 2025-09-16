@@ -1,6 +1,8 @@
+{% from 'ui/picture.twig' import picture %}
+
 <a class="" href="{{ item.link }}">
 	<article class="blog-card">
-		<img class="blog-card__image" src="{{ item.img }}" alt="{{ item.img_alt }}">
+        {{ picture('blog-card__image', item.img, item.img_alt) }}
 		<span class="blog-card__label">{{ item.label }}</span>
 		<p class="blog-card__name">{{ item.author }}</p>
 		<time class="blog-card__date" datetime="{{ item.date }}">{{ item.visible_data }}</time>
