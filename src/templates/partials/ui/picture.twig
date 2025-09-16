@@ -1,5 +1,7 @@
-<picture>
-    <source srcset="{{ img.src }}, logo-1.5x.png 2x" />
-    <source srcset="{{ img.src }}.webp" type="image/webp" />
-    <img src="{{ img.src }}" alt="{{ img.alt }}" height="{{ img.width }}" width="{{ img.height }}" />
-</picture>
+{% macro picture(classes, source, alt) %}
+	<picture class="{{ classes }}">
+		<source srcset="/src/assets/images/{{ source }}?format=webp" type="image/webp">
+		<source srcset="/src/assets/images/{{ source }}?format=avif" type="image/avif">
+		<img src="/src/assets/images/{{ source }}" alt="{{ alt }}">
+	</picture>
+{% endmacro %}

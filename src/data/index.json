@@ -8,6 +8,10 @@
       "end": "EXPLORE NFT COLLECTION!"
     },
     "desc": "We are the best way to check the rarity of NFT collection",
+    "image": {
+      "src": "banner-cube.png",
+      "alt": "binabox cube"
+    },
     "stat": [
       {
         "num": "2240+",
@@ -43,7 +47,7 @@
       "state": "new",
       "price": "199",
       "name": "Name product",
-      "image": "img/item-1-2x.webp",
+      "image": "item-1.png",
       "image_alt": "img_alt",
       "link": "#"
     },
@@ -52,7 +56,7 @@
       "state": "new",
       "price": "2999",
       "name": "Name Product",
-      "image": "img/catalog-item-photo-1-2x.webp",
+      "image": "item-2.png",
       "link": "#"
     },
     {
@@ -60,7 +64,7 @@
       "state": "sold-out",
       "price": "2999",
       "name": "Name Product",
-      "image": "img/catalog-item-photo-1-2x.webp",
+      "image": "item-3.png",
       "link": "#"
     },
     {
@@ -68,7 +72,7 @@
       "state": "sold-out",
       "price": "2999",
       "name": "Name Product",
-      "image": "img/catalog-item-photo-1-2x.webp",
+      "image": "item-4.png",
       "link": "#"
     },
     {
@@ -76,7 +80,7 @@
       "state": "sold-out",
       "price": "2999",
       "name": "Name Product",
-      "image": "img/catalog-item-photo-1-2x.webp",
+      "image": "item-5.png",
       "link": "#"
     }
   ],

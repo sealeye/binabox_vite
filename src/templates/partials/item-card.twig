@@ -1,6 +1,16 @@
+{% from 'ui/picture.twig' import picture %}
+
 <a href="{{ item.link }}">
 	<article class="item-card">
-		<img class="item-card__image" src="{{ item.image }}" alt="{{ item.image_alt }}">
+		{# <img  src="src/assets/images/{{ item.image }}" alt="{{ item.image_alt }}"> #}
+		{# <picture class="item-card__image">
+			<source srcset="/src/assets/images/{{ item.image }}?format=webp" type="image/webp">
+			<source srcset="/src/assets/images/{{ item.image }}?format=avif" type="image/avif">
+			<img src="/src/assets/images/{{ item.image }}" alt="{{ item.image_alt }}">
+		</picture>
+ #}
+
+        {{ picture('item-card__image', item.image, item.image_alt) }}
 		<span class="item-card__label item-card__label--{{ item.state }}">{{ item.label }}</span>
 		<p class="item-card__price">{{ item.price }}</p>
 		<h3 class="item-card__name">{{ item.name }}</h3>

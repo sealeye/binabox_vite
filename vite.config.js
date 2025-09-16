@@ -17,6 +17,8 @@ export default defineConfig({
     twig(),
     nunjucks(),
     postcss(),
-    imageOptimizer(),
+    imageOptimizer({
+      dimensions: true
+    }),
   ],
 });
