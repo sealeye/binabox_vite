@@ -89,7 +89,7 @@
     "post": {
       "main_image": {
         "src": "blog-1.png",
-        "alt": "Main image alt",
+        "alt": "Giant green dragon confronts a cloaked figure in moss-lit ruins.",
         "caption": "Photo caption"
       },
       "title": "The Basilisks NFT",
@@ -114,12 +114,12 @@
       "additional_images": [
         {
           "src": "blog-2.png",
-          "alt": "Secondary image 1",
+          "alt": "Close-up of an emerald dragon’s head with glittering scales and green bokeh.",
           "caption": "Photo caption"
         },
         {
           "src": "blog-3.png",
-          "alt": "Secondary image 2",
+          "alt": "Enormous green dragon lowers its head toward a lone swordsman in rainy ruins.",
           "caption": "Photo caption"
         }
       ],

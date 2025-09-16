@@ -48,7 +48,7 @@
       "price": "1990",
       "name": "Echo of Bones",
       "image": "item-2.png",
-      "image_alt": "img_alt",
+      "image_alt": "Translucent glass human skeleton under teal light with swirling mist in the background.",
       "link": "#"
     },
     {
@@ -57,6 +57,7 @@
       "price": "299.99",
       "name": "Nyx the Watcher",
       "image": "item-3.png",
+      "image_alt": "Profile of a black cat with glowing green eyes in moody teal lighting.",
       "link": "#"
     },
     {
@@ -65,18 +66,21 @@
       "price": "20",
       "name": "Blade of Silence",
       "image": "item-4.png",
+      "image_alt": "Metal scissors resting on draped fabric under cool teal light.",
       "link": "#"
     },
     {
       "price": "1.000.000",
       "name": "Data Core: Alpha",
       "image": "item-5.png",
+      "image_alt": "Futuristic neon-green circuit card with concentric interface details.",
       "link": "#"
     },
     {
       "price": "199.5",
       "name": "Phantom Console",
       "image": "item-6.png",
+      "image_alt": "Transparent, neon-lit handheld game console on a reflective surface.",
       "link": "#"
     }
   ],
@@ -86,7 +90,7 @@
   "blog_items": [
     {
       "img": "item-1.png",
-      "img_alt": "alt",
+      "img_alt": "Surreal teal illustration of a closed-eye human face wrapped in flowing ornamental swirls.",
       "label": "NFT",
       "author": "Nova Riven",
       "date": "2022-12-04",
@@ -98,6 +102,7 @@
     },
     {
       "img": "item-2.png",
+      "img_alt": "Translucent glass human skeleton under teal light with swirling mist in the background.",
       "label": "DROP",
       "author": "Kairo Null",
       "date": "2022-12-06",
@@ -109,6 +114,7 @@
     },
     {
       "img": "item-3.png",
+      "img_alt": "Profile of a black cat with glowing green eyes in moody teal lighting.",
       "label": "NFT",
       "author": "Synthya Void",
       "date": "2022-12-07",
@@ -120,6 +126,7 @@
     },
     {
       "img": "item-7.png",
+      "img_alt": "Cinematic close-up of a chimpanzee’s face, cool blue-green lighting and detailed fur, intense forward gaze.",
       "label": "RARE",
       "author": "Dr. Wex Omega",
       "date": "2022-12-08",
@@ -131,6 +138,7 @@
     },
     {
       "img": "item-9.png",
+      "img_alt": "White duck figurine against a teal background with abstract tech schematics.",
       "label": "NFT",
       "author": "Tony Nguyen",
       "date": "2022-06-20",
@@ -142,6 +150,7 @@
     },
     {
       "img": "item-6.png",
+      "img_alt": "Transparent, neon-lit handheld game console on a reflective surface.",
       "label": "Artifact",
       "author": "Echo Zero",
       "date": "2022-12-09",
