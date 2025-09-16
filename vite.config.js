@@ -18,7 +18,7 @@ export default defineConfig({
     nunjucks(),
     postcss(),
     imageOptimizer({
-      dimensions: true
-    }),
+      dimensions: true 
+    })
   ],
 });

@@ -1,0 +1,45 @@
+.banner {
+    background: radial-gradient(42.5% 42.5% at 22.28% -4.22%, rgba(2, 101, 220, 0.5) 0%, rgba(2, 101, 220, 0) 100%);
+
+    &__heading {
+        font-family: Bakbak One;
+        font-size: 52px;
+        line-height: 62px;
+        letter-spacing: -0.5px;
+        color: #F5F8FB;
+    }
+
+    &__highlight {
+        color: #0265DC;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: #D9D9D9;
+    }
+
+    &__status {}
+
+    &__stat-label {
+        font-family: Bakbak One;
+        font-size: 52px;
+        line-height: 62px;
+        letter-spacing: -0.5px;
+        color: #F5F8FB;
+    }
+
+    &__stat-value {
+        font-size: 16px;
+        line-height: 24px;
+        color: #EFF5FAD1;
+
+    }
+
+    &__button-group {}
+
+    &__button {}
+
+    &__image {}
+}

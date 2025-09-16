@@ -1,7 +1,13 @@
-{% macro picture(classes, source, alt) %}
+{% macro picture(classes, source, alt, width, height) %}
 	<picture class="{{ classes }}">
 		<source srcset="/src/assets/images/{{ source }}?format=webp" type="image/webp">
 		<source srcset="/src/assets/images/{{ source }}?format=avif" type="image/avif">
-		<img src="/src/assets/images/{{ source }}" alt="{{ alt }}">
+		<img 
+            src="/src/assets/images/{{ source }}" 
+            alt="{{ alt }}" 
+            loading="lazy" 
+            decoding="async" 
+            width="{{ width }}" 
+            height="{{ height }}">
 	</picture>
 {% endmacro %}
