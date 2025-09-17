@@ -1,8 +1,13 @@
-@use '../global/variables' as *;
+@use '../global/variables'as *;
 
 .numeric-list {
     &__item {
         background-color: #1A1925;
+        border: 2px solid transparent;
+
+        &:hover {
+            border-image: linear-gradient(-45deg, #0265DC, transparent 5%, transparent 95%, #0265DC) 1;
+        }
     }
 
     &__title {
