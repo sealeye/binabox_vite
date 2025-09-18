@@ -1,4 +1,7 @@
+{% from 'ui/icon.twig' import icon %}
+
 <section class="catalog-items">
+	<h2 class="catalog-items__title">All item</h2>
 	<form action="#" class="catalog-items-form">
 		<select name="" id="" class="select catalog-items-form__select button">
 			{% for item in catalog.filter_select %}
@@ -11,7 +14,10 @@
 		<ul class="catalog-filter-results__list">
 			{% for item in catalog.filter_results.list %}
 				<li class="catalog-filter-results__item">
-					<button class="catalog-filter-results__button button" type="button">{{ item }}</button>
+					<button class="catalog-filter-results__button button" type="button">
+						{{ item }}
+						{{ icon('', 'close', 16, 16) }}
+					</button>
 				</li>
 			{% endfor %}
 		</ul>
