@@ -1,7 +1,14 @@
 .social-list {
+
     &__item {}
 
-    &__link {}
+    &__link {
+        color: white;
+
+        svg {
+            fill: white;
+        }
+    }
 
     &__image {}
 }

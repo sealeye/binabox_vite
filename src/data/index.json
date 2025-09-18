@@ -62,7 +62,7 @@
     },
     {
       "label": "Sold out",
-      "state": "sold-out",
+      "state": "sold",
       "price": "20",
       "name": "Blade of Silence",
       "image": "item-4.png",
@@ -198,7 +198,7 @@
       "position": "Creative Architect",
       "socials": [
         "facebook.com/user",
-        "t.me/user",
+        "telegram.com/user",
         "linkedin.com/user",
         "instagram.com/user"
       ]
@@ -209,7 +209,7 @@
       "position": "Tech Whisperer",
       "socials": [
         "twitter.com/user",
-        "t.me/user",
+        "telegram.com/user",
         "linkedin.com/user",
         "instagram.com/user"
       ]
@@ -221,7 +221,7 @@
       "socials": [
         "twitter.com/user",
         "facebook.com/user",
-        "t.me/user",
+        "telegram.com/user",
         "linkedin.com/user"
       ]
     },
@@ -232,7 +232,7 @@
       "socials": [
         "twitter.com/user",
         "facebook.com/user",
-        "t.me/user",
+        "telegram.com/user",
         "linkedin.com/user",
         "instagram.com/user"
       ]
@@ -250,7 +250,7 @@
       "socials": [
         "twitter.com/user",
         "facebook.com/user",
-        "t.me/user",
+        "telegram.com/user",
         "linkedin.com/user",
         "instagram.com/user"
       ]
@@ -262,7 +262,7 @@
       "socials": [
         "twitter.com/user",
         "facebook.com/user",
-        "t.me/user",
+        "telegram.com/user",
         "linkedin.com/user",
         "instagram.com/user"
       ]

@@ -1,0 +1,11 @@
+.logo-bullet-list {
+    &__item {
+        font-size: 18px;
+        line-height: 28px;
+        color: #F8F7FF;
+
+        &::marker {
+            content: url(../assets/images/logo.svg);
+        }
+    }
+}

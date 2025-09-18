@@ -1,6 +1,9 @@
+{% from 'ui/icon.twig' import icon %}
+
 <footer class="page-footer">
 	<a class="page-footer__logo logo" href="index.html">
-		<img class="logo__image" src="{{ footer.logo.img }}" alt="{{ footer.logo.alt }}">
+		<img src="/src/assets/images/logo.svg" alt="Binabox Logo" class="logo__image" width="36" height="40"/>
+		{{ icon('logo__image-text', 'logo-text', 134, 21) }}
 	</a>
 
 	<p class="page-footer__text">{{ footer.description }}</p>

@@ -1,0 +1,11 @@
+.logo {
+    &--header {
+        .logo__image-text {
+            color: white;
+        }
+    }
+
+    &__image-text {
+        color: #0265DC;
+    }
+}

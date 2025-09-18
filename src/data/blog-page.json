@@ -144,9 +144,9 @@
         { "text": "Crypto", "url": "#" }
       ],
       "share": [
-        { "url": "#", "label": "Twitter" },
-        { "url": "#", "label": "Facebook" },
-        { "url": "#", "label": "Telegram" }
+        "twitter.com/user",
+        "facebook.com/user",
+        "instagram.com/user"
       ]
     }
   }

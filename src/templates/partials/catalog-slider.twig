@@ -1,9 +1,18 @@
+{% from 'ui/icon.twig' import icon %}
+
 <section class="catalog-slider">
 	<header class="catalog-slider__header">
-		<h2 class="catalog-slider__title">{{ catalog_section.title }}</h2>
+		<h2 class="catalog-slider__title">
+			{{ icon('', 'folder') }}
+			{{ catalog_section.title }}
+		</h2>
 		<a class="catalog-slider__link button" href="{{ catalog_section.link.action }}">{{ catalog_section.link.text }}</a>
-		<button class="catalog-slider__nav-button button" type="button"></button>
-		<button class="catalog-slider__nav-button button" type="button"></button>
+		<button class="catalog-slider__nav-button button" type="button">
+			{{ icon('', 'chevron-left') }}
+		</button>
+		<button class="catalog-slider__nav-button button" type="button">
+			{{ icon('', 'chevron-right') }}
+		</button>
 	</header>
 	<ul class="catalog-slider-list">
 		{% for item in catalog_cards %}

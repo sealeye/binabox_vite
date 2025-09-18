@@ -1,4 +1,5 @@
 {% from 'ui/picture.twig' import picture %}
+{% from 'ui/icon.twig' import icon %}
 
 <article class="blog-post">
 
@@ -11,8 +12,14 @@
 	<p class="blog-post__label button button--primary">{{ blog_page.post.category }}</p>
 
 	<div class="blog-post__meta">
-		<p>{{ blog_page.post.author }}</p>
-		<time datetime="{{ blog_page.post.date_iso }}">{{ blog_page.post.date_human }}</time>
+		<p>
+			{{ icon('', 'user', 16, 16) }}
+			{{ blog_page.post.author }}
+		</p>
+		<time datetime="{{ blog_page.post.date_iso }}">
+			{{ icon('', 'calendar', 16, 16) }}
+			{{ blog_page.post.date_human }}
+		</time>
 	</div>
 
 	<p class="blog-post__text">The Basilisks that
@@ -22,15 +29,15 @@
 		gathered to battle other players to win ether (ETH).</p>
 	<p class="blog-post__text">In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks.  Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.</p>
 
-	<ul class="blog-post__unordered-list">
+	<ul class="blog-post__bullet-list">
 		{% for item in blog_page.post.bullets %}
 			<li>{{ item }}</li>
 		{% endfor %}
 	</ul>
 
-	<ol class="blog-post__unordered-list">
+	<ol class="blog-post__unordered-list logo-bullet-list">
 		{% for item in blog_page.post.ordered %}
-			<li>{{ item }}</li>
+			<li class="logo-bullet-list__item">{{ item }}</li>
 		{% endfor %}
 	</ol>
 
@@ -60,11 +67,5 @@
 	</ul>
 
 	<p class="blog-post__text">Share:</p>
-	<ul>
-		{% for item in blog_page.post.share %}
-			<li>
-				<a class="button button--small" href="{{ item.url }}">{{ item.label }}</a>
-			</li>
-		{% endfor %}
-	</ul>
+	{% include 'ui/social-list.twig' with { items: blog_page.post.share, class: "blog-post__social-list" } %}
 </article>

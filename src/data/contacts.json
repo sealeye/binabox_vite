@@ -15,6 +15,26 @@
         }
       ]
     },
+    "section": [
+      {
+        "link": "#",
+        "icon": "marker-pin",
+        "title": "Location",
+        "text": "2163 Phillips Gap Rd"
+      },
+      {
+        "link": "mailto:info.avitex@gmail.com",
+        "icon": "mail",
+        "title": "Email",
+        "text": "Info.avitex@gmail.com"
+      },
+      {
+        "link": "tel:+1 666 8888",
+        "icon": "phone",
+        "title": "Phone",
+        "text": "+1 666 8888"
+      }
+    ],
     "title": "Get in touch",
     "description": "Browse through the most frequently asked questions",
     "form": {

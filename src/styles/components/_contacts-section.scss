@@ -1,0 +1,21 @@
+.contacts-section {
+
+    &__link {
+        border: 1px solid #D4D9F242;
+        color: white;
+        text-align: center;
+    }
+
+    &__heading {
+        font-family: Bakbak One;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+        color: #F8F7FF;
+    }
+
+    &__text {
+        color: #EFF5FAD1;
+    }
+
+}

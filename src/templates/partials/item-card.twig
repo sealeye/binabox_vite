@@ -3,7 +3,7 @@
 <a href="{{ item.link }}">
 	<article class="item-card">
         {{ picture('item-card__image', item.image, item.image_alt, 296, 324) }}
-		<span class="item-card__label item-card__label--{{ item.state }}">{{ item.label }}</span>
+		<span class="item-card__label label label--{{ item.state }}">{{ item.label }}</span>
 		<p class="item-card__price">${{ item.price }}</p>
 		<h3 class="item-card__name">{{ item.name }}</h3>
 	</article>

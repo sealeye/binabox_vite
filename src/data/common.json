@@ -68,6 +68,13 @@
       }
     ],
     "copyright": "BINABOX 2022 - ALL rights reserved",
-    "socials": ["facebook.com/f", "link", "link"]
+    "socials": [
+        "twitter.com/user",
+        "facebook.com/user",
+        "telegram.com/user",
+        "youtube.com/user",
+        "tiktok.com/user",
+        "discord.com/user"
+      ]
   }
 }
