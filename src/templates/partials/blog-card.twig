@@ -1,6 +1,6 @@
 {% from 'ui/picture.twig' import picture %}
 
-<a class="" href="{{ item.link }}">
+<a class="{{ item.class }}" href="{{ item.link }}">
 	<article class="blog-card">
         {{ picture('blog-card__image', item.img, item.img_alt, 261, 340) }}
 		<span class="blog-card__label">{{ item.label }}</span>
