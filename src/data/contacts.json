@@ -1,0 +1,27 @@
+{
+  "contacts": {
+    "site_title": "Binabox Contacts",
+    "path": "contacts.html",
+    "header": {
+      "title": "Contact Us",
+      "breadcrumbs": [
+        {
+          "text": "Home",
+          "link": "#"
+        },
+        {
+          "text": "Contact Us",
+          "link": "#"
+        }
+      ]
+    },
+    "title": "Get in touch",
+    "description": "Browse through the most frequently asked questions",
+    "form": {
+      "terms_button": {
+        "type": "checkbox",
+        "requred": true
+      }
+    }
+  }
+}

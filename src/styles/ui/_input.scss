@@ -1,0 +1,39 @@
+.input {
+    &__label {
+        font-size: 14px;
+        line-height: 20px;
+        color: #F5F8FB;
+    }
+
+    &__field {
+        border: 2px solid #D0D7FB2B;
+        border-radius: 0;
+        background-color: transparent;
+
+        font-family: inherit;
+        font-size: 14px;
+        line-height: 20px;
+        color: #F5F8FB;
+
+        &:placeholder {
+            color: var(--placeholder-color);
+        }
+
+        &:hover {
+            border-color: var(--focus-color);
+        }
+
+        &:focus {
+            border-color: var(--focus-color);
+            outline: 1px solid var(--focus-color);
+        }
+
+        &:user-invalid {
+            border-color: var(--error-color);
+        }
+
+        &:disabled {
+            background-color: #BFC5EE1F;
+        }
+    }
+}

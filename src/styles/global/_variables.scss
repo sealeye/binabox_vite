@@ -1,7 +1,22 @@
 :root {
   --color-white: #ffffff;
-  --color-gray: #cacaca;
-  --color-bg: #f0f6fd;
+  // --color-gray: #cacaca;
+  // --color-bg: #f0f6fd;
+  --color-primary: #F5F8FB;
+  --color-seporator-bold: #D0D7FB2B;
+  --color-separator: #BFC5EE1F;
+  --color-negative: #EA3829;
+
+  --color-focus-invert: #3892F3;
+  --color-accent-link-invert: #0265DC;
+  --color-accent-link: #78BBFA;
+
+  --text-color: var(--color-primary); 
+  --error-color: var(--color-negative);
+  --focus-color: var(--color-focus-invert);
+  --placeholder-color: #E7EEF7A8;
+  --checked-color: var(--color-accent-link-invert);
+  --border-color: var(--color-seporator-bold);
 }
 
 $base-font: "Poppins", "Arial", sans-serif;

@@ -1,0 +1,21 @@
+<section class="catalog-items">
+	<form action="#" class="catalog-items-form">
+		<select name="" id="" class="select catalog-items-form__select button">
+			{% for item in catalog.filter_select %}
+				<option value="{{ item|lower|replace({' ': '-'}) }}">{{ item }}</option>
+			{% endfor %}
+		</select>
+		{% include 'ui/input.twig' with { item: catalog.search, class: "catalog-items-form__search", input: catalog.search.id } %}
+	</form>
+	<div class="catalog-filter-results">
+		<ul class="catalog-filter-results__list">
+			{% for item in catalog.filter_results.list %}
+				<li class="catalog-filter-results__item">
+					<button class="catalog-filter-results__button button" type="button">{{ item }}</button>
+				</li>
+			{% endfor %}
+		</ul>
+		<button class="catalog-filter-results__button button button--light" type="button">{{ catalog.filter_results.button }}</button>
+	</div>
+    {% include 'catalog-list.twig'  %}
+</section>
