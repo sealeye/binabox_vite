@@ -12,6 +12,25 @@ body {
 
 a {
   text-decoration: none;
+  color: #78BBFA;
+
+  &:hover {
+    color: #3892F3;
+  }
+
+  &:focus {
+    outline: 4px solid #3892F3;
+    border-radius: 5px;
+  }
+
+  &:active {
+    color: #0054B6;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: #E5ECFB5C;
+  }
 }
 
 ul {

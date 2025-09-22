@@ -5,14 +5,65 @@
   font-weight: 500;
 
   /* padding: 10px 24px; */
-  border: 2px solid #D0D7FB; /* op 17 */
+  border: 2px solid #D0D7FB2B;
   text-align: center;
   background-color: transparent;
+
+  &:hover {
+    background-color: #BFC5EE1F;
+    border-color: #BFC5EE1F;
+    color: #F5F8FB;
+  }
+
+  &:focus {
+    background-color: #BFC5EE1F;
+    border-color: #3892F3;
+    outline: 2px solid #3892F3;
+    border-radius: 0;
+  }
+
+  &:active {
+    background-color: #BFC5EE1F;
+    border-color: #BFC5EE1F;
+    border-radius: 0;
+    color: #F5F8FB;
+    outline: none;
+  }
+
+  &:disabled,
+  &.disabled {
+    background-color: #D0D7FB2B;
+    background-color: #D0D7FB2B;
+    color: #E5ECFB5C;
+  }
 }
 
 .button--primary{
   background-color: #0265DC;
   border-color: #0265DC;
+
+  &:hover {
+    background-color: #3892F3;
+    border-color: #3892F3;
+  }
+
+  &:focus {
+    background-color: #0265DC;
+    // border-color: #3892F3;
+    // outline: 2px solid #3892F3;
+  }
+
+  &:active {
+    background-color: #0054B6;
+    border-color: #0054B6;
+  }
+
+  &:disabled,
+  &.disabled {
+    // background-color: #D0D7FB2B;
+    // background-color: #D0D7FB2B;
+    // color: #E5ECFB5C;
+  }
 }
 
 .button--medium {

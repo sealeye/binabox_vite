@@ -21,7 +21,8 @@
     "buttons": [
       {
         "text": "Connect Wallet",
-        "action": "#"
+        "action": "#",
+        "type": "primary"
       },
       {
         "text": "Whitelist now",
