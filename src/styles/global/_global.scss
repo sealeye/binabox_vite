@@ -3,7 +3,7 @@
 body {
   font-family: $base-font; 
   background-color: #0D0D15; 
-  color: #F5F8FB;
+  color: var(--text-color);
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -12,24 +12,24 @@ body {
 
 a {
   text-decoration: none;
-  color: #78BBFA;
+  color: var(--link-color);
 
   &:hover {
-    color: #3892F3;
+    color: var(--link-hover-color);
   }
 
   &:focus {
-    outline: 4px solid #3892F3;
+    outline: 4px solid var(--link-focus-color);
     border-radius: 5px;
   }
 
   &:active {
-    color: #0054B6;
+    color: var(--link-active-color);
   }
 
   &:disabled,
   &.disabled {
-    color: #E5ECFB5C;
+    color: var(--color-disabled);
   }
 }
 
@@ -45,7 +45,7 @@ ul {
 }
 
 .hightlight {
-  color:#0265DC;
+  color:var(--color-accent-link-invert);
 }
 
 .visually-hidden {
