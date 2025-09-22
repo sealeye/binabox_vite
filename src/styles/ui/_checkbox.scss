@@ -1,4 +1,15 @@
 .checkbox {
+    --checkbox-boreder: var(--color-line);
+    --checkbox-bg: var(--color-primary-invert);
+    --checkbox-hover: var(--color-alternative-2);
+    --checkbox-active: var(--color-marina-200);
+    --checkbox-focus: var(--color-focus-invert);
+    --checkbox-disabled: var(--color-seporator-bold);
+
+    --checkbox-checked: var(--color-accent-link-invert);
+    --checkbox-checked-hover: var(--color-focus-invert);
+    --checkbox-checked-focus: var(--color-accent-link-invert);
+
     &__label {
         font-size: 14px;
         line-height: 20px;

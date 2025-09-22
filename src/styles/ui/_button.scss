@@ -1,4 +1,17 @@
 .button{
+
+  --button-border-color: var(--color-seporator-bold);
+  --button-actions-border-color: var(--color-separator);
+  --button-hover-color: var(--color-focus-invert);
+  --button-focus-color: var(--color-focus-invert);
+  --button-active-color: var(--color-marina-900);
+
+  --button-primary-color: var(--color-accent-link-invert);
+  
+  --button-light-color: var(--color-primary-invert);
+  --button-light-hover: var(--color-alternative-2-invert);
+  --button-light-active: var(--color-disabled);
+
   font-family: inherit;
   font-size: 18px;
   line-height: 28px;
@@ -18,8 +31,8 @@
 
   &:focus {
     background-color: var(--button-actions-border-color);
-    border-color: var(--link-focus-color);
-    outline: 2px solid var(--link-focus-color);
+    border-color: var(--button-focus-color);
+    outline: 2px solid var(--button-focus-color);
     border-radius: 0;
   }
 
@@ -44,8 +57,8 @@
   border-color: var(--button-primary-color);
 
   &:hover {
-    background-color: var(--link-hover-color);
-    border-color: var(--link-hover-color);
+    background-color: var(--button-hover-color);
+    border-color: var(--button-hover-color);
   }
 
   &:focus {
@@ -53,8 +66,8 @@
   }
 
   &:active {
-    background-color: var(--link-active-color);
-    border-color: var(--link-active-color);
+    background-color: var(--button-active-color);
+    border-color: var(--button-active-color);
   }
 }
 
