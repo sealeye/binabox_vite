@@ -1,0 +1,24 @@
+.sidebar {
+    &__section {
+        background-color: #1D1C28;
+    }
+
+    &__section-title {}
+
+    &__section-list {}
+
+    &__section-list-item {}
+
+    &__section-link {
+        font-size: 14px;
+        line-height: 20px;
+        color: #F5F8FB;
+        font-weight: 600;
+    }
+
+    &__section-tags {}
+
+    &__section-tags-item {}
+
+    &__section-tags-link {}
+}

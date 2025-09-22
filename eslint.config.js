@@ -3,6 +3,6 @@ import html from "@html-eslint/eslint-plugin";
 export default [
   {
     ...html.configs["flat/recommended"],
-    files: ["src/**/*.njk"],
+    files: ["src/**/*.twig"],
   },
 ];

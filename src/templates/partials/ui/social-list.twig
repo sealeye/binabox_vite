@@ -1,0 +1,50 @@
+{% set socialMap = {
+  'facebook': { icon: 'icon-facebook', title: 'Facebook' },
+  'instagram': { icon: 'icon-instagram', title: 'Instagram' },
+  'telegram': { icon: 'icon-telegram', title: 'Telegram' },
+  'linkedin': { icon: 'icon-linkedin', title: 'LinkedIn' },
+  'github': { icon: 'icon-github', title: 'GitHub' },
+  'twitter': { icon: 'icon-twitter', title: 'Twitter' }
+} %}
+
+<ul class="social-list {{ class }} ">
+	{% for url in items %}
+		{% set key = null %}
+		{% if url matches '/facebook/' %}
+			{% set key = 'facebook' %}
+		{% elseif url matches '/instagram/' %}
+			{% set key = 'instagram' %}
+		{% elseif url matches '/telegram/' %}
+			{% set key = 'telegram' %}
+		{% elseif url matches '/linkedin/' %}
+			{% set key = 'linkedin' %}
+		{% elseif url matches '/github/' %}
+			{% set key = 'github' %}
+		{% elseif url matches '/twitter/' %}
+			{% set key = 'twitter' %}
+		{% endif %}
+
+		{% set icon = socialMap[key].icon ?? 'icon-placeholder' %}
+		{% set title = socialMap[key].title ?? 'Social' %}
+
+		<li class="social-list__item">
+			<a href="{{ url }}" class="social-list__link" target="_blank" rel="noopener">
+				<svg class="icon social-list__link-icon">
+					<use xlink:href="#{{ icon }}"></use>
+				</svg>
+				<span class="sr-only">{{ title }}</span>
+			</a>
+		</li>
+	{% endfor %}
+</ul>
+
+{# 
+<ul class="team-card__social-list social-list">
+		{% for link in item.social_links %}
+			<li class="social-list__item">
+				<a class="social-list__link" href="{{ link.link }}">
+                    <img class="social-list__image" src="#" alt="Twitter icon">
+                </a>
+			</li>
+		{% endfor %}
+	</ul> #}

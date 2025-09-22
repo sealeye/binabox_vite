@@ -1,0 +1,20 @@
+@use '../global/variables' as *;
+
+.numeric-list {
+    &__item {
+        background-color: #1A1925;
+    }
+
+    &__title {
+        font-family: $accent-font;
+        font-size: 24px;
+        line-height: 30px;
+        color: #F5F8FB;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 28px;
+        color: #EFF5FAD1;
+    }
+}

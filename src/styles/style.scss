@@ -1,16 +1,27 @@
+@use 'global/variables';
+@use "mixin/breakpoints";
+@use "global/global"; 
 @use 'ui/button';
-@use "variables";
-@use "main-banner";
-
-body {
-  margin: 0;
-  background: url("/src/assets/images/main-banner-3.png?format=avif");
-}
-
-header, footer {
-  padding: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-gray);
-}
+@use 'ui/label';
+@use 'ui/titles';
+@use "components/about";
+@use "components/blockquote";
+@use "components/blog-card";
+@use "components/blog-post";
+@use "components/blog-section";
+@use "components/breadcrumbs";
+@use "components/catalog-slider";
+@use "components/faq";
+@use "components/hero";
+@use "components/inner-header";
+@use "components/item-card";
+@use "components/main-banner";
+@use "components/main-nav";
+@use "components/numeric-list";
+@use "components/page-footer";
+@use "components/page-header";
+@use "components/question";
+@use "components/sidebar";
+@use "components/social-list";
+@use "components/team-card";
+@use "components/team"; 

@@ -1,0 +1,24 @@
+@use '../global/variables' as *;
+
+.blockquote {
+    background-color: #002754;
+    border-radius: 16px;
+
+    &__text {
+        font-family: $accent-font;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 400;
+        color: #F8F7FF;
+    }
+
+    &__cite {
+        font-size: 14px;
+        line-height: 20px;
+        color: #F8F7FF;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    &__rating {}
+}

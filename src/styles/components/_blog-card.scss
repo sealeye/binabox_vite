@@ -1,0 +1,36 @@
+@use '../global/variables' as *;
+
+.blog-card {
+    background-color: #1D1C28;
+
+    &__image {}
+
+    &__label {}
+
+    &__date,
+    &__name {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        color: #EFF5FAD1;
+    }
+
+    &__name {}
+
+    &__date {}
+
+    &__heading {
+        font-family: $accent-font;
+        font-size: 36px;
+        line-height: 44px;
+        color: #F5F8FB;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+        color: #EFF5FAD1;
+    }
+
+    &__button {}
+}

@@ -1,0 +1,35 @@
+.blog-post {
+    &__illustration {}
+
+    &__illustration--wide {}
+
+    &__illustration-image {}
+
+    &__illustration-caption {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #F8F7FF;
+    }
+
+    &__main-title {}
+
+    &__desc {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        color: #EFF5FAD1;
+    }
+
+    &__label {}
+
+    &__text {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+    }
+
+    &__unordered-list {}
+
+    &__subtitle {}
+}

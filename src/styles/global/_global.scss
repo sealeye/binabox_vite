@@ -1,0 +1,23 @@
+@use 'variables' as *;
+
+body {
+  font-family: $base-font; 
+  background-color: #0D0D15; 
+  color: #F5F8FB;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.hightlight {
+  color:#0265DC;
+}

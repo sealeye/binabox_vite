@@ -1,0 +1,32 @@
+@use '../global/variables' as *;
+
+.hero {
+    &__heading {
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+    }
+
+    &__defenition {}
+
+    &__defenition dt {
+        font-family: $accent-font;
+        font-size: 52px;
+        line-height: 56px;
+        letter-spacing: -0.5px;
+        color: #F5F8FB;
+        text-transform: uppercase;
+    }
+
+    &__defenition dd {
+        font-size: 16px;
+        line-height: 24px;
+        color: #EFF5FA;
+    }
+
+    &__button {}
+}

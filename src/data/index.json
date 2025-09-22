@@ -1,5 +1,194 @@
 {
-  "index": {
-    "title": "Hello World!"
-  }
+  "site_title": "Binabox homepage",
+  "path": "index.html",
+  "banner": {
+    "title": {
+      "start": "WITH",
+      "highlight": "BINABOX",
+      "end": "EXPLORE NFT COLLECTION!"
+    },
+    "desc": "We are the best way to check the rarity of NFT collection",
+    "stat": [
+      {
+        "num": "2240+",
+        "text": "Total It eam"
+      },
+      {
+        "num": "1000+",
+        "text": "Profiles whitelisted"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "Connect Wallet",
+        "action": "#"
+      },
+      {
+        "text": "Whitelist now",
+        "action": "#"
+      }
+    ]
+  },
+  "catalog_section": {
+    "title": "Catalog",
+    "link": {
+      "text": "See all",
+      "action": "#"
+    }
+  },
+  "catalog_cards": [
+    {
+      "label": "New",
+      "state": "new",
+      "price": "199",
+      "name": "Name product",
+      "image": "img/catalog-item-photo-1-2x.webp",
+      "image_alt": "img_alt",
+      "link": "#"
+    },
+    {
+      "label": "Sold out",
+      "state": "new",
+      "price": "2999",
+      "name": "Name Product",
+      "image": "img/catalog-item-photo-1-2x.webp",
+      "link": "#"
+    },
+    {
+      "label": "Sold out",
+      "state": "sold-out",
+      "price": "2999",
+      "name": "Name Product",
+      "image": "img/catalog-item-photo-1-2x.webp",
+      "link": "#"
+    },
+    {
+      "label": "Sold out",
+      "state": "sold-out",
+      "price": "2999",
+      "name": "Name Product",
+      "image": "img/catalog-item-photo-1-2x.webp",
+      "link": "#"
+    },
+    {
+      "label": "Sold out",
+      "state": "sold-out",
+      "price": "2999",
+      "name": "Name Product",
+      "image": "img/catalog-item-photo-1-2x.webp",
+      "link": "#"
+    }
+  ],
+  "blog_section": {
+    "title": "Our blog"
+  },
+  "blog_items": [
+    {
+      "img": "img/catalog-item-photo-1-2x.webp",
+      "img_alt": "alt",
+      "label": "NFT card",
+      "author": "Tony Nguyen",
+      "date": "2022-06-20",
+      "visible_date": "20 Jun 2022",
+      "title": "Sonic live",
+      "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices necnulla imperdiet...",
+      "button_text": "Read more",
+      "link": "index.html"
+    },
+    {
+      "img": "img/catalog-item-photo-1-2x.webp",
+      "label": "NFT card",
+      "author": "Tony Nguyen",
+      "date": "2022-06-20",
+      "visible_date": "20 Jun 2022",
+      "title": "Sonic live",
+      "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices necnulla imperdiet...",
+      "button_text": "Read more",
+      "link": "index.html"
+    },
+    {
+      "img": "img/catalog-item-photo-1-2x.webp",
+      "label": " card",
+      "author": "Tony Nguyen",
+      "date": "2022-06-20",
+      "visible_date": "20 Jun 2022",
+      "title": "Sonic live fhkdshksdhjkd",
+      "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices necnulla imperdiet...",
+      "button_text": "Read more",
+      "link": "index.html"
+    }
+  ],
+  "about_section": {
+    "title": "About us",
+    "desc": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat",
+    "button": {
+      "text": "Read more",
+      "action": "#"
+    }
+  },
+  "about_list": [
+    {
+      "title": "High quality",
+      "text": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+    },
+    {
+      "title": "Big collection",
+      "text": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+    },
+    {
+      "title": "Top Resourse",
+      "text": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+    },
+    {
+      "title": "Big community",
+      "text": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+    }
+  ],
+  "team_section": {
+    "title": "Our team"
+  },
+  "team_list": [
+    {
+      "img": "img/team-member-1.webp",
+      "img_alt": "alt",
+      "name": "Jason Smith",
+      "position": "Co - Founder",
+      "socials": [
+        "facebook.com/f",
+        "link",
+        "link"
+      ]
+    },
+    {
+      "img": "img/team-member-1.webp",
+      "name": "Jason Smith",
+      "position": "Co - Founder",
+      "social_links": [
+        "link",
+        "link",
+        "link"
+      ]
+    }
+  ],
+  "faq_section": {
+    "title": "FAQs"
+  },
+  "faq_list": [
+    {
+      "question": "What are the NFTs?",
+      "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "question": "How do i get NFTs?",
+      "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "question": "How can we buy your NFTs?",
+      "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "question": "Who are the team behind the project?",
+      "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    }
+  ]
 }

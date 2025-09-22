@@ -1,0 +1,30 @@
+.button{
+  font-size: 18px;
+  line-height: 28px;
+  color: #F5F8FB;
+  font-weight: 500;
+
+  /* padding: 10px 24px; */
+  border: 2px solid #D0D7FB; /* op 17 */
+  text-align: center;
+  background-color: transparent;
+}
+
+.button--primary{
+  background-color: #0265DC;
+  border-color: #0265DC;
+}
+
+.button--medium {
+  font-size: 16px;
+  line-height: 24px;
+
+//   padding: 8px 20px;
+}
+
+.button--small{
+  font-size: 14px;
+  line-height: 20px;
+
+//   padding: 6px 12px;
+}
