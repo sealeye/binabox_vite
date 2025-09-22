@@ -1,39 +1,43 @@
 .input {
+    --input-placeholder: var(--color-secondary-2);
+    --input-hover: var(--color-marina-600);
+    --input-disabled: var(--color-separator);
+
     &__label {
         font-size: 14px;
         line-height: 20px;
-        color: #F5F8FB;
+        color: var(--text-color);
     }
 
     &__field {
-        border: 2px solid #D0D7FB2B;
+        border: 2px solid var(--border-color);
         border-radius: 0;
         background-color: transparent;
 
         font-family: inherit;
         font-size: 14px;
         line-height: 20px;
-        color: #F5F8FB;
+        color: var(--text-color);
 
         &:placeholder {
-            color: var(--placeholder-color);
+            color: var(--input-placeholder);
         }
 
         &:hover {
-            border-color: var(--focus-color);
+            border-color: var(--input-hover);
         }
 
         &:focus {
-            border-color: var(--focus-color);
-            outline: 1px solid var(--focus-color);
+            border-color: var(--input-hover);
+            outline: 1px solid var(--input-hover);
         }
 
         &:user-invalid {
-            border-color: var(--error-color);
+            border-color: var(--input-invalid);
         }
 
         &:disabled {
-            background-color: #BFC5EE1F;
+            background-color: var(--input-disabled);
         }
     }
 }

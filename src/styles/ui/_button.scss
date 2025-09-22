@@ -1,6 +1,4 @@
 .button{
-
-  --button-border-color: var(--color-seporator-bold);
   --button-actions-border-color: var(--color-separator);
   --button-hover-color: var(--color-focus-invert);
   --button-focus-color: var(--color-focus-invert);
@@ -19,7 +17,7 @@
   font-weight: 500;
 
   /* padding: 10px 24px; */
-  border: 2px solid var(--button-border-color);
+  border: 2px solid var(--border-color);
   text-align: center;
   background-color: transparent;
 

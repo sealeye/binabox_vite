@@ -28,13 +28,14 @@
 
   // StaticPalette/Marina
   --color-marina-900: #0054B6;
+  --color-marin-600: #3892F3;
   --color-marina-200: #B5DEFF;
-
 
 
   // Text
   --text-color: var(--color-primary); 
   --link-color: var(--color-accent-link);
+  --border-color: var(--color-seporator-bold);
 
   // Links
   --link-hover-color: var(--color-focus-invert);
@@ -44,7 +45,6 @@
   --error-color: var(--color-negative);
 
   // Input
-  --placeholder-color: var(--color-secondary-2);
   --input-invalid: var(--color-negative);
 }
 
