@@ -1,0 +1,290 @@
+body {
+  font-family: "Poppins", "Arial", sans-serif;
+  background-color: #0D0D15;
+  color: #F5F8FB;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* buttons */
+
+button {
+  font-size: 18px;
+  line-height: 28px;
+  color: #F5F8FB;
+  font-weight: 500;
+
+  /* padding: 10px 24px; */
+  border: 2px solid #D0D7FB; /* op 17 */
+  text-align: center;
+  background-color: transparent;
+}
+
+h1 {
+  font-family: "Bakbak One", "Arial", "Helvetica", sans-serif;
+  font-size: 52px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-family: "Bakbak One", "Arial", "Helvetica", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #F8F7FF;
+}
+
+span {
+  color:#0265DC;
+}
+
+.catalog span {
+  background-color: #F5F8FB;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0265DC;
+}
+
+nav a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #F5F8FB;
+}
+
+/* hero */
+
+.banner p{
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+dt{
+  font-family: "Bakbak One", "Arial", "Helvetica", sans-serif;
+  font-size: 52px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+  color: #F5F8FB;
+  text-transform: uppercase;
+}
+
+dd{
+  font-size: 16px;
+  line-height: 24px;
+  color: #EFF5FA;
+}
+
+/* catalog slider */
+
+.catalog h2 {
+  font-family: "Bakbak One", "Arial", "Helvetica", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #F8F7FF;
+}
+
+/* item card */
+
+.catalog-card{
+  background-color: #1D1C28;
+}
+
+.catalog-card p {
+  font-family: "Bakbak One", "Arial", "Helvetica", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #F5F8FB;
+}
+
+.catalog-card h3{
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #EFF5FA;
+}
+
+/* blog section */
+
+.blog-card{
+  background-color: #1D1C28;
+}
+
+.blog-card time,
+.blog-card p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #EFF5FAD1;
+}
+
+.blog-card h3{
+  font-family: "Bakbak One", "Arial", "Helvetica", sans-serif;
+  font-size: 36px;
+  line-height: 44px;
+  color: #F5F8FB;
+}
+
+.blog-card p{
+  font-size: 16px;
+  line-height: 24px;
+  color: #EFF5FAD1;
+}
+
+/* about */
+
+.about p{
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #EFF5FAD1;
+}
+
+.about ol li{
+  background-color: #1A1925;
+}
+
+.about ol h3{
+  font-family: "Bakbak One", "Arial", "Helvetica", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #F5F8FB;
+}
+
+.about ol p{
+  font-size: 18px;
+  line-height: 28px;
+  color: #EFF5FAD1;
+}
+
+/* team */
+
+.team-card{
+  background-color: #1D1C28;
+}
+
+.team-card img{
+  border-radius: 50%;
+}
+
+.team-card h3{
+  font-family: "Bakbak One", "Arial", "Helvetica", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #F5F8FB;
+}
+
+.team-card p{
+  font-size: 18px;
+  line-height: 28px;
+  color: #EFF5FAD1;
+}
+
+/* faq */
+
+.question{
+  background-color: #1D1C28;
+}
+
+.question summary{
+  font-family: "Bakbak One", "Arial", "Helvetica", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #F5F8FB;
+}
+
+.question details{
+  font-size: 16px;
+  line-height: 24px;
+  color: #F5F8FB;
+}
+
+/* footer */
+
+footer{
+  background-color: #1A1925;
+  color: #F5F8FB;
+}
+
+footer p{
+  font-size: 14px;
+  line-height: 20px;
+}
+
+footer nav h2{
+  font-size: 20px;
+  line-height: 28px;
+}
+
+footer nav a{
+  font-size: 12px;
+  line-height: 16px;
+  color: #F5F8FB;
+}
+
+/* inner haeder */
+
+.breadcrumbs a{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #F5F8FB;
+}
+
+/* sidebar */
+
+.sidebar{
+  background-color: #1D1C28;
+}
+
+.sidebar a{
+  font-size: 14px;
+  line-height: 20px;
+  color: #F5F8FB;
+  font-weight: 600;
+}
+
+/* blog post */
+
+figcaption{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #F8F7FF;
+}
+
+.blog-post p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #EFF5FAD1;
+}
+
+blockquote{
+  background-color: #002754;
+  border-radius: 16px;
+  font-family: "Bakbak One", "Arial", "Helvetica", sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #F8F7FF;
+}
+
+blockquote cite {
+  font-size: 14px;
+  line-height: 20px;
+  color: #F8F7FF;
+  font-weight: 600;
+  font-style: normal;
+}
