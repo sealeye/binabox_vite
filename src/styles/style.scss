@@ -8,12 +8,15 @@
 @use 'ui/radio';
 @use 'ui/checkbox';
 @use "components/about";
+@use "components/banner";
 @use "components/blockquote";
 @use "components/blog-card";
 @use "components/blog-post";
 @use "components/blog-section";
 @use "components/breadcrumbs";
 @use "components/catalog-slider";
+@use "components/catalog-slider-list";
+@use "components/catalog-list";
 @use "components/faq";
 @use "components/hero";
 @use "components/inner-header";

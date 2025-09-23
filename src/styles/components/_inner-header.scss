@@ -1,3 +1,17 @@
+@use '../global/variables' as *;
+
 .inner-header {
-    &__title {}
+    text-align: center;
+
+    background-image: url(../assets/images/big_circular_lines.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+
+    &__title {
+        font-family: $accent-font;
+        font-size: 52px;
+        line-height: 62px;
+        letter-spacing: -0.5px;
+    }
 }

@@ -5,9 +5,9 @@
         name="{{ item.title|lower|replace({' ': '-'}) }}" 
         value="{% if item.type == 'radio' or item.type == 'checkbox' %}{{ input|lower|replace({' ': '-'}) }}{% endif %}" 
         placeholder="{{ item.placeholder }}"
+        {% if item.required == true %}required{% endif %}  
         class="input__field {{ item.type }}__field 
             {% if item.type == 'radio' or item.type == 'checkbox' %}visually-hidden{% endif %}"
-        {% if item.required == true %}required{% endif %}    
     >
 	<label for="{{ input|lower|replace({' ': '-'}) }}" class="{{ item.type }}__label input__label">
         {{ item.label }}
