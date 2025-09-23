@@ -103,6 +103,7 @@
     {
       "img": "item-2.png",
       "img_alt": "Translucent glass human skeleton under teal light with swirling mist in the background.",
+      "img_fit": "0 -50px",
       "label": "DROP",
       "author": "Kairo Null",
       "date": "2022-12-06",
@@ -139,6 +140,7 @@
     {
       "img": "item-9.png",
       "img_alt": "White duck figurine against a teal background with abstract tech schematics.",
+      "img_fit": "0 -100px",
       "label": "NFT",
       "author": "Tony Nguyen",
       "date": "2022-06-20",
@@ -192,7 +194,7 @@
   },
   "team_list": [
     {
-      "img": "team-1.jpg",
+      "img": "team-1.png",
       "img_alt": "alt",
       "name": "Nova Riven",
       "position": "Creative Architect",
@@ -204,7 +206,7 @@
       ]
     },
     {
-      "img": "team-2.jpg",
+      "img": "team-2.png",
       "name": "Echo Zero",
       "position": "Tech Whisperer",
       "socials": [
@@ -215,7 +217,7 @@
       ]
     },
     {
-      "img": "team-3.jpg",
+      "img": "team-3.png",
       "name": "Kairo Null",
       "position": "Lore Engineer",
       "socials": [
@@ -226,7 +228,7 @@
       ]
     },
     {
-      "img": "team-4.jpg",
+      "img": "team-4.png",
       "name": "Dr. Wex Omega",
       "position": "Visual Disruptor",
       "socials": [
@@ -238,13 +240,13 @@
       ]
     },
     {
-      "img": "team-5.jpg",
+      "img": "team-5.png",
       "name": "Synthya Void",
       "position": "UX Seer",
       "socials": ["twitter.com/user"]
     },
     {
-      "img": "team-6.jpg",
+      "img": "team-6.png",
       "name": "Mirlo Drift",
       "position": "Community Catalyst",
       "socials": [
@@ -256,7 +258,7 @@
       ]
     },
     {
-      "img": "team-7.jpg",
+      "img": "team-7.png",
       "name": "Axon Rune",
       "position": "Security Ghost",
       "socials": [

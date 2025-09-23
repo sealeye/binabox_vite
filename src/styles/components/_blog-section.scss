@@ -3,7 +3,20 @@
 
     &__list {}
 
-    &__list-item {}
+    &__list-item {
+        img {
+            width: 736px;
+            height: 198px;
+        }
+
+        &:first-child,
+        &:last-child {
+            img {
+                width: 736px;
+                height: 664px;
+            }
+        }
+    }
 
     &__link {}
 
