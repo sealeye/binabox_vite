@@ -1,7 +1,7 @@
 @use '../global/variables' as *;
 
 .blockquote {
-    background-color: #002754;
+    background-color: var(--color-marina-1200);
     border-radius: 16px;
 
     &__text {

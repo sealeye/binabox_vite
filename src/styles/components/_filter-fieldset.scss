@@ -1,7 +1,7 @@
 @use '../global/variables' as *;
 
 .filter-fieldset {
-    background-color: #1D1C28;
+    background-color: var(--color-alternative-2);
 
     &__title {
         font-family: $accent-font;

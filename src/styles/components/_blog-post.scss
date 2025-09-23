@@ -1,4 +1,8 @@
+@use '../mixin/hover-corners'as *;
+
 .blog-post {
+    @include hover-corners;
+
     &__illustration {}
 
     &__illustration--wide {
@@ -26,7 +30,7 @@
         font-size: 14px;
         line-height: 20px;
         font-weight: 600;
-        color: #EFF5FAD1;
+        color: var(--color-secondary);
     }
 
     &__label {}

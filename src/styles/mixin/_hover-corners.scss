@@ -1,0 +1,11 @@
+@mixin hover-corners {
+    border: 2px solid transparent;
+
+    &:hover {
+        border-image: linear-gradient(-45deg,
+                var(--color-accent-link-invert),
+                transparent 5%,
+                transparent 95%,
+                var(--color-accent-link-invert)) 1;
+    }
+}

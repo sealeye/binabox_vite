@@ -1,8 +1,6 @@
 :root {
   --color-white: #ffffff;
   --color-black: #000;
-  // --color-gray: #cacaca;
-  // --color-bg: #f0f6fd;
 
   // Text-icon-elements
   --color-primary: #F5F8FB;
@@ -12,6 +10,7 @@
   --color-primary-invert: #0D0D15;
 
   // BG 
+  --color-alternative: #1A1925;
   --color-alternative-2: #1D1C28;
   --color-alternative-2-invert: #F4F7FA;
 
@@ -27,6 +26,7 @@
   --color-negative: #EA3829;
 
   // StaticPalette/Marina
+  --color-marina-1200: #002754;
   --color-marina-900: #0054B6;
   --color-marin-600: #3892F3;
   --color-marina-200: #B5DEFF;
@@ -36,6 +36,8 @@
   --text-color: var(--color-primary); 
   --link-color: var(--color-accent-link);
   --border-color: var(--color-seporator-bold);
+  --background-color: var(--color-primary-invert);
+  --logo-color: var(--color-accent-link-invert);
 
   // Links
   --link-hover-color: var(--color-focus-invert);

@@ -1,7 +1,7 @@
 @use '../global/variables' as *;
 
 .team-card {
-    background-color: #1D1C28;
+    background-color: var(-color-alternative-2);
 
     &__image {
         border-radius: 50%;
@@ -13,13 +13,13 @@
         font-family: $accent-font;
         font-size: 24px;
         line-height: 30px;
-        color: #F5F8FB;
+        color: var(--text-color);
     }
 
     &__positon {
         font-size: 18px;
         line-height: 28px;
-        color: #EFF5FAD1;
+        color: var(--color-secondary);
     }
 
     &__social-list {}

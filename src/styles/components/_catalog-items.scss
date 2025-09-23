@@ -1,6 +1,8 @@
+@use '../global/variables' as *;
+
 .catalog-items {
     &__title {
-        font-family: Bakbak One;
+        font-family: $accent-font;
         font-size: 36px;
         line-height: 48px;
         letter-spacing: -0.5px;

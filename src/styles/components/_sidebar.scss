@@ -1,6 +1,6 @@
 .sidebar {
     &__section {
-        background-color: #1D1C28;
+        background-color: var(--color-alternative-2);
     }
 
     &__section-title {}
@@ -12,7 +12,7 @@
     &__section-link {
         font-size: 14px;
         line-height: 20px;
-        color: #F5F8FB;
+        color: var(--text-color);
         font-weight: 600;
     }
 

@@ -1,7 +1,9 @@
-@use '../global/variables' as *;
+@use '../global/variables'as *;
+@use '../mixin/hover-corners'as *;
 
 .item-card {
-    background-color: #1D1C28;
+    background-color: var(--color-alternative-2);
+    @include hover-corners;
 
     &__image {}
 
@@ -12,13 +14,13 @@
         font-size: 36px;
         line-height: 48px;
         letter-spacing: -0.5px;
-        color: #F5F8FB;
+        color: var(--color-primary);
     }
 
     &__name {
         font-size: 20px;
         line-height: 28px;
         font-weight: 500;
-        color: #EFF5FA;
+        color: var(--color-alternative-2-invert);
     }
 }

@@ -3,10 +3,10 @@
     &__item {}
 
     &__link {
-        color: white;
+        color: var(--color-white);
 
         svg {
-            fill: white;
+            fill: var(--color-white);
         }
     }
 

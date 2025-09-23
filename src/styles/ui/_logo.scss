@@ -1,11 +1,11 @@
 .logo {
     &--header {
         .logo__image-text {
-            color: white;
+            color: var(--color-white);
         }
     }
 
     &__image-text {
-        color: #0265DC;
+        color: var(--logo-color);
     }
 }

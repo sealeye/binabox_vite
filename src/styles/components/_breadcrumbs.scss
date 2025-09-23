@@ -6,11 +6,11 @@
         font-size: 14px;
         line-height: 20px;
         font-weight: 600;
-        color: #F5F8FB;
+        color: var(--color-primary);
     }
 
     &__link--active {
-        color: #E7EEF7A8;
+        color: var(--color-secondary-2);
         pointer-events: none;
     }
 }

@@ -1,18 +1,18 @@
 @use '../global/variables' as *;
 
 .question {
-    background-color: #1D1C28;
+    background-color: var(--color-alternative-2);
 
     &__title {
         font-family: $accent-font;
         font-size: 24px;
         line-height: 30px;
-        color: #F5F8FB;
+        color: var(--text-color);
     }
 
     &__text {
         font-size: 16px;
         line-height: 24px;
-        color: #F5F8FB;
+        color: var(--text-color);
     }
 }

@@ -1,6 +1,6 @@
 .page-footer {
-    background-color: #1A1925;
-    color: #F5F8FB;
+    background-color: var(--color-alternative);
+    color: var(--color-primary);
 
     &__logo {}
 
@@ -23,7 +23,7 @@
     &__nav-list-link {
         font-size: 12px;
         line-height: 16px;
-        color: #F5F8FB;
+        color: var(--color-primary);
     }
 
     &__social-list {}

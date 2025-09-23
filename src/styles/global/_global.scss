@@ -2,7 +2,7 @@
 
 body {
   font-family: $base-font; 
-  background-color: #0D0D15; 
+  background-color: var(--background-color); 
   color: var(--text-color);
   font-size: 16px;
   line-height: 24px;

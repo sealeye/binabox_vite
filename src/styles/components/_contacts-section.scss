@@ -1,13 +1,15 @@
+@use '../global/variables' as *;
+
 .contacts-section {
 
     &__link {
-        border: 1px solid #D4D9F242;
-        color: white;
+        border: 1px solid var(--color-line);
+        color: var(--color-white);
         text-align: center;
     }
 
     &__heading {
-        font-family: Bakbak One;
+        font-family:  $accent-font;
         font-size: 36px;
         line-height: 48px;
         letter-spacing: -0.5px;
@@ -15,7 +17,7 @@
     }
 
     &__text {
-        color: #EFF5FAD1;
+        color: var(--color-secondary);
     }
 
 }
