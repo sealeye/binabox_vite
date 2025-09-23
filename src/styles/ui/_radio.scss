@@ -1,8 +1,19 @@
 .radio {
+    --radio-boreder: var(--color-line);
+
+    --radio-hover: var(--color-alternative-2);
+    --radio-active: var(--color-marina-200);
+    --radio-focus: var(--color-focus-invert);
+    --radio-disabled: var(--color-seporator-bold);
+
+    --radio-checked: var(--color-accent-link-invert);
+    --radio-checked-hover: var(--color-focus-invert);
+    --radio-checked-focus: var(--color-accent-link-invert);
+
     &__label {
         font-size: 14px;
         line-height: 20px;
-        color: #F5F8FB;
+        color: var(--text-color);
 
         &:before {
             content: '';
@@ -10,54 +21,55 @@
             width: 16px;
             height: 16px;
             border-radius: 50%;
-            border: 2px solid #D4D9F242;
+            border: 2px solid var(--radio-boreder);
             box-sizing: border-box;
         }
     }
 
     input {
-        &:checked {
-            &+label:before {
-                border: 5px solid #0265DC;
-            }
-
-            &:hover+label:before {
-                border-color: #3892F3;
-            }
-
-            &:active+label:before  {
-                border-color: #B5DEFF;
-            }
-
-            &:focus+label:before {
-                border-color: var(--checked-color);
-            }
-            &:disabled+label:before  {
-                background-color: #D0D7FB2B;
-            }
-        }
-
         &:hover+label:before {
-            background-color: #1D1C28;
+            background-color: var(--radio-hover);
         }
 
         &:active+label:before {
-            border: 5px solid var(--checked-color)
+            border: 5px solid var(--radio-active);
         }
 
         &:focus+label:before {
             border-color: #E7EEF7A8;
-            outline: 2px solid #3892F3;
+            outline: 2px solid var(--radio-focus);
             outline-offset: 1px;
         }
 
         &:disabled+label:before {
-            background-color: #D0D7FB2B;
-            border-color: #D0D7FB2B;
+            background-color: var(--radio-disabled);
+            border-color: var(--radio-disabled);
         }
 
         &:user-invalid+label:before {
             border-color: var(--error-color)
+        }
+
+        &:checked {
+            &+label:before {
+                border: 5px solid var(--radio-checked);
+            }
+
+            &:hover+label:before {
+                border-color: var(--radio-checked-hover);
+            }
+
+            &:active+label:before {
+                border-color: var(--radio-active);
+            }
+
+            &:focus+label:before {
+                border-color: var(--radio-checked-focus);
+            }
+
+            &:disabled+label:before {
+                background-color: var(--radio-disabled);
+            }
         }
     }
 }
