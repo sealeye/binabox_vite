@@ -3,7 +3,7 @@
 
 <a class="{{ item.class }}" href="{{ item.link }}">
 	<article class="blog-card">
-        {{ picture('blog-card__image', item.img, item.img_alt, 261, 340) }}
+        {{ picture('blog-card__image', item.img, item.img_alt, 261, 340, item.img_fit) }}
 		<span class="blog-card__label label">{{ item.label }}</span>
 		<p class="blog-card__name">
 			{{ icon('', 'user', 16, 16) }}
