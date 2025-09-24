@@ -3,7 +3,7 @@
 
 .numeric-list {
     &__item {
-        background-color: #1A1925;
+        background-color: var(--color-primary-invert);
 
         @include hover-corners;
     }

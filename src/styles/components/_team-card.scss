@@ -1,7 +1,7 @@
 @use '../global/variables' as *;
 
 .team-card {
-    background-color: var(-color-alternative-2);
+    background-color: var(--color-alternative-2);
 
     &__image {
         border-radius: 50%;
