@@ -8,7 +8,13 @@
 				<option value="{{ item|lower|replace({' ': '-'}) }}">{{ item }}</option>
 			{% endfor %}
 		</select>
-		{% include 'ui/input.twig' with { item: catalog.search, class: "catalog-items-form__search", input: catalog.search.id } %}
+	</form>
+	<form action="#" method="post" class="search-form">
+		<label class="input search-form__label">
+			{{ icon('input__icon search-form__icon', 'search') }}
+			<input type="search" class="input__field search-form__input" placeholder="Search">
+		</label>
+		<button type="submit" class="visually-hidden">Send</button>
 	</form>
 	<div class="catalog-filter-results">
 		<ul class="catalog-filter-results__list">
@@ -23,5 +29,5 @@
 		</ul>
 		<button class="catalog-filter-results__button button button--light" type="button">{{ catalog.filter_results.button }}</button>
 	</div>
-    {% include 'catalog-list.twig'  %}
+	{% include 'catalog-list.twig'  %}
 </section>

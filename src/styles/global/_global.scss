@@ -1,8 +1,8 @@
-@use 'variables' as *;
+@use 'variables'as *;
 
 body {
-  font-family: $base-font; 
-  background-color: var(--background-color); 
+  font-family: $base-font;
+  background-color: var(--background-color);
   color: var(--text-color);
   font-size: 16px;
   line-height: 24px;
@@ -44,13 +44,58 @@ ul {
   margin: 0;
 }
 
+input[disabled],
+input[disabled]+label {
+  pointer-events: none;
+}
+
+summary {
+  position: relative;
+
+  &::marker {
+    content: "";
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    border: 1px solid var(--color-primary);
+    border-radius: 2px;
+    height: 0;
+    width: 1rem;
+
+    inset-block-start: 50%;
+    inset-inline-end: 0;
+
+    position: absolute;
+    position-area: top end;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+    transform-origin: 50%;
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      border-color: var(--color-focus-invert);
+    }
+  }
+}
+
+details[open] summary::after {
+  transform: rotate(0deg);
+}
+
 .hightlight {
-  color:var(--color-accent-link-invert);
+  color: var(--color-accent-link-invert);
 }
 
 .visually-hidden {
   position: absolute;
-  height: 0; 
+  height: 0;
   width: 0;
-  opacity: 0;  /* or: visibility: hidden; */
+  opacity: 0;
+  /* or: visibility: hidden; */
 }

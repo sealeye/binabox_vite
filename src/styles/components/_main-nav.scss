@@ -8,6 +8,11 @@
         font-size: 16px;
         line-height: 24px;
         color: var(--color-primary);
+
+        &:after {
+            content: url(../assets/icons/chevron-down.svg);
+            filter: brightness(0) saturate(100%) invert(91%) sepia(30%) saturate(15%) hue-rotate(182deg) brightness(98%) contrast(105%);
+        }
     }
 
     &__link--active {

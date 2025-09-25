@@ -3,9 +3,22 @@
         .logo__image-text {
             color: var(--color-white);
         }
+
+        &[href]:hover {
+            .logo__image-text {
+                color: var(--logo-color);
+            }
+        }
+
     }
 
     &__image-text {
         color: var(--logo-color);
+    }
+
+    &[href]:hover {
+        .logo__image-text {
+            color: var(--color-white);
+        }
     }
 }

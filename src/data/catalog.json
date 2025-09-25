@@ -44,7 +44,7 @@
       {
         "title": "Special",
         "type": "radio",
-        "list": ["Yellow", "Green", "Mix", "Orange"]
+        "list": ["1", "2", "3", "4"]
       }
     ],
     "filter_results": {

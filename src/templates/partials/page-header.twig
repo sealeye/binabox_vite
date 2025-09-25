@@ -1,7 +1,7 @@
 {% from 'ui/icon.twig' import icon %}
 
 <header class="page-header">
-	<a href="index.html" class="logo logo--header">
+	<a class="logo logo--header" {% if path == 'index.html' %} {% else %}href="/"{% endif %}>
 		<img src="/src/assets/images/logo.svg" alt="Binabox Logo" class="logo__image" width="36" height="40"/>
 		{{ icon('logo__image-text', 'logo-text', 134, 21) }}
 	</a>
@@ -9,8 +9,11 @@
 		<ul class="main-nav__list">
 			{% for item in nav %}
 				<li class="main-nav__list-item">
-					<a href="{{ item.url }}" class="main-nav__link {% if item.url == path %} main-nav__link--active {% endif %}">
-						{{ item.text }}</a>
+					<a href="{{ item.url }}" 
+						class="main-nav__link 
+							{% if item.url == path %}main-nav__link--active{% endif %}">
+						{{ item.text }}
+					</a>
 				</li>
 			{% endfor %}
 		</ul>

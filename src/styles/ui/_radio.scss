@@ -1,5 +1,6 @@
 .radio {
     --radio-boreder: var(--color-line);
+    --radio-background: var(--color-primary-invert);
 
     --radio-hover: var(--color-alternative-2);
     --radio-active: var(--color-marina-200);
@@ -8,7 +9,7 @@
 
     --radio-checked: var(--color-accent-link-invert);
     --radio-checked-hover: var(--color-focus-invert);
-    --radio-checked-focus: var(--color-accent-link-invert);
+    --radio-checked-focus: var(--color-focus-invert);
 
     &__label {
         font-size: 14px;
@@ -22,6 +23,7 @@
             height: 16px;
             border-radius: 50%;
             border: 2px solid var(--radio-boreder);
+            background-color: var(--radio-background);
             box-sizing: border-box;
         }
     }
@@ -43,7 +45,7 @@
 
         &:disabled+label:before {
             background-color: var(--radio-disabled);
-            border-color: var(--radio-disabled);
+            border: none;
         }
 
         &:user-invalid+label:before {
@@ -68,7 +70,7 @@
             }
 
             &:disabled+label:before {
-                background-color: var(--radio-disabled);
+                border: 5px solid var(--radio-boreder);
             }
         }
     }
