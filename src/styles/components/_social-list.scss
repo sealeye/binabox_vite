@@ -1,9 +1,13 @@
+@use '../mixin/icon-link' as *;
+
 .social-list {
 
     &__item {}
 
     &__link {
         color: var(--color-white);
+        padding: 8px;
+        @include icon-link;
 
         svg {
             fill: var(--color-white);

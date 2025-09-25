@@ -9,12 +9,16 @@
     background-position: top left, top 0 right 164px;
     background-size: auto, 641.8px 533.5px;
 
+    min-height: 640px;
+    padding-inline: 100px;
+
     &__heading {
         font-family: $accent-font;
         font-size: 52px;
         line-height: 62px;
         letter-spacing: -0.5px;
         color: var(--text-color);
+        margin-bottom: 8px;
     }
 
     &__highlight {
@@ -36,6 +40,7 @@
         line-height: 62px;
         letter-spacing: -0.5px;
         color: var(--text-color); 
+        margin-bottom: 4px;
     }
 
     &__stat-value {

@@ -1,11 +1,13 @@
-.button{
+@use '../mixin/icon-link' as *;
+
+.button {
   --button-actions-border-color: var(--color-separator);
   --button-hover-color: var(--color-focus-invert);
   --button-focus-color: var(--color-focus-invert);
   --button-active-color: var(--color-marina-900);
 
   --button-primary-color: var(--color-accent-link-invert);
-  
+
   --button-light-color: var(--color-primary-invert);
   --button-light-hover: var(--color-alternative-2-invert);
   --button-light-active: var(--color-disabled);
@@ -15,8 +17,7 @@
   line-height: 28px;
   color: var(--text-color);
   font-weight: 500;
-
-  /* padding: 10px 24px; */
+  padding: 10px 24px;
   border: 2px solid var(--border-color);
   text-align: center;
   background-color: transparent;
@@ -50,7 +51,7 @@
   }
 }
 
-.button--primary{
+.button--primary {
   background-color: var(--button-primary-color);
   border-color: var(--button-primary-color);
 
@@ -93,13 +94,24 @@
 .button--medium {
   font-size: 16px;
   line-height: 24px;
-
-//   padding: 8px 20px;
+  padding: 8px 20px;
 }
 
-.button--small{
+.button--small {
   font-size: 14px;
   line-height: 20px;
+  padding: 6px 12px;
+}
 
-//   padding: 6px 12px;
+.button--icon {
+  padding: 10px;
+  @include icon-link;
+
+  &.button--medium {
+    padding: 8px;
+  }
+
+  &.button--small {
+    padding: 6px;
+  }
 }

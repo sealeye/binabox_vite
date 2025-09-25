@@ -1,5 +1,9 @@
 @use 'variables'as *;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: $base-font;
   background-color: var(--background-color);
@@ -8,6 +12,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   text-align: left;
+  margin: 0;
 }
 
 a {
@@ -33,9 +38,18 @@ a {
   }
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
 img {
   max-width: 100%;
   object-fit: cover;
+  display: block;
+}
+
+svg {
+  vertical-align: middle;
 }
 
 ul {
@@ -77,6 +91,7 @@ summary {
   }
 
   &:hover {
+
     &::before,
     &::after {
       border-color: var(--color-focus-invert);

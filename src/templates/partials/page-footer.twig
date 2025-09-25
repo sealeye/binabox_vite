@@ -1,27 +1,30 @@
 {% from 'ui/icon.twig' import icon %}
 
 <footer class="page-footer">
-	<a class="page-footer__logo logo" {% if path == 'index.html' %} {% else %}href="/"{% endif %}>
-		<img src="/src/assets/images/logo.svg" alt="Binabox Logo" class="logo__image" width="36" height="40"/>
-		{{ icon('logo__image-text', 'logo-text', 134, 21) }}
-	</a>
+	<div class="content-wrapper">
+		<a class="page-footer__logo logo" {% if path == 'index.html' %} {% else %} href="/" {% endif %}>
+			<img src="/src/assets/images/logo.svg" alt="Binabox Logo" class="logo__image" width="36" height="40"/>
+			{{ icon('logo__image-text', 'logo-text', 134, 21) }}
+		</a>
 
-	<p class="page-footer__text">{{ footer.description }}</p>
+		<p class="page-footer__text">{{ footer.description }}</p>
 
-	{% for section in footer.navigation %}
-		<nav class="page-footer__nav">
-			<h2 class="page-footer__nav-title">{{ section.title }}</h2>
-			<ul class="page-footer__nav-list">
-				{% for link in section.links %}
-					<li class="page-footer__nav-list-item">
-						<a class="page-footer__nav-list-link" href="{{ link.url }}">{{ link.text }}</a>
-					</li>
-				{% endfor %}
-			</ul>
-		</nav>
-	{% endfor %}
+		{% for section in footer.navigation %}
+			<nav class="page-footer__nav">
+				<h2 class="page-footer__nav-title">{{ section.title }}</h2>
+				<ul class="page-footer__nav-list">
+					{% for link in section.links %}
+						<li class="page-footer__nav-list-item">
+							<a class="page-footer__nav-list-link" href="{{ link.url }}">{{ link.text }}</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</nav>
+		{% endfor %}
+	</div>
+	<div class="content-wrapper page-footer__bottom">
+		<p class="page-footer__text">{{ footer.copyright }}</p>
 
-	<p class="page-footer__text">{{ footer.copyright }}</p>
-
-	{% include 'ui/social-list.twig' with { items: footer.socials, class: "footer__social-list" } %}
+		{% include 'ui/social-list.twig' with { items: footer.socials, class: "footer__social-list" } %}
+	</div>
 </footer>

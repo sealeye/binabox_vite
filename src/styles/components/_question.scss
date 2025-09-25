@@ -2,6 +2,7 @@
 
 .question {
     background-color: var(--color-alternative-2);
+    padding: 24px;
 
     &__title {
         font-family: $accent-font;
@@ -11,8 +12,11 @@
     }
 
     &__text {
+        border-top: 1px solid var(--color-separator);
         font-size: 16px;
         line-height: 24px;
         color: var(--text-color);
+        margin-top: 24px;
+        padding-top: 16px;
     }
 }

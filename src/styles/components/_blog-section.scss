@@ -1,5 +1,9 @@
 .blog-section {
-    &__title {}
+    padding-block: 64px;
+    
+    &__title {
+        text-align: center;
+    }
 
     &__list {}
 
