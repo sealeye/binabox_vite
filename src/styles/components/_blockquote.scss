@@ -1,8 +1,9 @@
-@use '../global/variables' as *;
+@use '../global/variables'as *;
 
 .blockquote {
     background-color: var(--color-marina-1200);
     border-radius: 16px;
+    padding: 16px;
 
     &__text {
         font-family: $accent-font;
@@ -10,6 +11,7 @@
         line-height: 36px;
         font-weight: 400;
         color: #F8F7FF;
+        margin-bottom: 8px;
     }
 
     &__cite {
@@ -18,7 +20,13 @@
         color: #F8F7FF;
         font-weight: 600;
         font-style: normal;
+
+        .icon {
+            color: #E7F1FD7D;
+        }
     }
 
-    &__rating {}
+    &__rating {
+        color: #EFF5FAD1;
+    }
 }

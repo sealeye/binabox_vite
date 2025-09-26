@@ -4,8 +4,17 @@
         line-height: 28px;
         color: #F8F7FF;
 
-        &::marker {
-            content: url(../assets/images/logo.svg);
+        &::before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            
+            background-image: url(../assets/images/logo.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
         }
     }
 }

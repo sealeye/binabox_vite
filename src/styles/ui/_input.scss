@@ -3,6 +3,12 @@
     --input-hover: var(--color-marina-600);
     --input-disabled: var(--color-separator);
 
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--text-color);
+    }
+
     &__label {
         font-size: 14px;
         line-height: 20px;

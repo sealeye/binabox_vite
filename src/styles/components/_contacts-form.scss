@@ -1,6 +1,8 @@
 @use '../global/variables' as *;
 
 .contacts-form {
+    padding: 64px;
+
     &__title {
         font-family: $accent-font;
         font-size: 36px;
@@ -16,6 +18,7 @@
         line-height: 28px;
         text-align: center;
         color: var(--color-secondary);
+        margin-bottom: 40px;
     }
 
     fieldset {
