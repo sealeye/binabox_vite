@@ -23,9 +23,26 @@
         line-height: 20px;
         font-weight: 600;
         color: var(--color-secondary);
+
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
     }
 
-    &__name {}
+    &__name {
+        margin-bottom: 16px;
+
+        &:after {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 2px;
+            height: 16px;
+            border-radius: 2px;
+            background-color: #D0D7FB2B;
+            margin-inline: 8px;
+        }
+    }
 
     &__date {}
 
@@ -40,6 +57,8 @@
         font-size: 16px;
         line-height: 24px;
         color: var(--color-secondary);
+
+        margin-bottom: 16px;
     }
 
     &__button {}
