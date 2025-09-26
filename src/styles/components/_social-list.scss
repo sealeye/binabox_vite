@@ -1,6 +1,8 @@
 @use '../mixin/icon-link' as *;
 
 .social-list {
+    display: flex;
+    gap: 8px;
 
     &__item {}
 

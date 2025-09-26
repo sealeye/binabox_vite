@@ -14,13 +14,15 @@
 
   font-family: inherit;
   font-size: 18px;
-  line-height: 28px;
   color: var(--text-color);
   font-weight: 500;
   padding: 10px 24px;
   border: 2px solid var(--border-color);
   text-align: center;
   background-color: transparent;
+
+  display: inline-flex;
+  gap: 8px;
 
   &:hover {
     background-color: var(--button-actions-border-color);

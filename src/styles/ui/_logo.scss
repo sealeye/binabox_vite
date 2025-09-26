@@ -1,4 +1,8 @@
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 16px; //approx
+
     &--header {
         .logo__image-text {
             color: var(--color-white);

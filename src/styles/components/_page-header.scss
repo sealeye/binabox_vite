@@ -5,15 +5,23 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color:#0D0D15;
+    background-color: #0D0D15;
 
     .content-wrapper {
         padding-inline: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__logo {}
 
     &__nav {}
+
+    &__wrap {
+        display: flex;
+        gap: 16px;
+    }
 
     &__button {}
 }

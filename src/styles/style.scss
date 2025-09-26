@@ -13,6 +13,7 @@
 @use "components/about";
 @use "components/banner";
 @use "components/blockquote";
+@use "components/blog-page";
 @use "components/blog-card";
 @use "components/blog-post";
 @use "components/blog-section";
@@ -38,3 +39,4 @@
 @use "components/filter-fieldset"; 
 @use "components/contacts-section.scss"; 
 @use "components/catalog-items.scss"; 
+@use "components/search-form.scss"; 

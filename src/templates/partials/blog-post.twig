@@ -57,15 +57,20 @@
 		{% endfor %}
 	{% endfor %}
 
-	<p class="blog-post__text">Tags:</p>
-	<ul>
-		{% for tag in blog_page.post.tags %}
-			<li>
-				<a class="button button--small" href="{{ tag.url }}">{{ tag.text }}</a>
-			</li>
-		{% endfor %}
-	</ul>
-
-	<p class="blog-post__text">Share:</p>
-	{% include 'ui/social-list.twig' with { items: blog_page.post.share, class: "blog-post__social-list" } %}
+	<footer class="blog-post__footer">
+		<div>
+			<p class="blog-post__text">Tags:</p>
+			<ul class="blog-post__tags-list">
+				{% for tag in blog_page.post.tags %}
+					<li>
+						<a class="button button--small" href="{{ tag.url }}">{{ tag.text }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div>
+			<p class="blog-post__text">Share:</p>
+			{% include 'ui/social-list.twig' with { items: blog_page.post.share, class: "blog-post__social-list" } %}
+		</div>
+	</footer>
 </article>

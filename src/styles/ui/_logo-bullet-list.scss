@@ -1,4 +1,8 @@
 .logo-bullet-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
     &__item {
         font-size: 18px;
         line-height: 28px;
@@ -11,7 +15,7 @@
             width: 24px;
             height: 24px;
             margin-right: 8px;
-            
+
             background-image: url(../assets/images/logo.svg);
             background-size: contain;
             background-repeat: no-repeat;

@@ -1,6 +1,8 @@
 .main-nav {
 
-    &__list {}
+    &__list {
+        display: flex;
+    }
 
     &__item {}
 
@@ -9,9 +11,13 @@
         line-height: 24px;
         color: var(--color-primary);
         padding: 8px 20px;
+        display: flex;
+        align-items: center;
 
         &:after {
             content: url(../assets/icons/chevron-down.svg);
+            margin-left: 8px;
+            line-height: 0;
             filter: brightness(0) saturate(100%) invert(91%) sepia(30%) saturate(15%) hue-rotate(182deg) brightness(98%) contrast(105%);
         }
     }

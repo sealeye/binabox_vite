@@ -1,7 +1,13 @@
 .page-footer {
     background-color: var(--color-alternative);
     color: var(--color-primary);
-    padding-block: 64px 32px ;
+    padding-block: 64px 32px;
+
+    .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+    }
 
     &__logo {
         margin-bottom: 12px;
@@ -10,6 +16,8 @@
     &__text {
         font-size: 14px;
         line-height: 20px;
+        max-width: 320px;
+        margin-top: 12px;
     }
 
     &__nav {}
@@ -19,7 +27,9 @@
         line-height: 28px;
     }
 
-    &__nav-list {}
+    &__nav-list {
+        column-count: 2;
+    }
 
     &__nav-list-item {}
 
@@ -35,5 +45,6 @@
         border-top: 1px solid var(--color-separator);
         padding-top: 32px;
         margin-top: 64px;
+        align-items: flex-end;
     }
 }
