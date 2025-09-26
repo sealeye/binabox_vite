@@ -1,4 +1,7 @@
 .catalog-slider-list {
+    display: flex;
+    gap: 24px;
+    
     &__item {
         img {
             width: 253px;

@@ -1,10 +1,15 @@
-@use '../global/variables' as *;
+@use '../global/variables'as *;
 
 .catalog-slider {
 
     padding-block: 64px;
 
-    &__header {}
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
 
     &__title {
         font-family: $accent-font;
@@ -12,14 +17,35 @@
         line-height: 32px;
         color: #F8F7FF;
         padding-block: 2px;
+        margin-right: auto;
+
+        display: flex;
+        gap: 8px;
+        align-items: center;
     }
 
-    &__link {}
+    &__link {
+        margin-right: 16px;
+        position: relative;
+
+        &:after {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 2px;
+            height: 24px;
+            border-radius: 2px;
+            background-color: #D0D7FB2B;
+
+            position: absolute;
+            right: -18px;
+            top: 8px;
+        }
+    }
 
     &__nav-button {}
 
     &__list {}
 
-    &__item {
-    }
+    &__item {}
 }

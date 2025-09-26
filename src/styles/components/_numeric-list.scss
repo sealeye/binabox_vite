@@ -2,6 +2,9 @@
 @use '../mixin/hover-corners' as *;
 
 .numeric-list {
+    display: flex;
+    gap: 32px;
+        
     &__item {
         background-color: var(--color-alternative);
         padding: 32px;

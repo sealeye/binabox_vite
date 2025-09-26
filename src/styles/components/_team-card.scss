@@ -1,14 +1,20 @@
-@use '../global/variables' as *;
+@use '../global/variables'as *;
 
 .team-card {
     background-color: var(--color-alternative-2);
     padding: 32px;
     text-align: center;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     &__image {
         border-radius: 50%;
         width: 120px;
         height: 120px;
+        margin-inline: auto;
+        margin-bottom: 16px;
     }
 
     &__name {
@@ -22,7 +28,10 @@
         font-size: 18px;
         line-height: 28px;
         color: var(--color-secondary);
+        margin-bottom: 16px;
     }
 
-    &__social-list {}
+    .social-list {
+        justify-content: center;
+    }
 }

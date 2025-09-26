@@ -6,7 +6,14 @@
         text-align: center;
     }
 
-    &__list {}
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
 
-    &__list-item {}
+    &__list-item {
+        flex-basis: 293px;
+    }
 }
