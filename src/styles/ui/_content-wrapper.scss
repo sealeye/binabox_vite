@@ -1,0 +1,9 @@
+.content-wrapper {
+    max-width: 1728px;
+    padding-inline: 64px;
+    margin-inline: auto;
+
+    &--narrow {
+        padding-inline: 100px; // approx
+    }
+}

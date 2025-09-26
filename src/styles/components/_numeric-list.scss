@@ -3,7 +3,8 @@
 
 .numeric-list {
     &__item {
-        background-color: var(--color-primary-invert);
+        background-color: var(--color-alternative);
+        padding: 32px;
 
         @include hover-corners;
     }
@@ -13,6 +14,7 @@
         font-size: 24px;
         line-height: 30px;
         color: var(--color-primary);
+        margin-bottom: 24px;
     }
 
     &__text {

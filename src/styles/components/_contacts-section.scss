@@ -1,19 +1,23 @@
-@use '../global/variables' as *;
+@use '../global/variables'as *;
 
 .contacts-section {
+    padding-top: 64px;
 
     &__link {
         border: 1px solid var(--color-line);
         color: var(--color-white);
         text-align: center;
+        padding: 40px 32px;
+        display: inline-block;
     }
 
     &__heading {
-        font-family:  $accent-font;
+        font-family: $accent-font;
         font-size: 36px;
         line-height: 48px;
         letter-spacing: -0.5px;
         color: #F8F7FF;
+        margin-top: 24px;
     }
 
     &__text {

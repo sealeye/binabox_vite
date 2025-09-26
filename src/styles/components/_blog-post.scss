@@ -1,9 +1,10 @@
-@use '../mixin/hover-corners'as *;
+@use '../global/variables'as *;
 
 .blog-post {
-    @include hover-corners;
-
-    &__illustration {}
+    &__illustration {
+        margin: 0;
+        margin-bottom: 32px;
+    }
 
     &__illustration--wide {
         img {
@@ -24,7 +25,14 @@
         color: #F8F7FF;
     }
 
-    &__main-title {}
+    &__main-title {
+        font-family: $accent-font;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+        color: #F8F7FF;
+        margin-bottom: 16px;
+    }
 
     &__desc {
         font-size: 14px;
@@ -33,15 +41,42 @@
         color: var(--color-secondary);
     }
 
-    &__label {}
+    &__label {
+        margin-bottom: 32px;
+    }
+
+    &__meta {
+        margin-bottom: 32px;
+    }
 
     &__text {
         font-size: 18px;
         line-height: 28px;
         font-weight: 400;
+        margin-bottom: 16px;
     }
 
-    &__unordered-list {}
+    &__bullet-list {
+        margin-bottom: 32px;
+        font-size: 18px;
+        line-height: 28px;
+        list-style: disc;
+        list-style-position: inside;
+    }
 
-    &__subtitle {}
+    &__unordered-list {
+        margin-bottom: 32px;
+    }
+
+    &__subtitle {
+        font-family: $accent-font;
+        font-size: 28px;
+        line-height: 36px;
+
+        margin-bottom: 16px;
+    }
+
+    .blockquote {
+        margin-bottom: 32px;
+    }
 }

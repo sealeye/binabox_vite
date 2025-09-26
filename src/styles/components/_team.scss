@@ -1,6 +1,10 @@
 .team {
+    padding-block: 64px;
 
-    &__title {}
+    &__title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
 
     &__list {}
 

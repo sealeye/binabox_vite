@@ -35,11 +35,11 @@
 		{% endfor %}
 	</ul>
 
-	<ol class="blog-post__unordered-list logo-bullet-list">
+	<ul class="blog-post__unordered-list logo-bullet-list">
 		{% for item in blog_page.post.ordered %}
 			<li class="logo-bullet-list__item">{{ item }}</li>
 		{% endfor %}
-	</ol>
+	</ul>
 
 	{% include 'ui/blockquote.twig' with { item: blog_page.post.blockquote } %}
 

@@ -4,8 +4,11 @@
 .item-card {
     background-color: var(--color-alternative-2);
     @include hover-corners;
+    padding: 24px;
 
-    &__image {}
+    &__image {
+        margin-bottom: 24px;
+    }
 
     &__label {}
 
@@ -15,6 +18,7 @@
         line-height: 48px;
         letter-spacing: -0.5px;
         color: var(--color-primary);
+        margin-bottom: 8px;
     }
 
     &__name {

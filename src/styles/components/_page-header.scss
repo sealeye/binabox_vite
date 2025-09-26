@@ -1,4 +1,10 @@
 .page-header {
+    padding-block: 32px;
+
+    .content-wrapper {
+        padding-inline: 32px;
+    }
+
     &__logo {}
 
     &__nav {}

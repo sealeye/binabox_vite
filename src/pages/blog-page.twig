@@ -3,6 +3,8 @@
 
 {% block content %}
 	{% include 'src/templates/partials/inner-header.twig' with { header: blog_page.header }  %}
-	{% include 'src/templates/partials/sidebar.twig' %}
-	{% include 'src/templates/partials/blog-post.twig' %}
+	<div class="content-wrapper content-wrapper--narrow">
+		{% include 'src/templates/partials/sidebar.twig' %}
+		{% include 'src/templates/partials/blog-post.twig' %}
+	</div>
 {% endblock %}

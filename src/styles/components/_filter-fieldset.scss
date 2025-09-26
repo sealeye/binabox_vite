@@ -1,7 +1,8 @@
-@use '../global/variables' as *;
+@use '../global/variables'as *;
 
 .filter-fieldset {
     background-color: var(--color-alternative-2);
+    padding: 24px;
 
     &__title {
         font-family: $accent-font;
@@ -17,5 +18,10 @@
         }
     }
 
-    &__list {}
+    &__list {
+        margin-top: 16px;
+        border-top: 1px solid #BFC5EE1F;
+        padding-top: 16px;
+
+    }
 }

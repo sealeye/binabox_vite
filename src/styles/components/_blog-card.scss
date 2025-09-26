@@ -4,8 +4,11 @@
 .blog-card {
     background-color: var(--color-alternative-2);
     @include hover-corners;
+    padding: 24px;
 
-    &__image {}
+    &__image {
+        margin-bottom: 24px;
+    }
 
     &__label {}
 
