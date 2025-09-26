@@ -1,5 +1,11 @@
 .page-header {
     padding-block: 32px;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:#0D0D15;
 
     .content-wrapper {
         padding-inline: 32px;
