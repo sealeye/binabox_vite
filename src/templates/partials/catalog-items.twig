@@ -1,33 +1,35 @@
 {% from 'ui/icon.twig' import icon %}
 
 <section class="catalog-items">
-	<h2 class="catalog-items__title">All item</h2>
-	<form action="#" class="catalog-items-form">
-		<select name="" id="" class="select catalog-items-form__select button">
-			{% for item in catalog.filter_select %}
-				<option value="{{ item|lower|replace({' ': '-'}) }}">{{ item }}</option>
-			{% endfor %}
-		</select>
-	</form>
-	<form action="#" method="post" class="search-form">
-		<label class="input search-form__label">
-			{{ icon('input__icon search-form__icon', 'search') }}
-			<input type="search" class="input__field search-form__input" placeholder="Search">
-		</label>
-		<button type="submit" class="visually-hidden">Send</button>
-	</form>
+	<div class="catalog-items__wrap">
+		<h2 class="catalog-items__title">All item</h2>
+		<form action="#" class="catalog-sort">
+			<select name="" id="" class="select catalog-sort__select button">
+				{% for item in catalog.filter_select %}
+					<option value="{{ item|lower|replace({' ': '-'}) }}">{{ item }}</option>
+				{% endfor %}
+			</select>
+		</form>
+		<form action="#" method="post" class="catalog-items__search search-form">
+			<label class="input search-form__label">
+				{{ icon('input__icon search-form__icon', 'search') }}
+				<input type="search" class="input__field search-form__input" placeholder="Search">
+			</label>
+			<button type="submit" class="visually-hidden">Send</button>
+		</form>
+	</div>
 	<div class="catalog-filter-results">
 		<ul class="catalog-filter-results__list">
 			{% for item in catalog.filter_results.list %}
 				<li class="catalog-filter-results__item">
-					<button class="catalog-filter-results__button button" type="button">
+					<button class="catalog-filter-results__button button button--small" type="button">
 						{{ item }}
 						{{ icon('', 'close', 16, 16) }}
 					</button>
 				</li>
 			{% endfor %}
 		</ul>
-		<button class="catalog-filter-results__button button button--light" type="button">{{ catalog.filter_results.button }}</button>
+		<button class="catalog-filter-results__button button button--light button--small" type="button">{{ catalog.filter_results.button }}</button>
 	</div>
 	{% include 'catalog-list.twig'  %}
 </section>

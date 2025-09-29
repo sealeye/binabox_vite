@@ -16,11 +16,20 @@
         color: var(--text-color);
         position: relative;
 
-        &:before {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+
+        &:before,
+        &:after {
             content: '';
             display: block;
             width: 16px;
             height: 16px;
+            margin: 4px;
+        }
+
+        &:before {
             border-radius: 4px;
             border: 2px solid var(--checkbox-boreder);
             background-color: var(--checkbox-bg);
@@ -28,10 +37,6 @@
         }
 
         &:after {
-            content: '';
-            display: block;
-            width: 16px;
-            height: 16px;
             // background-image: url("data:image/svg+xml,%3Csvg width='8' height='7' viewBox='0 0 8 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.71402 2.54394C1.62206 2.44863 1.51205 2.3726 1.39042 2.32029C1.26879 2.26799 1.13797 2.24046 1.0056 2.23931C0.873227 2.23816 0.741951 2.26341 0.619431 2.31359C0.496911 2.36377 0.385602 2.43787 0.291996 2.53157C0.198391 2.62528 0.124366 2.73671 0.0742387 2.85936C0.0241118 2.98201 -0.00111264 3.11342 3.76407e-05 3.24593C0.00118792 3.37845 0.0286892 3.5094 0.0809377 3.63116C0.133186 3.75292 0.209136 3.86304 0.304353 3.9551L2.29823 5.95109C2.48518 6.13818 2.73871 6.24329 3.00306 6.24329C3.26741 6.24329 3.52094 6.13818 3.7079 5.95109L7.69565 1.95912C7.79086 1.86706 7.86681 1.75694 7.91906 1.63518C7.97131 1.51342 7.99881 1.38246 7.99996 1.24995C8.00111 1.11744 7.97589 0.986022 7.92576 0.863373C7.87563 0.740723 7.80161 0.629296 7.708 0.535592C7.6144 0.441888 7.50309 0.367784 7.38057 0.317604C7.25805 0.267424 7.12677 0.242172 6.9944 0.243324C6.86203 0.244475 6.73121 0.272006 6.60958 0.32431C6.48795 0.376614 6.37794 0.452643 6.28598 0.547962L3.00306 3.83435L1.71402 2.54394Z' fill='%23F5F8FB'/%3E%3C/svg%3E%0A");
             background-image: url(../assets/icons/mark.svg);
             background-repeat: no-repeat;
@@ -41,7 +46,6 @@
             top: 0;
             z-index: 1;
             opacity: 0;
-            // on this stage students don't know how to add images and position
         }
     }
 

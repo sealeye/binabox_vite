@@ -16,11 +16,16 @@
         line-height: 20px;
         color: var(--text-color);
 
+        display: flex;
+        gap: 4px;
+        align-items: center;
+
         &:before {
             content: '';
             display: block;
             width: 16px;
             height: 16px;
+            margin: 4px;
             border-radius: 50%;
             border: 2px solid var(--radio-boreder);
             background-color: var(--radio-background);

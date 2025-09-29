@@ -13,7 +13,6 @@
 @use "components/about";
 @use "components/banner";
 @use "components/blockquote";
-@use "components/blog-page";
 @use "components/blog-card";
 @use "components/blog-post";
 @use "components/blog-section";
@@ -21,6 +20,8 @@
 @use "components/catalog-slider";
 @use "components/catalog-slider-list";
 @use "components/catalog-list";
+@use "components/catalog-filter-results";
+@use "components/catalog-sort";
 @use "components/faq";
 @use "components/hero";
 @use "components/inner-header";
@@ -40,3 +41,6 @@
 @use "components/contacts-section.scss"; 
 @use "components/catalog-items.scss"; 
 @use "components/search-form.scss"; 
+
+@use "pages/blog-page";
+@use "pages/catalog-page";
