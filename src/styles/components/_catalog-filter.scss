@@ -1,6 +1,8 @@
 .catalog-filter {
     position: sticky;
-    top: 0;
+    top: var(--header-height);
+    left: 0;
+    height: max-content;
     width: 320px;
 
     display: flex;
