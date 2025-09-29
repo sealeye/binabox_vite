@@ -10,6 +10,7 @@
 @use 'ui/logo'; 
 @use 'ui/logo-bullet-list'; 
 @use 'ui/content-wrapper'; 
+@use "components/fieldset";
 @use "components/about";
 @use "components/banner";
 @use "components/blockquote";

@@ -3,6 +3,10 @@
     --input-hover: var(--color-marina-600);
     --input-disabled: var(--color-separator);
 
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
     &__text {
         font-size: 14px;
         line-height: 20px;
@@ -46,6 +50,10 @@
 
         &:disabled {
             background-color: var(--input-disabled);
+        }
+
+        &--textarea {
+            min-height: 160px;
         }
     }
 }

@@ -1,9 +1,9 @@
 {% from 'ui/icon.twig' import icon %}
 
 <section class="contacts-section">
-    <ul>
+    <ul class="contacts-section__list">
     {% for item in contacts.section %}
-        <li>
+        <li class="contacts-section__list-item">
             <a href="{{ item.link }}" class="contacts-section__link">
                 {{ icon('', item.icon, 56, 56) }}
                 <p class="contacts-section__heading">{{ item.title }}</p>

@@ -1,7 +1,7 @@
 <section class="contacts-form">
 	<h2 class="contacts-form__title">{{ contacts.title }}</h2>
 	<p class="contacts-form__desc">{{ contacts.description }}</p>
-	<form action="#" method="post">
+	<form action="#" method="post" class="contacts-form__form">
 		<label class="input">
 			<span class="input__text">Name</span>
 			<input 
@@ -33,12 +33,13 @@
                 max="2007-12-31">
 		</label>
 
-		<fieldset>
-			<p class="radio">
+		<fieldset class="input fieldset">
+			<legend class="input__text fieldset__title">Sex</legend>
+			<p class="radio fieldset__item">
 				<input type="radio" class="radio__input visually-hidden" id="male" name="sex" value="male" checked>
 				<label for="male" class="radio__label">Male</label>
 			</p>
-			<p class="radio">
+			<p class="radio fieldset__item">
 				<input type="radio" class="radio__input visually-hidden" id="female" name="sex" value="female">
 				<label for="female" class="radio__label">Female</label>
 			</p>
@@ -66,7 +67,7 @@
 
 		<label class="input">
 			<span class="input__text">Message</span>
-			<textarea class="input__field" placeholder="Text your message here" required></textarea>
+			<textarea class="input__field input__field--textarea" placeholder="Text your message here" required></textarea>
 		</label>
 
 		<p class="input checkbox">

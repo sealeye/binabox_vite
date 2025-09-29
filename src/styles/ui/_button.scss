@@ -1,4 +1,4 @@
-@use '../mixin/icon-link' as *;
+@use '../mixin/icon-link'as *;
 
 .button {
   --button-actions-border-color: var(--color-separator);
@@ -24,6 +24,7 @@
   display: inline-flex;
   gap: 8px;
   align-items: center;
+  justify-content: center;
 
   &:hover {
     background-color: var(--button-actions-border-color);

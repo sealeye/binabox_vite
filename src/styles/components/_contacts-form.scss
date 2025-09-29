@@ -21,7 +21,11 @@
         margin-bottom: 40px;
     }
 
-    fieldset {
-        border: none;
+    &__form {
+        max-width: 640px;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
 }

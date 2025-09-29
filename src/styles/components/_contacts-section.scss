@@ -3,12 +3,23 @@
 .contacts-section {
     padding-top: 64px;
 
+    &__list {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    &__list-item {
+        flex-basis: 328px;
+    }
+
     &__link {
         border: 1px solid var(--color-line);
         color: var(--color-white);
         text-align: center;
         padding: 40px 32px;
-        display: inline-block;
+        display: block;
+        padding: 40px 32px;
     }
 
     &__heading {
