@@ -2,11 +2,14 @@
 
 <header class="page-header">
 	<div class="content-wrapper">
-		<a class="logo logo--header" {% if path == 'index.html' %} {% else %} href="/" {% endif %}>
+		<button type="button" class="button button--icon page-header__burger">
+			{{ icon('button__icon', 'menu') }}
+		</button>
+		<a class="page-header__logo logo logo--invert" {% if path == 'index.html' %} {% else %} href="/" {% endif %}>
 			<img src="/src/assets/images/logo.svg" alt="Binabox Logo" class="logo__image" width="36" height="40"/>
 			{{ icon('logo__image-text', 'logo-text', 134, 21) }}
 		</a>
-		<nav class="main-nav">
+		<nav class="page-header__nav main-nav">
 			<ul class="main-nav__list">
 				{% for item in nav %}
 					<li class="main-nav__list-item">
@@ -19,7 +22,7 @@
 			</ul>
 		</nav>
 		<div class="page-header__wrap">
-			<form action="#" method="post" class="search-form">
+			<form action="#" method="post" class="page-header__search search-form">
 				<label class="input search-form__label">
 					{{ icon('input__icon', 'search') }}
 					<input type="search" class="input__field" placeholder="Search">

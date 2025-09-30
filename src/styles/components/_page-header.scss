@@ -1,3 +1,5 @@
+@use '../mixin/breakpoints'as *;
+
 .page-header {
     padding-block: 32px;
     position: sticky;
@@ -8,20 +10,56 @@
     background-color: #0D0D15;
 
     .content-wrapper {
-        padding-inline: 32px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include tablet {
+            padding-inline: 32px;
+        }
     }
 
-    &__logo {}
+    &__logo {
+        @include mobile {
+            margin-right: auto;
+            margin-left: 16px;
+        }
 
-    &__nav {}
+        .logo__image-text {
+            display: none;
+
+            @include tablet {
+                display: block;
+            }
+        }
+    }
+
+    &__nav {
+        display: none;
+
+        @include tablet {
+            display: block;
+        }
+    }
 
     &__wrap {
         display: flex;
         gap: 16px;
     }
 
-    &__button {}
+    &__search {
+        display: none;
+
+        @include tablet {
+            display: block;
+        }
+    }
+
+    &__button {
+        @include mobile {
+            font-size: 0;
+            gap: 0;
+            padding: 10px;
+        }
+    }
 }

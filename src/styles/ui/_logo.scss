@@ -3,7 +3,7 @@
     align-items: center;
     gap: 16px; //approx
 
-    &--header {
+    &--invert {
         .logo__image-text {
             color: var(--color-white);
         }
@@ -13,7 +13,6 @@
                 color: var(--logo-color);
             }
         }
-
     }
 
     &__image-text {

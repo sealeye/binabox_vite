@@ -1,11 +1,16 @@
 @use '../global/variables'as *;
 @use '../mixin/hover-corners'as *;
+@use '../mixin/breakpoints'as *;
 
 .item-card {
     background-color: var(--color-alternative-2);
     @include hover-corners;
-    padding: 24px;
+    padding: 16px;
     position: relative;
+
+    @include tablet {
+        padding: 24px;
+    }
 
     &__image {
         margin-bottom: 24px;

@@ -1,8 +1,17 @@
+@use '../mixin/breakpoints'as *;
+
 .about {
-    padding-block: 64px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-block: 32px;
+
+    @include desktop {
+        padding-block: 64px;
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     &__title {
         text-align: center;

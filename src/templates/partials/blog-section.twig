@@ -1,6 +1,6 @@
 <section class="blog-section">
 	<h2 class="blog-section__title main-title">{{ blog_section.title }}</h2>
-	<ul class="blog-section__list">
+	<ul class="blog-section__list content-wrapper content-wrapper--wide">
 		{% for item in blog_items %}
 			<li class="blog-section__list-item">
 				{% include 'blog-card.twig' %}

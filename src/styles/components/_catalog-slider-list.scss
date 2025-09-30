@@ -1,12 +1,27 @@
+@use '../mixin/breakpoints'as *;
+
 .catalog-slider-list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 24px;
-    
+
+    display: flex;
+    overflow-y: auto;
+    gap: 16px;
+
+    @include desktop {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 24px;
+    }
+
     &__item {
+        flex-shrink: 0;
+
         img {
-            width: 253px;
+            width: 296px;
             height: 324px;
+
+            @include desktop {
+                width: 253px;
+            }
         }
     }
 }

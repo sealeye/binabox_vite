@@ -1,13 +1,24 @@
 @use '../global/variables'as *;
+@use '../mixin/breakpoints'as *;
 
 .catalog-slider {
-    padding-block: 64px;
+    padding-block: 32px;
+
+    @include desktop {
+        padding-block: 64px;
+    }
 
     &__header {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+
         gap: 16px;
         margin-bottom: 40px;
+
+        @include tablet {
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
     }
 
     &__title {
@@ -21,6 +32,12 @@
         display: flex;
         gap: 8px;
         align-items: center;
+
+        width: 100%;
+
+        @include tablet {
+            width: auto;
+        }
 
         &:after {
             content: "";
@@ -39,6 +56,8 @@
     &__link {
         margin-right: 16px;
         position: relative;
+
+        flex-grow: 1;
 
         &:after {
             content: "";

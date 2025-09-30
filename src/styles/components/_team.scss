@@ -1,5 +1,11 @@
+@use '../mixin/breakpoints'as *;
+
 .team {
-    padding-block: 64px;
+    padding-block: 32px;
+
+    @include desktop {
+        padding-block: 64px;
+    }
 
     &__title {
         margin-bottom: 40px;
@@ -8,12 +14,18 @@
 
     &__list {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 40px;
+        overflow-x: auto;
+        gap: 16px;
+
+        @include desktop {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
     }
 
     &__list-item {
         flex-basis: 293px;
+        flex-shrink: 0;
     }
 }

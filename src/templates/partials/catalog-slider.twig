@@ -1,7 +1,7 @@
 {% from 'ui/icon.twig' import icon %}
 
 <section class="catalog-slider">
-	<header class="catalog-slider__header">
+	<header class="catalog-slider__header content-wrapper content-wrapper--wide">
 		<h2 class="catalog-slider__title">
 			{{ icon('', 'folder') }}
 			{{ catalog_section.title }}
@@ -14,7 +14,7 @@
 			{{ icon('', 'chevron-right') }}
 		</button>
 	</header>
-	<ul class="catalog-slider-list">
+	<ul class="catalog-slider-list content-wrapper content-wrapper--wide">
 		{% for item in catalog_cards %}
 			<li class="catalog-slider-list__item">
 				{% include 'item-card.twig' %}

@@ -1,6 +1,5 @@
-@use '../global/variables' as *;
-
-ç
+@use '../global/variables'as *;
+@use '../mixin/breakpoints'as *;
 
 .page-title {
   font-family: $accent-font;
@@ -9,10 +8,16 @@
   letter-spacing: -0.5px;
 }
 
-.main-title{
+.main-title {
   font-family: $accent-font;
-  font-size: 36px;
-  line-height: 48px;
   letter-spacing: -0.5px;
   color: #F8F7FF;
+
+  font-size: 28px;
+  line-height: 36px;
+
+  @include desktop {
+    font-size: 36px;
+    line-height: 48px;
+  }
 }
