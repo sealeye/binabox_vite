@@ -1,3 +1,5 @@
+@use '../mixin/breakpoints'as *;
+
 .catalog-filter-results {
     display: flex;
     background-color: #1D1C28;
@@ -5,7 +7,9 @@
     gap: 16px;
 
     &__list {
-        display: flex;
-        gap: 16px;
+        @include tablet {
+            display: flex;
+            gap: 16px;
+        }
     }
 }

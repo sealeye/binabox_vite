@@ -1,13 +1,22 @@
-.catalog-filter {
-    position: sticky;
-    top: var(--header-height);
-    left: 0;
-    height: max-content;
-    width: 320px;
+@use '../mixin/breakpoints'as *;
 
+.catalog-filter {
     display: flex;
     flex-direction: column;
     gap: 21px;
+
+    @include mobile {
+        display: none;
+    }
+
+    @include tablet {
+        position: sticky;
+        top: var(--header-height);
+        left: 0;
+
+        height: max-content;
+        width: 320px;
+    }
 
     &__button {
         justify-content: center;

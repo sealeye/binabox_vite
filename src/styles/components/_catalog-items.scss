@@ -1,4 +1,5 @@
 @use '../global/variables'as *;
+@use '../mixin/breakpoints'as *;
 
 .catalog-items {
     flex-grow: 1;
@@ -7,8 +8,10 @@
     gap: 32px;
 
     &__wrap {
-        display: flex;
-        gap: 16px;
+        @include tablet {
+            display: flex;
+            gap: 16px;
+        }
     }
 
     &__title {
