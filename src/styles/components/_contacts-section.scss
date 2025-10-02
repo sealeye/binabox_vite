@@ -1,16 +1,36 @@
 @use '../global/variables'as *;
+@use '../mixin/breakpoints'as *;
 
 .contacts-section {
-    padding-top: 64px;
+
+    @include tablet {
+        padding-top: 32px;
+    }
+
+    @include desktop {
+        padding-top: 64px;
+    }
 
     &__list {
         display: flex;
+        flex-direction: column;
         gap: 16px;
         justify-content: center;
+
+        @include tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
 
     &__list-item {
-        flex-basis: 328px;
+        @include tablet {
+            flex-basis: 307px;
+        }
+
+        @include desktop {
+            flex-basis: 328px;
+        }
     }
 
     &__link {
@@ -19,7 +39,11 @@
         text-align: center;
         padding: 40px 32px;
         display: block;
-        padding: 40px 32px;
+        padding: 24px;
+
+        @include tablet {
+            padding: 40px 32px;
+        }
     }
 
     &__heading {
