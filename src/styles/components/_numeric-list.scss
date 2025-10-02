@@ -1,5 +1,5 @@
-@use '../global/variables' as *;
-@use '../mixin/hover-corners' as *;
+@use '../global/variables'as *;
+@use '../mixin/hover-corners'as *;
 @use '../mixin/breakpoints'as *;
 
 .numeric-list {
@@ -8,15 +8,27 @@
     gap: 16px;
 
     @include desktop {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include desktop-large {
+        display: flex;
         flex-direction: row;
         gap: 32px;
     }
-        
+
     &__item {
         background-color: var(--color-alternative);
         padding: 32px;
 
         @include hover-corners;
+
+        &:last-child {
+            @include desktop {
+                grid-column: 1/-1;
+            }
+        }
     }
 
     &__title {
@@ -31,5 +43,9 @@
         font-size: 18px;
         line-height: 28px;
         color: var(--color-secondary);
+
+        @include desktop {
+            max-width: 380px; //approx
+        }
     }
 }

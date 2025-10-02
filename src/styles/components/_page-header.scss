@@ -1,13 +1,17 @@
 @use '../mixin/breakpoints'as *;
 
 .page-header {
-    padding-block: 32px;
+    padding-block: 16px;
     position: sticky;
     z-index: 2;
     top: 0;
     left: 0;
     right: 0;
     background-color: #0D0D15;
+
+    @include desktop {
+        padding-block: 32px;
+    }
 
     .content-wrapper {
         display: flex;
@@ -16,6 +20,14 @@
 
         @include tablet {
             padding-inline: 32px;
+        }
+    }
+
+    &__burger {
+        display: none;
+
+        @include mobile {
+            display: block;
         }
     }
 
@@ -28,7 +40,7 @@
         .logo__image-text {
             display: none;
 
-            @include tablet {
+            @include desktop-large {
                 display: block;
             }
         }
@@ -37,7 +49,7 @@
     &__nav {
         display: none;
 
-        @include tablet {
+        @include desktop {
             display: block;
         }
     }
@@ -50,7 +62,7 @@
     &__search {
         display: none;
 
-        @include tablet {
+        @include desktop {
             display: block;
         }
     }
@@ -60,6 +72,7 @@
             font-size: 0;
             gap: 0;
             padding: 10px;
+            display: block;
         }
     }
 }

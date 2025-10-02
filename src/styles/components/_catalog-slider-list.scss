@@ -8,16 +8,37 @@
 
     @include desktop {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 24px;
+    }
+
+    @include desktop-large {
+        grid-template-columns: repeat(5, 1fr);
     }
 
     &__item {
         flex-shrink: 0;
 
+        @include desktop {
+            &:nth-child(n + 5) {
+                display: none;
+            }
+        }
+
+        @include desktop-large {
+            &:nth-child(n + 5) {
+                display: block;
+            }
+        }
+
         img {
             width: 296px;
             height: 324px;
+
+            @include tablet {
+                width: 255px;
+                height: 324px;
+            }
 
             @include desktop {
                 width: 253px;

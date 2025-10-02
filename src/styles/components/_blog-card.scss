@@ -1,16 +1,21 @@
 @use '../global/variables'as *;
 @use '../mixin/hover-corners'as *;
+@use '../mixin/breakpoints'as *;
 
 .blog-card {
     background-color: var(--color-alternative-2);
     @include hover-corners;
-    padding: 24px;
+    padding: 16px;
     position: relative;
 
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @include tablet {
+        padding: 24px;
+    }
 
     &__image {
         margin-bottom: 24px;
@@ -57,7 +62,9 @@
         line-height: 44px;
         color: var(--color-primary);
 
-        margin-top: auto;
+        @include mobile {
+            margin-top: auto;
+        }
     }
 
     &__text {
@@ -72,6 +79,10 @@
         white-space: normal;
 
         margin-bottom: 16px;
+
+        @include tablet {
+            -webkit-line-clamp: 1;
+        }
     }
 
     &__button {}

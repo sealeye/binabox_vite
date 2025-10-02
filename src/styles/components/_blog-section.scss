@@ -2,6 +2,8 @@
 
 .blog-section {
     padding-block: 32px;
+    display: flex;
+    flex-direction: column;
 
     @include desktop {
         padding-block: 64px;
@@ -17,7 +19,7 @@
         overflow-y: auto;
         gap: 16px;
 
-        @include desktop {
+        @include tablet {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 32px;
@@ -32,12 +34,17 @@
             width: 261px;
             height: 340px;
             object-position: center !important;
+
+            @include tablet {
+                width: 255px;
+                height: 210px;
+            }
         }
 
         @include desktop {
             img {
-                width: 736px;
-                aspect-ratio: 3.7 / 1;
+                width: 512px;
+                aspect-ratio: 2.56 / 1;
                 height: auto;
             }
 
@@ -53,6 +60,21 @@
             &:first-child,
             &:last-child {
                 img {
+                    aspect-ratio: 0.765 / 1;
+                }
+            }
+        }
+
+        @include desktop-large {
+            img {
+                width: 736px;
+                aspect-ratio: 3.7 / 1;
+                height: auto;
+            }
+
+            &:first-child,
+            &:last-child {
+                img {
                     aspect-ratio: 1.102 / 1;
                 }
             }
@@ -61,5 +83,13 @@
 
     &__link {}
 
-    &__button {}
+    &__button {
+        margin-top: 40px;
+        justify-content: center;
+        margin-inline: 20px;
+
+        @include desktop {
+            align-self: center;
+        }
+    }
 }

@@ -2,13 +2,13 @@
 
 $breakpoints: (
   "mobile": 360px,
-  "tablet": 678px,
-  "desktop": 1280px,
-  "desktop-large": 1728px
+  "tablet": 677px,
+  "desktop": 1279px,
+  "desktop-large": 1727px
 );
 
 @mixin mobile {
-  @media (min-width: map.get($breakpoints, "mobile")) {
+  @media (max-width: map.get($breakpoints, "tablet")) {
     @content;
   }
 }
