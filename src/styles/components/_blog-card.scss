@@ -1,16 +1,21 @@
-@use '../global/variables' as *;
-@use '../mixin/hover-corners' as *;
+@use '../global/variables'as *;
+@use '../mixin/hover-corners'as *;
 
 .blog-card {
     background-color: var(--color-alternative-2);
     @include hover-corners;
     padding: 24px;
+    position: relative;
 
     &__image {
         margin-bottom: 24px;
     }
 
-    &__label {}
+    &__label {
+        position: absolute;
+        top: 32px;
+        right: 34px;
+    }
 
     &__date,
     &__name {

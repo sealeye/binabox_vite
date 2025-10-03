@@ -4,6 +4,7 @@
     &__illustration {
         margin: 0;
         margin-bottom: 32px;
+        position: relative;
     }
 
     &__illustration--wide {
@@ -23,6 +24,9 @@
         line-height: 24px;
         font-weight: 500;
         color: #F8F7FF;
+        position: absolute;
+        left: 24px;
+        bottom: 16px;
     }
 
     &__main-title {

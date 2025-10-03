@@ -1,6 +1,11 @@
 @use '../global/variables'as *;
 
 .sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: max-content;
+
     &__section {
         background-color: var(--color-alternative-2);
         padding: 24px;
