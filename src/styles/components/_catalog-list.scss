@@ -1,9 +1,17 @@
 @use '../mixin/breakpoints'as *;
 
 .catalog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 
     @include tablet {
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    @include desktop {
         grid-template-columns: repeat(3, 1fr);
         gap: 32px;
     }

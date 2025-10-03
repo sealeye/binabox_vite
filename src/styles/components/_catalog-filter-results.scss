@@ -2,14 +2,20 @@
 
 .catalog-filter-results {
     display: flex;
+    flex-direction: column;
     background-color: #1D1C28;
     padding: 16px;
     gap: 16px;
 
+    @include tablet {
+        flex-direction: row;
+    }
+
     &__list {
-        @include tablet {
-            display: flex;
-            gap: 16px;
-        }
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+
+        @include tablet {}
     }
 }

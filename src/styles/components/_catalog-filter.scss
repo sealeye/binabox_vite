@@ -1,21 +1,19 @@
 @use '../mixin/breakpoints'as *;
 
 .catalog-filter {
-    display: flex;
-    flex-direction: column;
-    gap: 21px;
+    display: none;
 
-    @include mobile {
-        display: none;
-    }
-
-    @include tablet {
+    @include desktop {
         position: sticky;
         top: var(--header-height);
         left: 0;
 
         height: max-content;
         width: 320px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
     }
 
     &__button {
