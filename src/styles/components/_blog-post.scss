@@ -13,12 +13,15 @@
         margin: 0;
         margin-bottom: 32px;
         position: relative;
-        float: left;
-        width: calc(50% - 12px);
+
+        @include tablet {
+            float: left;
+            width: calc(50% - 12px);
+        }
     }
 
     .blog-post__illustration+.blog-post__illustration {
-        @include desktop {
+        @include tablet {
             margin-left: 24px;
         }
     }

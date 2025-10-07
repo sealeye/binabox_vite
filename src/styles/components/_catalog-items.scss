@@ -9,6 +9,10 @@
     padding-bottom: 64px;
     padding-top: 64px;
 
+    @include desktop {
+        padding-top: 0;
+    }
+
     &__wrap {
         @include tablet {
             display: flex;

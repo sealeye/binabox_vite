@@ -61,10 +61,7 @@
         font-size: 36px;
         line-height: 44px;
         color: var(--color-primary);
-
-        @include mobile {
-            margin-top: auto;
-        }
+        margin-top: auto;
     }
 
     &__text {

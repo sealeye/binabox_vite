@@ -33,7 +33,7 @@
         img {
             width: 100%;
 
-            @include mobile {
+            @media (max-width: 1279px) {
                 object-position: center !important;
             }
 
