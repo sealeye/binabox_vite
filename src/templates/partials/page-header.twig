@@ -2,14 +2,15 @@
 
 <header class="page-header">
 	<div class="content-wrapper">
-		<button type="button" class="button button--icon page-header__burger">
-			{{ icon('button__icon', 'menu') }}
+		<button type="button" class="button button--icon page-header__burger js-b-button">
+			{{ icon('button__icon page-header__burger-menu', 'menu') }}
+			{{ icon('button__icon page-header__burger-close', 'close') }}
 		</button>
 		<a class="page-header__logo logo logo--invert" {% if path == 'index.html' %} {% else %} href="/" {% endif %}>
 			<img src="/src/assets/images/logo.svg" alt="Binabox Logo" class="logo__image" width="36" height="40"/>
 			{{ icon('logo__image-text', 'logo-text', 134, 21) }}
 		</a>
-		<nav class="page-header__nav main-nav">
+		<nav class="page-header__nav main-nav js-b-nav">
 			<ul class="main-nav__list">
 				{% for item in nav %}
 					<li class="main-nav__list-item">
@@ -21,14 +22,14 @@
 				{% endfor %}
 			</ul>
 		</nav>
+		<form action="#" method="post" class="page-header__search search-form js-b-search">
+			<label class="input search-form__label">
+				{{ icon('input__icon', 'search') }}
+				<input type="search" class="input__field" placeholder="Search">
+			</label>
+			<button type="submit" class="visually-hidden">Send</button>
+		</form>
 		<div class="page-header__wrap">
-			<form action="#" method="post" class="page-header__search search-form">
-				<label class="input search-form__label">
-					{{ icon('input__icon', 'search') }}
-					<input type="search" class="input__field" placeholder="Search">
-				</label>
-				<button type="submit" class="visually-hidden">Send</button>
-			</form>
 			<a class="button page-header__button" href="#" target="_blank" rel="noopener noreferrer">
 				{{ icon('button__icon', 'discord') }}
 				Discord</a>

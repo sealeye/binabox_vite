@@ -3,6 +3,12 @@
 .catalog-filter {
     display: none;
 
+    &.is-open {
+        display: flex;
+          flex-direction: column;
+           gap: 21px;
+    }
+
     @include desktop {
         position: sticky;
         top: var(--header-height);
@@ -14,6 +20,7 @@
         display: flex;
         flex-direction: column;
         gap: 21px;
+        flex-shrink: 0;
     }
 
     &__button {

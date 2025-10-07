@@ -1,8 +1,14 @@
 @use '../global/variables'as *;
+@use '../mixin/details'as *;
+@use '../mixin/breakpoints'as *;
 
 .filter-fieldset {
     background-color: var(--color-alternative-2);
     padding: 24px;
+
+    @include desktop {
+        @include details;
+    }
 
     &__title {
         font-family: $accent-font;

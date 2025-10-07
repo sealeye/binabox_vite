@@ -31,19 +31,21 @@
         min-width: 293px;
 
         img {
-            width: 261px;
-            height: 340px;
-            object-position: center !important;
+            width: 100%;
 
-            @include tablet {
-                width: 255px;
-                height: 210px;
+            @include mobile {
+                object-position: center !important;
             }
+
+            // @include tablet {
+            //     width: 255px;
+            //     height: 210px;
+            // }
         }
 
         @include desktop {
             img {
-                width: 512px;
+                // width: 512px;
                 aspect-ratio: 2.56 / 1;
                 height: auto;
             }

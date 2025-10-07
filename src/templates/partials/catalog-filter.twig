@@ -2,7 +2,8 @@
 
 <button class="button catalog-page__filter-button" type="button">
 	Filters
-	{{ icon('', 'filter-lines') }}
+	{{ icon('catalog-page__filter-button-icon', 'filter-lines') }}
+	{{ icon('catalog-page__filter-button-close', 'close') }}
 </button>
 <form action="#" method="post" class="catalog-filter">
 	{% for item in catalog.filter %}

@@ -151,15 +151,14 @@
             align-items: center;
             margin-top: 32px;
         }
+    }
 
-        &>div {
-            display: flex;
-            align-items: center;
-            gap: 12px;
+    &__footer-section {
+        display: flex;
+        gap: 12px;
 
-            p {
-                margin: 0;
-            }
+        p {
+            margin: 0;
         }
     }
 
@@ -170,6 +169,8 @@
     }
 
     &__social-list {
+        justify-content: flex-end;
+
         a {
             @extend .button;
             padding: 8px;

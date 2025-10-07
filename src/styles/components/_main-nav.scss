@@ -1,7 +1,16 @@
-.main-nav {
+@use '../mixin/breakpoints'as *;
 
+.main-nav {
     &__list {
-        display: flex;
+        display: inline-flex;
+        flex-direction: column;
+        gap: 8px;
+
+        @include desktop {
+            flex-direction: row;
+            padding: 0;
+            gap: 0;
+        }
     }
 
     &__item {}
@@ -13,12 +22,15 @@
         padding: 8px 20px;
         display: flex;
         align-items: center;
+        width: fit-content;
 
-        &:after {
-            content: url(../assets/icons/chevron-down.svg);
-            margin-left: 8px;
-            line-height: 0;
-            filter: brightness(0) saturate(100%) invert(91%) sepia(30%) saturate(15%) hue-rotate(182deg) brightness(98%) contrast(105%);
+        @include desktop {
+            &:after {
+                content: url(../assets/icons/chevron-down.svg);
+                margin-left: 8px;
+                line-height: 0;
+                filter: brightness(0) saturate(100%) invert(91%) sepia(30%) saturate(15%) hue-rotate(182deg) brightness(98%) contrast(105%);
+            }
         }
     }
 

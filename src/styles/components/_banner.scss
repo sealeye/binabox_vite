@@ -6,28 +6,40 @@
     flex-direction: column;
     justify-content: center;
     padding-block: 32px;
+    position: relative;
     background-image:
         radial-gradient(42.5% 42.5% at 22.28% -4.22%, rgba(2, 101, 220, 0.5) 0%, rgba(2, 101, 220, 0) 100%);
 
     @include desktop {
         min-height: 474px;
         padding-block: 64px;
+        padding-inline: 100px;
 
-        background-image:
-            radial-gradient(42.5% 42.5% at 22.28% -4.22%, rgba(2, 101, 220, 0.5) 0%, rgba(2, 101, 220, 0) 100%),
-            url(../assets/images/banner-cube.png?format=webp);
-
-        background-repeat: no-repeat;
-        background-position: top left, top -25.96px right 100px;
-        background-size: auto, 526px 437.24px;
+        &:after {
+            content: '';
+            display: block;
+            width: 437.24px;
+            height: 526px;
+            position: absolute;
+            right: 120px;
+            top: -25.96px;
+            background-image: url(../assets/images/banner-cube.png?format=webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
 
     @include desktop-large {
         background-position: top left, top 0 right 164px;
         background-size: auto, 641.8px 533.5px;
-        
-        padding-inline: 100px;
+
         min-height: 640px;
+
+        &:after {
+            left: 60vw;
+            width: 533px;
+            height: 641.8px;
+        }
     }
 
     &__heading {

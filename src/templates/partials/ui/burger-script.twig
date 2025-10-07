@@ -1,0 +1,58 @@
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.querySelector('.js-b-button');
+  const nav = document.querySelector('.js-b-nav');
+  const search = document.querySelector('.js-b-search');
+  const header = (btn && btn.closest('.page-header')) || document.querySelector('.page-header');
+  if (!btn || !nav) return;
+
+  // классы, которые будем переключать
+  const CLS = {
+    navOpen: 'is-open',         // навигация видима
+    btnActive: 'is-active',     // кнопка в активном состоянии (иконка "крестик" и т.п.)
+    headerOpen: 'is-menu-open', // хедер в состоянии открытого меню (можно задать фон/оверлей)
+    bodyLock: 'no-scroll'       // блокируем прокрутку страницы
+  };
+
+  // a11y-связка
+  if (!nav.id) nav.id = 'main-nav';
+  btn.setAttribute('aria-controls', nav.id);
+  btn.setAttribute('aria-expanded', 'false');
+
+  const open = () => {
+    nav.classList.add(CLS.navOpen);
+    search.classList.add(CLS.navOpen);
+    btn.classList.add(CLS.btnActive);
+    header && header.classList.add(CLS.headerOpen);
+    document.body.classList.add(CLS.bodyLock);
+    btn.setAttribute('aria-expanded', 'true');
+  };
+
+  const close = () => {
+    nav.classList.remove(CLS.navOpen);
+    search.classList.remove(CLS.navOpen);
+    btn.classList.remove(CLS.btnActive);
+    header && header.classList.remove(CLS.headerOpen);
+    document.body.classList.remove(CLS.bodyLock);
+    btn.setAttribute('aria-expanded', 'false');
+  };
+
+  const toggle = () => (nav.classList.contains(CLS.navOpen) ? close() : open());
+
+  btn.addEventListener('click', toggle);
+
+  // Закрыть по Esc
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') close();
+  });
+
+  // Закрыть после клика по ссылке в меню
+  nav.addEventListener('click', (e) => {
+    if (e.target.closest('a')) close();
+  });
+
+  // Опционально: при переходе на десктоп сбрасываем состояние
+  const mq = window.matchMedia('(min-width: 1024px)');
+  mq.addEventListener?.('change', (e) => { if (e.matches) close(); });
+});
+</script>
