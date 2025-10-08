@@ -1,0 +1,15 @@
+.catalog-filter {
+    position: sticky;
+    top: var(--header-height);
+    left: 0;
+    height: max-content;
+    width: 320px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+
+    &__button {
+        justify-content: center;
+    }
+}

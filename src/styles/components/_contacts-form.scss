@@ -1,0 +1,31 @@
+@use '../global/variables' as *;
+
+.contacts-form {
+    padding: 64px;
+
+    &__title {
+        font-family: $accent-font;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+        text-align: center;
+        color: #F8F7FF;
+    }
+
+    &__desc {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color: var(--color-secondary);
+        margin-bottom: 40px;
+    }
+
+    &__form {
+        max-width: 640px;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}

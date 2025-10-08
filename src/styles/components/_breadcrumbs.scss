@@ -1,0 +1,31 @@
+.breadcrumbs {
+
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    &__item {
+        &:not(:last-child):after {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 2px;
+            height: 24px;
+            border-radius: 2px;
+            background-color: #D0D7FB2B;
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        color: var(--color-primary);
+        padding: 6px 12px;
+    }
+
+    &__link--active {
+        color: var(--color-secondary-2);
+        pointer-events: none;
+    }
+}

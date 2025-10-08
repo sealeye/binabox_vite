@@ -1,0 +1,21 @@
+@use '../global/variables' as *;
+
+.inner-header {
+    text-align: center;
+
+    background-image: url(../assets/images/big_circular_lines.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+
+    padding: 64px;
+    min-height: 375px;
+
+    &__title {
+        font-family: $accent-font;
+        font-size: 52px;
+        line-height: 62px;
+        letter-spacing: -0.5px;
+        margin-bottom: 20px;
+    }
+}

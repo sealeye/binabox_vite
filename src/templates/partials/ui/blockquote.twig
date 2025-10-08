@@ -1,0 +1,10 @@
+{% from 'icon.twig' import icon %}
+
+<blockquote class="blockquote">
+	<p class="blockquote__text">“{{ item.text }}”</p>
+	<p class="blockquote__cite">
+		{{ icon('', 'stars', 16, 16) }}
+		<span class="blockquote__rating">{{ item.rating }}/10</span>
+		{{ item.author }}
+    </p>
+</blockquote>

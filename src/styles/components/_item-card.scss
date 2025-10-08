@@ -1,0 +1,35 @@
+@use '../global/variables'as *;
+@use '../mixin/hover-corners'as *;
+
+.item-card {
+    background-color: var(--color-alternative-2);
+    @include hover-corners;
+    padding: 24px;
+    position: relative;
+
+    &__image {
+        margin-bottom: 24px;
+    }
+
+    &__label {
+        position: absolute;
+        top: 32px;
+        right: 34px;
+    }
+
+    &__price {
+        font-family: $accent-font;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+        color: var(--color-primary);
+        margin-bottom: 8px;
+    }
+
+    &__name {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+        color: var(--color-alternative-2-invert);
+    }
+}

@@ -1,0 +1,38 @@
+@use '../global/variables'as *;
+
+.contacts-section {
+    padding-top: 64px;
+
+    &__list {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    &__list-item {
+        flex-basis: 328px;
+    }
+
+    &__link {
+        border: 1px solid var(--color-line);
+        color: var(--color-white);
+        text-align: center;
+        padding: 40px 32px;
+        display: block;
+        padding: 40px 32px;
+    }
+
+    &__heading {
+        font-family: $accent-font;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+        color: #F8F7FF;
+        margin-top: 24px;
+    }
+
+    &__text {
+        color: var(--color-secondary);
+    }
+
+}

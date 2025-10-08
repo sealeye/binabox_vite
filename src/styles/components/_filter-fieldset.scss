@@ -1,0 +1,31 @@
+@use '../global/variables'as *;
+
+.filter-fieldset {
+    background-color: var(--color-alternative-2);
+    padding: 24px;
+
+    &__title {
+        font-family: $accent-font;
+        font-size: 24px;
+        line-height: 32px;
+
+        list-style: none;
+        -webkit-appearance: none;
+        appearance: none;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+    }
+
+    &__list {
+        margin-top: 16px;
+        border-top: 1px solid #BFC5EE1F;
+        padding-top: 16px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+    }
+}

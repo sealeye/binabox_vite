@@ -1,0 +1,16 @@
+<p class="input {{ item.type }} {{ class }}">
+	<input 
+        type="{{ item.type }}" 
+        id="{{ input|lower|replace({' ': '-'}) }}" 
+        name="{{ item.title|lower|replace({' ': '-'}) }}" 
+        value="{% if item.type == 'radio' or item.type == 'checkbox' %}{{ input|lower|replace({' ': '-'}) }}{% endif %}" 
+        placeholder="{{ item.placeholder }}"
+        {% if item.required == true %}required{% endif %}  
+        class="input__field {{ item.type }}__field 
+            {% if item.type == 'radio' or item.type == 'checkbox' %}visually-hidden{% endif %}"
+    >
+	<label for="{{ input|lower|replace({' ': '-'}) }}" class="{{ item.type }}__label input__label">
+        {{ item.label }}
+		{% if item.type == 'radio' or item.type == 'checkbox' %}{{ input }}{% endif %} 
+	</label>
+</p>

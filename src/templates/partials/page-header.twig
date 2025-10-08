@@ -1,0 +1,37 @@
+{% from 'ui/icon.twig' import icon %}
+
+<header class="page-header">
+	<div class="content-wrapper">
+		<a class="logo logo--header" {% if path == 'index.html' %} {% else %} href="/" {% endif %}>
+			<img src="/src/assets/images/logo.svg" alt="Binabox Logo" class="logo__image" width="36" height="40"/>
+			{{ icon('logo__image-text', 'logo-text', 134, 21) }}
+		</a>
+		<nav class="main-nav">
+			<ul class="main-nav__list">
+				{% for item in nav %}
+					<li class="main-nav__list-item">
+						<a href="{{ item.url }}" class="main-nav__link
+							{% if item.url == path %}main-nav__link--active{% endif %}">
+							{{ item.text }}
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
+		<div class="page-header__wrap">
+			<form action="#" method="post" class="search-form">
+				<label class="input search-form__label">
+					{{ icon('input__icon', 'search') }}
+					<input type="search" class="input__field" placeholder="Search">
+				</label>
+				<button type="submit" class="visually-hidden">Send</button>
+			</form>
+			<a class="button page-header__button" href="#" target="_blank" rel="noopener noreferrer">
+				{{ icon('button__icon', 'discord') }}
+				Discord</a>
+			<a class="button button--primary page-header__button" href="#" target="_blank" rel="noopener noreferrer">
+				{{ icon('button__icon', 'user') }}
+				Log In</a>
+		</div>
+	</div>
+</header>

@@ -1,0 +1,133 @@
+@use 'variables'as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $base-font;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+
+  &:hover {
+    color: var(--link-hover-color);
+  }
+
+  &:focus {
+    outline: 4px solid var(--link-focus-color);
+    border-radius: 5px;
+  }
+
+  &:active {
+    color: var(--link-active-color);
+  }
+
+  &:disabled,
+  &.disabled {
+    color: var(--color-disabled);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+svg {
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+input[disabled],
+input[disabled]+label {
+  pointer-events: none;
+}
+
+textarea {
+  resize: none;
+}
+
+summary {
+  position: relative;
+
+  &::marker {
+    content: "";
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    border: 1px solid var(--color-primary);
+    border-radius: 2px;
+    height: 0;
+    width: 1rem;
+
+    inset-block-start: 50%;
+    inset-inline-end: 0;
+
+    position: absolute;
+    position-area: top end;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+    transform-origin: 50%;
+  }
+
+  &:hover {
+
+    &::before,
+    &::after {
+      border-color: var(--color-focus-invert);
+    }
+  }
+}
+
+details[open] summary::after {
+  transform: rotate(0deg);
+}
+
+.hightlight {
+  color: var(--color-accent-link-invert);
+}
+
+.visually-hidden {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  /* or: visibility: hidden; */
+}

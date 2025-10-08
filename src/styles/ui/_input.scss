@@ -1,0 +1,59 @@
+.input {
+    --input-placeholder: var(--color-secondary-2);
+    --input-hover: var(--color-marina-600);
+    --input-disabled: var(--color-separator);
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--text-color);
+    }
+
+    &__label {
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--text-color);
+    }
+
+    &__field {
+        border: 2px solid var(--border-color);
+        border-radius: 0;
+        background-color: transparent;
+
+        font-family: inherit;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--text-color);
+
+        padding: 10px 12px;
+
+        &:placeholder {
+            color: var(--input-placeholder);
+        }
+
+        &:hover {
+            border-color: var(--input-hover);
+        }
+
+        &:focus {
+            border-color: var(--input-hover);
+            outline: 1px solid var(--input-hover);
+        }
+
+        &:user-invalid {
+            border-color: var(--input-invalid);
+        }
+
+        &:disabled {
+            background-color: var(--input-disabled);
+        }
+
+        &--textarea {
+            min-height: 160px;
+        }
+    }
+}

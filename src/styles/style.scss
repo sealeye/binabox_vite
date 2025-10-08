@@ -1,16 +1,47 @@
+@use 'global/variables';
+@use "mixin/breakpoints";
+@use "global/global"; 
 @use 'ui/button';
-@use "variables";
-@use "main-banner";
+@use 'ui/label';
+@use 'ui/titles';
+@use 'ui/input';
+@use 'ui/radio';
+@use 'ui/checkbox';
+@use 'ui/logo'; 
+@use 'ui/logo-bullet-list'; 
+@use 'ui/content-wrapper'; 
+@use "components/fieldset";
+@use "components/about";
+@use "components/banner";
+@use "components/blockquote";
+@use "components/blog-card";
+@use "components/blog-post";
+@use "components/blog-section";
+@use "components/breadcrumbs";
+@use "components/catalog-slider";
+@use "components/catalog-slider-list";
+@use "components/catalog-list";
+@use "components/catalog-filter-results";
+@use "components/catalog-sort";
+@use "components/faq";
+@use "components/hero";
+@use "components/inner-header";
+@use "components/item-card";
+@use "components/main-nav";
+@use "components/numeric-list";
+@use "components/page-footer";
+@use "components/page-header";
+@use "components/question";
+@use "components/sidebar";
+@use "components/social-list";
+@use "components/team-card";
+@use "components/team"; 
+@use "components/contacts-form"; 
+@use "components/catalog-filter"; 
+@use "components/filter-fieldset"; 
+@use "components/contacts-section.scss"; 
+@use "components/catalog-items.scss"; 
+@use "components/search-form.scss"; 
 
-body {
-  margin: 0;
-  background: url("/src/assets/images/main-banner-3.png?format=avif");
-}
-
-header, footer {
-  padding: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-gray);
-}
+@use "pages/blog-page";
+@use "pages/catalog-page";

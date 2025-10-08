@@ -1,0 +1,14 @@
+<section class="about">
+	<h2 class="about__title main-title">{{ about_section.title }}</h2>
+	<p class="about__text">{{ about_section.desc }}</p>
+	<ol class="about__list numeric-list">
+		{% for item in about_list %}
+			<li class="numeric-list__item">
+				<h3 class="numeric-list__title">{{ item.title }}</h3>
+				<p class="numeric-list__text">{{ item.text }}
+				</p>
+			</li>
+		{% endfor %}
+	</ol>
+	<button class="about__button button" type="button">{{ about_section.button.text }}</button>
+</section>

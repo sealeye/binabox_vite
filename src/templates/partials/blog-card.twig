@@ -1,0 +1,25 @@
+{% from 'ui/picture.twig' import picture %}
+{% from 'ui/icon.twig' import icon %}
+
+<a class="{{ item.class }}" href="{{ item.link }}">
+	<article class="blog-card">
+		{{ picture('blog-card__image', item.img, item.img_alt, 261, 340, item.img_fit) }}
+		<span class="blog-card__label label">{{ item.label }}</span>
+		<div>
+			<p class="blog-card__name">
+				{{ icon('', 'user', 16, 16) }}
+				{{ item.author }}
+			</p>
+			<time class="blog-card__date" datetime="{{ item.date }}">
+				{{ icon('', 'calendar', 16, 16) }}
+				{{ item.visible_date }}
+			</time>
+		</div>
+		<h3 class="blog-card__heading">{{ item.title }}</h3>
+		<p class="blog-card__text">{{ item.text}}</p>
+		<p class="blog-card__button button button--medium">
+			{{ item.button_text }}
+			{{ icon('', 'chevron-right') }}
+		</p>
+	</article>
+</a>

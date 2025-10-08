@@ -1,0 +1,16 @@
+.label{
+  --label-color: var(--color-accent-link-invert);
+  --label-sold: var(--color-negative);
+
+  background-color: var(--text-color);
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--label-color);
+
+  padding: 8px 10px;
+}
+
+.label--sold {
+  background-color: var(--label-sold);
+  color: var(--color-primary);
+}

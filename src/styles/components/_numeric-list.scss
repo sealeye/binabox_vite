@@ -1,0 +1,28 @@
+@use '../global/variables' as *;
+@use '../mixin/hover-corners' as *;
+
+.numeric-list {
+    display: flex;
+    gap: 32px;
+        
+    &__item {
+        background-color: var(--color-alternative);
+        padding: 32px;
+
+        @include hover-corners;
+    }
+
+    &__title {
+        font-family: $accent-font;
+        font-size: 24px;
+        line-height: 30px;
+        color: var(--color-primary);
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 28px;
+        color: var(--color-secondary);
+    }
+}

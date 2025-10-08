@@ -1,0 +1,82 @@
+.radio {
+    --radio-boreder: var(--color-line);
+    --radio-background: var(--color-primary-invert);
+
+    --radio-hover: var(--color-alternative-2);
+    --radio-active: var(--color-marina-200);
+    --radio-focus: var(--color-focus-invert);
+    --radio-disabled: var(--color-seporator-bold);
+
+    --radio-checked: var(--color-accent-link-invert);
+    --radio-checked-hover: var(--color-focus-invert);
+    --radio-checked-focus: var(--color-focus-invert);
+
+    &__label {
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--text-color);
+
+        display: flex;
+        gap: 4px;
+        align-items: center;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 16px;
+            height: 16px;
+            margin: 4px;
+            border-radius: 50%;
+            border: 2px solid var(--radio-boreder);
+            background-color: var(--radio-background);
+            box-sizing: border-box;
+        }
+    }
+
+    input {
+        &:hover+label:before {
+            background-color: var(--radio-hover);
+        }
+
+        &:active+label:before {
+            border: 5px solid var(--radio-active);
+        }
+
+        &:focus+label:before {
+            border-color: #E7EEF7A8;
+            outline: 2px solid var(--radio-focus);
+            outline-offset: 1px;
+        }
+
+        &:disabled+label:before {
+            background-color: var(--radio-disabled);
+            border: none;
+        }
+
+        &:user-invalid+label:before {
+            border-color: var(--error-color)
+        }
+
+        &:checked {
+            &+label:before {
+                border: 5px solid var(--radio-checked);
+            }
+
+            &:hover+label:before {
+                border-color: var(--radio-checked-hover);
+            }
+
+            &:active+label:before {
+                border-color: var(--radio-active);
+            }
+
+            &:focus+label:before {
+                border-color: var(--radio-checked-focus);
+            }
+
+            &:disabled+label:before {
+                border: 5px solid var(--radio-boreder);
+            }
+        }
+    }
+}

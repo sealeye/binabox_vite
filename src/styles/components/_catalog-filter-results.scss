@@ -1,0 +1,11 @@
+.catalog-filter-results {
+    display: flex;
+    background-color: #1D1C28;
+    padding: 16px;
+    gap: 16px;
+
+    &__list {
+        display: flex;
+        gap: 16px;
+    }
+}

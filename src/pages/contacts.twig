@@ -1,0 +1,10 @@
+{% extends 'src/templates/layouts/base.twig' %}
+{% set path = contacts.path %}
+
+{% block content %}
+	{% include 'src/templates/partials/inner-header.twig' with { header: contacts.header } %}
+	<div class="content-wrapper">
+		{% include 'src/templates/partials/contacts-section.twig' %}
+		{% include 'src/templates/partials/contacts-form.twig' %}
+	</div>
+{% endblock %}
