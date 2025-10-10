@@ -7,6 +7,9 @@
     flex-direction: column;
     gap: 16px;
 
+    list-style: none;
+    counter-reset: numeric;
+
     @include desktop {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -22,7 +25,25 @@
         background-color: var(--color-alternative);
         padding: 32px;
 
+        counter-increment: numeric;
+
         @include hover-corners;
+
+        &:before {
+            content: counters(numeric, ".", decimal-leading-zero);
+            font-family: $accent-font;
+            font-size: 70px;
+            line-height: 1;
+            opacity: 0.5;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: var(--color-marina-800);
+
+
+            display: inline-block;
+            vertical-align: bottom;
+            margin-bottom: -30px;
+        }
 
         &:last-child {
             @include desktop {
@@ -37,6 +58,9 @@
         line-height: 30px;
         color: var(--color-primary);
         margin-bottom: 24px;
+
+        position: relative;
+        z-index: 2;
     }
 
     &__text {

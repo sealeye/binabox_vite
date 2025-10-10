@@ -4,11 +4,14 @@
 	<div class="catalog-items__wrap">
 		<h2 class="catalog-items__title">All item</h2>
 		<form action="#" class="catalog-sort">
-			<select name="" id="" class="select catalog-sort__select button">
-				{% for item in catalog.filter_select %}
-					<option value="{{ item|lower|replace({' ': '-'}) }}">{{ item }}</option>
-				{% endfor %}
-			</select>
+			<label class="select button">
+				<select name="sort-select" class="select__button catalog-sort__select">
+					{% for item in catalog.filter_select %}
+						<option value="{{ item|lower|replace({' ': '-'}) }}">{{ item }}</option>
+					{% endfor %}
+				</select>
+				{{ icon('select__icon', 'chevron-down') }}
+			</label>
 		</form>
 		<form action="#" method="post" class="catalog-items__search search-form">
 			<label class="input search-form__label">

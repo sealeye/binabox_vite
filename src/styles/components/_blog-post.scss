@@ -39,6 +39,7 @@
     &__illustration-image {
         width: 100%;
         height: auto;
+        filter: sepia(0.4) hue-rotate(90deg) saturate(3) brightness(0.9);
 
         @include desktop {
             width: 100%;

@@ -29,22 +29,22 @@
       {
         "title": "Face",
         "type": "radio",
-        "list": []
+        "list": ["Yellow 1", "Green 1", "Mix 1", "Orange 1"]
       },
       {
         "title": "Skin",
-        "type": "radio",
-        "list": []
+        "type": "toggle",
+        "list": ["Skin 1", "Skin 2"]
       },
       {
         "title": "Background",
         "type": "radio",
-        "list": []
+        "list": ["Yellow 2", "Green 2", "Mix 2", "Orange 2"]
       },
       {
         "title": "Special",
         "type": "radio",
-        "list": ["1", "2", "3", "4"]
+        "list": ["Yellow 3", "Green 3", "Mix 3", "Orange 3"]
       }
     ],
     "filter_results": {

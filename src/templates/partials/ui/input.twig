@@ -1,6 +1,6 @@
 <p class="input {{ item.type }} {{ class }}">
 	<input 
-        type="{{ item.type }}" 
+        type="{% if item.type == "toggle" %}checkbox{% else %}{{ item.type }}{% endif %}" 
         id="{{ input|lower|replace({' ': '-'}) }}" 
         name="{{ item.title|lower|replace({' ': '-'}) }}" 
         value="{% if item.type == 'radio' or item.type == 'checkbox' %}{{ input|lower|replace({' ': '-'}) }}{% endif %}" 
@@ -10,6 +10,6 @@
     >
 	<label for="{{ input|lower|replace({' ': '-'}) }}" class="{{ item.type }}__label input__label">
         {{ item.label }}
-		{% if item.type == 'radio' or item.type == 'checkbox' %}{{ input }}{% endif %} 
+		{% if item.type == 'radio' or item.type == 'checkbox' or item.type == 'toggle' %}{{ input }}{% endif %} 
 	</label>
 </p>

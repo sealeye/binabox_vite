@@ -12,6 +12,37 @@
         padding: 24px;
     }
 
+    @media (pointer: fine) {
+        &:hover {
+            .item-card__overlay {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__link {
+        display: none;
+
+        @media (pointer: coarse) {
+            display: block;
+            position: absolute;
+            inset: 0;
+            z-index: 10;
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        inset: -2px;
+        opacity: 0;
+        background: #0D0D15A3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+        padding: 24px;
+    }
+
     &__image {
         margin-bottom: 24px;
     }
@@ -37,4 +68,6 @@
         font-weight: 500;
         color: var(--color-alternative-2-invert);
     }
+
+    &__link {}
 }
