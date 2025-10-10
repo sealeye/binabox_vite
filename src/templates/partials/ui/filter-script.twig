@@ -1,0 +1,94 @@
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const DESKTOP_BP = 1024; // поменяй при необходимости
+  const mq = window.matchMedia(`(min-width: ${DESKTOP_BP}px)`);
+
+  const btn   = document.querySelector('.catalog-page__filter-button');
+  const panel = document.querySelector('.catalog-filter');
+  const page  = btn?.closest('.catalog-page') || document.querySelector('.catalog-page') || document.body;
+  if (!btn || !panel) return;
+
+  const CLS = {
+    open: 'is-open',
+    active: 'is-active',
+    pageOpen: 'is-filter-open',
+    // bodyLock: 'no-scroll',
+  };
+
+  // a11y-связка
+  if (!panel.id) panel.id = 'catalog-filter';
+  btn.setAttribute('aria-controls', panel.id);
+  btn.setAttribute('aria-expanded', 'false');
+
+  const updateBodyLock = () => {
+    document.body.classList.toggle(panel.classList.contains(CLS.open));
+  };
+
+  const open = () => {
+    panel.classList.add(CLS.open);
+    btn.classList.add(CLS.active);
+    page.classList.add(CLS.pageOpen);
+    btn.setAttribute('aria-expanded', 'true');
+    (panel.querySelector('summary,button,input,select,textarea,a') || panel).focus?.();
+    updateBodyLock();
+  };
+
+  const close = () => {
+    panel.classList.remove(CLS.open);
+    btn.classList.remove(CLS.active);
+    page.classList.remove(CLS.pageOpen);
+    btn.setAttribute('aria-expanded', 'false');
+    updateBodyLock();
+  };
+
+  const toggle = () => panel.classList.contains(CLS.open) ? close() : open();
+
+  btn.addEventListener('click', toggle);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+
+  // Клик вне панели — закрыть
+  document.addEventListener('click', (e) => {
+    if (!panel.contains(e.target) && e.target !== btn && panel.classList.contains(CLS.open)) close();
+  }, { capture: true });
+
+  // Сабмит формы — закрыть
+  panel.addEventListener('submit', () => close());
+
+  // На вход в десктоп — сбросить "мобильное" открытие
+  (mq.addEventListener ? mq.addEventListener('change', e => { if (e.matches) close(); })
+                       : mq.addListener(e => { if (e.matches) close(); }));
+
+  // ===== <details>: моб. всегда открыты, дескт. по умолчанию закрыты =====
+  const details = Array.from(panel.querySelectorAll('.filter-fieldset')); // <details>
+  if (details.length) {
+    const applyDetailsState = () => {
+      const isDesktop = mq.matches;
+      details.forEach(d => {
+        const s = d.querySelector('summary');
+        if (isDesktop) {
+          d.open = false;                          // по умолчанию закрыты
+          d.classList.remove('is-forced-open');
+          s?.removeAttribute('aria-disabled');
+        } else {
+          d.open = true;                           // на мобиле — всегда открыты
+          d.classList.add('is-forced-open');
+          s?.setAttribute('aria-disabled', 'true');
+        }
+      });
+    };
+
+    // Не даём закрывать на мобиле
+    details.forEach(d => {
+      d.addEventListener('toggle', () => {
+        if (!mq.matches && !d.open) d.open = true;
+      });
+      const s = d.querySelector('summary');
+      if (s) s.addEventListener('click', (e) => { if (!mq.matches) e.preventDefault(); });
+    });
+
+    applyDetailsState();
+    (mq.addEventListener ? mq.addEventListener('change', applyDetailsState)
+                         : mq.addListener(applyDetailsState));
+  }
+});
+</script>

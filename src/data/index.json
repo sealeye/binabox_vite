@@ -1,5 +1,294 @@
 {
-  "index": {
-    "title": "Hello World!"
-  }
+  "site_title": "Binabox homepage",
+  "path": "index.html",
+  "banner": {
+    "title": {
+      "start": "WITH",
+      "highlight": "BINABOX",
+      "end": "EXPLORE NFT COLLECTION!"
+    },
+    "desc": "We are the best way to check the rarity of NFT collection",
+    "image": {
+      "src": "banner-cube.png",
+      "alt": "binabox cube"
+    },
+    "stat": [
+      {
+        "num": "2240+",
+        "text": "Total It eam"
+      },
+      {
+        "num": "1000+",
+        "text": "Profiles whitelisted"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "Connect Wallet",
+        "action": "#",
+        "type": "primary"
+      },
+      {
+        "text": "Whitelist now",
+        "action": "#"
+      }
+    ]
+  },
+  "catalog_section": {
+    "title": "Catalog",
+    "link": {
+      "text": "See all",
+      "action": "#"
+    }
+  },
+  "catalog_cards": [
+    {
+      "label": "New",
+      "state": "new",
+      "price": "1990",
+      "name": "Echo of Bones",
+      "image": "item-2.png",
+      "image_alt": "Translucent glass human skeleton under teal light with swirling mist in the background.",
+      "link": "#"
+    },
+    {
+      "label": "New",
+      "state": "new",
+      "price": "299.99",
+      "name": "Nyx the Watcher",
+      "image": "item-3.png",
+      "image_alt": "Profile of a black cat with glowing green eyes in moody teal lighting.",
+      "link": "#"
+    },
+    {
+      "label": "Sold out",
+      "state": "sold",
+      "price": "20",
+      "name": "Blade of Silence",
+      "image": "item-4.png",
+      "image_alt": "Metal scissors resting on draped fabric under cool teal light.",
+      "link": "#"
+    },
+    {
+      "price": "1.000.000",
+      "name": "Data Core: Alpha",
+      "image": "item-5.png",
+      "image_alt": "Futuristic neon-green circuit card with concentric interface details.",
+      "link": "#"
+    },
+    {
+      "price": "199.5",
+      "name": "Phantom Console",
+      "image": "item-6.png",
+      "image_alt": "Transparent, neon-lit handheld game console on a reflective surface.",
+      "link": "#"
+    }
+  ],
+  "blog_section": {
+    "title": "Our blog"
+  },
+  "blog_items": [
+    {
+      "img": "item-1.png",
+      "img_alt": "Surreal teal illustration of a closed-eye human face wrapped in flowing ornamental swirls.",
+      "label": "NFT",
+      "author": "Nova Riven",
+      "date": "2022-12-04",
+      "visible_date": "4 Dec 2022",
+      "title": "Neural Drift",
+      "text": "I woke up inside the void. My body stayed in the past — only thoughts were allowed through the wires.",
+      "button_text": "Read more",
+      "link": "#"
+    },
+    {
+      "img": "item-2.png",
+      "img_alt": "Translucent glass human skeleton under teal light with swirling mist in the background.",
+      "img_fit": "0 -50px",
+      "label": "DROP",
+      "author": "Kairo Null",
+      "date": "2022-12-06",
+      "visible_date": "06 Dec 2022",
+      "title": "Deadframe",
+      "text": "He just stood there, waiting. Not for a person — for a signal. Like the memory of the network took shape.",
+      "button_text": "Read more",
+      "link": "#"
+    },
+    {
+      "img": "item-3.png",
+      "img_alt": "Profile of a black cat with glowing green eyes in moody teal lighting.",
+      "label": "NFT",
+      "author": "Synthya Void",
+      "date": "2022-12-07",
+      "visible_date": "07 Dec 2022",
+      "title": "Glitch Panther",
+      "text": "Cats always knew more than they showed. Especially the ones that vanish into code.",
+      "button_text": "Read more",
+      "link": "#"
+    },
+    {
+      "img": "item-7.png",
+      "img_alt": "Cinematic close-up of a chimpanzee’s face, cool blue-green lighting and detailed fur, intense forward gaze.",
+      "label": "RARE",
+      "author": "Dr. Wex Omega",
+      "date": "2022-12-08",
+      "visible_date": "08 Dec 2022",
+      "title": "Primal.exe",
+      "text": "We tried to resurrect the past. What we got was rage compressed into an algorithm.",
+      "button_text": "Read more",
+      "link": "#"
+    },
+    {
+      "img": "item-9.png",
+      "img_alt": "White duck figurine against a teal background with abstract tech schematics.",
+      "img_fit": "0 -100px",
+      "label": "NFT",
+      "author": "Tony Nguyen",
+      "date": "2022-06-20",
+      "visible_date": "20 Jun 2022",
+      "title": "White Protocol",
+      "text": "At first, it was just a signal — clean, white, hypnotic. We didn't know it was alive.",
+      "button_text": "Read more",
+      "link": "#"
+    },
+    {
+      "img": "item-6.png",
+      "img_alt": "Transparent, neon-lit handheld game console on a reflective surface.",
+      "label": "Artifact",
+      "author": "Echo Zero",
+      "date": "2022-12-09",
+      "visible_date": "09 Dec 2022",
+      "title": "Retrocore",
+      "text": "This console comes from a game no one remembers how to play. But it's still powered on.",
+      "button_text": "Read more",
+      "link": "#"
+    }
+  ],
+  "about_section": {
+    "title": "About us",
+    "desc": "We craft digital artifacts for those who live between worlds. Our space is built for creators, collectors, and the quietly obsessed.",
+    "button": {
+      "text": "Read more",
+      "action": "#"
+    }
+  },
+  "about_list": [
+    {
+      "title": "High quality",
+      "text": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+    },
+    {
+      "title": "Big collection",
+      "text": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+    },
+    {
+      "title": "Top Resourse",
+      "text": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+    },
+    {
+      "title": "Big community",
+      "text": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+    }
+  ],
+  "team_section": {
+    "title": "Our team"
+  },
+  "team_list": [
+    {
+      "img": "team-1.png",
+      "img_alt": "alt",
+      "name": "Nova Riven",
+      "position": "Creative Architect",
+      "socials": [
+        "facebook.com/user",
+        "telegram.com/user",
+        "linkedin.com/user",
+        "instagram.com/user"
+      ]
+    },
+    {
+      "img": "team-2.png",
+      "name": "Echo Zero",
+      "position": "Tech Whisperer",
+      "socials": [
+        "twitter.com/user",
+        "telegram.com/user",
+        "linkedin.com/user",
+        "instagram.com/user"
+      ]
+    },
+    {
+      "img": "team-3.png",
+      "name": "Kairo Null",
+      "position": "Lore Engineer",
+      "socials": [
+        "twitter.com/user",
+        "facebook.com/user",
+        "telegram.com/user",
+        "linkedin.com/user"
+      ]
+    },
+    {
+      "img": "team-4.png",
+      "name": "Dr. Wex Omega",
+      "position": "Visual Disruptor",
+      "socials": [
+        "twitter.com/user",
+        "facebook.com/user",
+        "telegram.com/user",
+        "linkedin.com/user",
+        "instagram.com/user"
+      ]
+    },
+    {
+      "img": "team-5.png",
+      "name": "Synthya Void",
+      "position": "UX Seer",
+      "socials": ["twitter.com/user"]
+    },
+    {
+      "img": "team-6.png",
+      "name": "Mirlo Drift",
+      "position": "Community Catalyst",
+      "socials": [
+        "twitter.com/user",
+        "facebook.com/user",
+        "telegram.com/user",
+        "linkedin.com/user",
+        "instagram.com/user"
+      ]
+    },
+    {
+      "img": "team-7.png",
+      "name": "Axon Rune",
+      "position": "Security Ghost",
+      "socials": [
+        "twitter.com/user",
+        "facebook.com/user",
+        "telegram.com/user",
+        "linkedin.com/user",
+        "instagram.com/user"
+      ]
+    }
+  ],
+  "faq_section": {
+    "title": "FAQs"
+  },
+  "faq_list": [
+    {
+      "question": "What are the NFTs?",
+      "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "question": "How do i get NFTs?",
+      "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "question": "How can we buy your NFTs?",
+      "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "question": "Who are the team behind the project?",
+      "answer": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    }
+  ]
 }

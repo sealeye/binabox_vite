@@ -1,0 +1,84 @@
+<section class="contacts-form">
+	<h2 class="contacts-form__title">{{ contacts.title }}</h2>
+	<p class="contacts-form__desc">{{ contacts.description }}</p>
+	<form action="#" method="post" class="contacts-form__form">
+		<label class="input">
+			<span class="input__text">Name</span>
+			<input 
+                type="text" 
+                class="input__field" 
+                placeholder="Enter your name" 
+                required 
+                pattern="^[A-Za-z]{2,30}$">
+		</label>
+
+		<label class="input">
+			<span class="input__text">Last name</span>
+			<input 
+                type="text" 
+                class="input__field" 
+                placeholder="Enter your last name" 
+                required 
+                pattern="^[A-Za-z]{2,30}(-[A-Za-z]{2,30})?$">
+		</label>
+
+		<label class="input">
+			<span class="input__text">Date of birth</span>
+			<input 
+                type="date" 
+                class="input__field" 
+                placeholder="dd/mm/yyyy" 
+                required 
+                min="1925-01-01" 
+                max="2007-12-31">
+		</label>
+
+		<fieldset class="input fieldset">
+			<legend class="input__text fieldset__title">Sex</legend>
+			<p class="radio fieldset__item">
+				<input type="radio" class="radio__input visually-hidden" id="male" name="sex" value="male" checked>
+				<label for="male" class="radio__label">Male</label>
+			</p>
+			<p class="radio fieldset__item">
+				<input type="radio" class="radio__input visually-hidden" id="female" name="sex" value="female">
+				<label for="female" class="radio__label">Female</label>
+			</p>
+		</fieldset>
+
+		<label class="input">
+			<span class="input__text">Email</span>
+			<input 
+                type="email" 
+                class="input__field" 
+                placeholder="Enter your email" 
+                required 
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.">
+		</label>
+
+		<label class="input">
+			<span class="input__text">Phone Number</span>
+			<input 
+                type="tel" 
+                class="input__field" 
+                placeholder="Enter your number" 
+                required 
+                pattern="^\+?[0-9\s\-]{7,15}$">
+		</label>
+
+		<label class="input">
+			<span class="input__text">Message</span>
+			<textarea class="input__field input__field--textarea" placeholder="Text your message here" required></textarea>
+		</label>
+
+		<p class="input checkbox">
+			<input type="checkbox" id="terms" name="terms" class="input__field checkbox__field visually-hidden" required>
+			<label for="terms" class="checkbox__label input__label">
+				By clicking on the ‘Send Message’ button I agree to <a href="#">all the terms of the security policy</a>
+			</label>
+		</p>
+
+		<button class="button button--primary contacts-form__button" type="submit">
+			Send Message
+		</button>
+	</form>
+</section>

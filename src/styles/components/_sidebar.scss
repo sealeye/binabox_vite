@@ -1,0 +1,55 @@
+@use '../global/variables'as *;
+@use '../mixin/breakpoints'as *;
+
+.sidebar {
+    @include desktop {
+        position: sticky;
+        top: var(--header-height);
+        left: 0;
+        height: max-content;
+        width: 328px;
+        flex-shrink: 0;
+        padding-bottom: 43px;
+    }
+
+    &__section {
+        background-color: var(--color-alternative-2);
+        padding: 24px;
+        margin-bottom: 21px;
+    }
+
+    &__section-title {
+        font-family: $accent-font;
+        font-size: 24px;
+        line-height: 32px;
+        border-bottom: 1px solid #BFC5EE1F;
+
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+    }
+
+    &__section-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__section-list-item {}
+
+    &__section-link {
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--text-color);
+        font-weight: 600;
+    }
+
+    &__section-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    &__section-tags-item {}
+
+    &__section-tags-link {}
+}

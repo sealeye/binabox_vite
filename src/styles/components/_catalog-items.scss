@@ -1,0 +1,39 @@
+@use '../global/variables'as *;
+@use '../mixin/breakpoints'as *;
+
+.catalog-items {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 64px;
+    padding-top: 64px;
+
+    @include desktop {
+        padding-top: 0;
+    }
+
+    &__wrap {
+        @include tablet {
+            display: flex;
+            gap: 16px;
+        }
+    }
+
+    &__title {
+        font-family: $accent-font;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+        color: #F8F7FF;
+        margin-right: auto;
+    }
+
+    &__search {
+        flex-basis: 423px;
+
+        input {
+            width: 100%;
+        }
+    }
+}

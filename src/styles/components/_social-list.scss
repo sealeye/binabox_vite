@@ -1,0 +1,20 @@
+@use '../mixin/icon-link' as *;
+
+.social-list {
+    display: flex;
+    gap: 8px;
+
+    &__item {}
+
+    &__link {
+        color: var(--color-white);
+        padding: 8px;
+        @include icon-link;
+
+        svg {
+            fill: var(--color-white);
+        }
+    }
+
+    &__image {}
+}

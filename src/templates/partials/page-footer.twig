@@ -1,0 +1,29 @@
+{% from 'ui/icon.twig' import icon %}
+
+<footer class="page-footer">
+	<div class="content-wrapper content-wrapper--wide">
+		<div>
+			<a class="page-footer__logo logo" {% if path == 'index.html' %} {% else %} href="/" {% endif %}>
+				<img src="/src/assets/images/logo.svg" alt="Binabox Logo" class="logo__image" width="36" height="40"/>
+				{{ icon('logo__image-text', 'logo-text', 134, 21) }}
+			</a>
+			<p class="page-footer__text">{{ footer.description }}</p>
+		</div>
+
+		<nav class="page-footer__nav">
+			<h2 class="page-footer__nav-title">{{ footer.navigation.title }}</h2>
+			<ul class="page-footer__nav-list">
+				{% for link in footer.navigation.links %}
+					<li class="page-footer__nav-list-item">
+						<a class="page-footer__nav-list-link" href="{{ link.url }}">{{ link.text }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</div>
+	<div class="content-wrapper content-wrapper--wide page-footer__bottom">
+		<p class="page-footer__text">{{ footer.copyright }}</p>
+
+		{% include 'ui/social-list.twig' with { items: footer.socials, class: "footer__social-list" } %}
+	</div>
+</footer>

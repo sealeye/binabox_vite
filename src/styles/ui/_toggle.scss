@@ -1,0 +1,100 @@
+.toggle {
+    --toggle-color: var(--color-disabled);
+    --toggle-background: var(--color-primary-invert);
+
+    --toggle-hover: var(--color-line);
+    --toggle-active: var(--color-secondary);
+    --toggle-focus: var(--color-focus-invert);
+    --toggle-disabled: var(--color-seporator-bold);
+
+    --toggle-checked: var(--color-accent-link-invert);
+    --toggle-checked-hover: var(--color-focus-invert);
+
+    &__label {
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--text-color);
+
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        position: relative;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 20px;
+            margin: 4px;
+            border-radius: 19px;
+            background-color: var(--toggle-color);
+            box-sizing: border-box;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #fff;
+            position: absolute;
+            top: 6px;
+            left: 6px;
+        }
+    }
+
+    input {
+        display: none;
+
+        &:hover+label:before {
+            background-color: var(--toggle-hover);
+        }
+
+        &:active+label:before {
+           background-color: var(--toggle-active);
+        }
+
+        &:focus+label:before {
+            border-color: #E7EEF7A8;
+            outline: 2px solid var(--toggle-focus);
+            outline-offset: 2px;
+        }
+
+        &:disabled+label:before {
+            background-color: var(--toggle-disabled);
+        }
+
+        &:user-invalid+label:before {
+            border-color: var(--error-color)
+        }
+
+        &:checked {
+            &+label {
+                &:before {
+                    background-color: var(--toggle-checked);
+                }
+
+                &:after {
+                    left: 25px;
+                }
+            }
+
+            &:hover+label:before {
+                background-color: var(--toggle-checked-hover);
+            }
+
+            &:active+label:before {
+               background-color: var(--toggle-checked-hover);
+            }
+
+            &:focus+label:before {
+                background-color: var(--toggle-checked-focus);
+            }
+
+            &:disabled+label:before {
+                background-color: var(--toggle-boreder);
+            }
+        }
+    }
+}

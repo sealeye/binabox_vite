@@ -1,0 +1,86 @@
+@use '../global/variables'as *;
+@use '../mixin/hover-corners'as *;
+@use '../mixin/breakpoints'as *;
+
+.blog-card {
+    background-color: var(--color-alternative-2);
+    @include hover-corners;
+    padding: 16px;
+    position: relative;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include tablet {
+        padding: 24px;
+    }
+
+    &__image {
+        margin-bottom: 24px;
+    }
+
+    &__label {
+        position: absolute;
+        top: 32px;
+        right: 34px;
+    }
+
+    &__date,
+    &__name {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        color: var(--color-secondary);
+
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__name {
+        margin-bottom: 16px;
+
+        &:after {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 2px;
+            height: 16px;
+            border-radius: 2px;
+            background-color: #D0D7FB2B;
+            margin-inline: 8px;
+        }
+    }
+
+    &__date {}
+
+    &__heading {
+        font-family: $accent-font;
+        font-size: 36px;
+        line-height: 44px;
+        color: var(--color-primary);
+        margin-top: auto;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--color-secondary);
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        white-space: normal;
+
+        margin-bottom: 16px;
+
+        @include tablet {
+            -webkit-line-clamp: 1;
+        }
+    }
+
+    &__button {}
+}

@@ -1,0 +1,48 @@
+@use '../global/variables'as *;
+@use '../mixin/breakpoints'as *;
+
+.inner-header {
+    text-align: center;
+
+    background-image: url(../assets/images/big_circular_lines.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: auto;
+
+    padding-block: 16px 48px;
+
+    @include tablet {
+        padding-block: 16px 56px;
+    }
+
+    @include desktop {
+        min-height: 278px;
+        padding-top: 64px;
+    }
+
+    @include desktop-large {
+        padding: 64px;
+        min-height: 375px;
+        background-position: top center;
+        background-size: contain;
+    }
+
+    &__title {
+        font-family: $accent-font;
+        letter-spacing: -0.5px;
+        margin-bottom: 20px;
+
+        font-size: 28px;
+        line-height: 36px;
+
+        @include tablet {
+            font-size: 36px;
+            line-height: 48px;
+        }
+
+        @include desktop {
+            font-size: 52px;
+            line-height: 62px;
+        }
+    }
+}

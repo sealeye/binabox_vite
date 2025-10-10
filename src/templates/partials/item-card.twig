@@ -1,0 +1,19 @@
+{% from 'ui/picture.twig' import picture %}
+{% from 'ui/icon.twig' import icon %}
+
+<article class="item-card">
+	{{ picture('item-card__image', item.image, item.image_alt, 296, 324) }}
+	{% if item.state %}
+		<span class="item-card__label label label--{{ item.state }}">{{ item.label }}</span>
+	{% endif %}
+	<p class="item-card__price">${{ item.price }}</p>
+	<h3 class="item-card__name">{{ item.name }}</h3>
+	<a href="{{ item.link }}" class="item-card__link"></a>
+	<div class="item-card__overlay">
+		<button class="item-card__button button button--light">
+			{{ icon('', 'heart') }}
+			Favourite
+		</button>
+		<a href="{{ item.link }}" class="item-card__button button button--primary">Buy</a>
+	</div>
+</article>

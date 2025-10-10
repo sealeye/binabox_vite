@@ -1,0 +1,11 @@
+{% extends 'src/templates/layouts/base.twig' %}
+{% set path = catalog.path %}
+
+{% block content %}
+	{% include 'src/templates/partials/inner-header.twig' with { header: catalog.header } %}
+	<div class="content-wrapper catalog-page">
+		{% include 'src/templates/partials/catalog-filter.twig'  %}
+		{% include 'src/templates/partials/catalog-items.twig'  %}
+	</div>
+	{% include 'src/templates/partials/ui/filter-script.twig' %}
+{% endblock %}

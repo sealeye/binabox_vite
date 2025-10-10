@@ -1,0 +1,99 @@
+@use 'variables'as *;
+@use '../mixin/breakpoints'as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $base-font;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+
+  &:hover {
+    color: var(--link-hover-color);
+  }
+
+  &:focus {
+    outline: 4px solid var(--link-focus-color);
+    border-radius: 5px;
+  }
+
+  &:active {
+    color: var(--link-active-color);
+  }
+
+  &:disabled,
+  &.disabled {
+    color: var(--color-disabled);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  height: auto;
+}
+
+svg {
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+input[disabled],
+input[disabled]+label {
+  pointer-events: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.hightlight {
+  color: var(--color-accent-link-invert);
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  // width: 1px;
+  // height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+}
+
+.no-scroll {
+  overflow: hidden;
+}

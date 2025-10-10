@@ -1,0 +1,10 @@
+<section class="team">
+	<h2 class="team__title main-title">{{ team_section.title }}</h2>
+	<ul class="team__list content-wrapper content-wrapper--wide">
+		{% for item in team_list %}
+			<li class="team__list-item">
+				{% include 'team-card.twig' with { item: item } %}
+			</li>
+		{% endfor %}
+	</ul>
+</section>

@@ -1,0 +1,48 @@
+{% set socialMap = {
+  'facebook': { icon: 'facebook', title: 'Facebook' },
+  'instagram': { icon: 'instagram', title: 'Instagram' },
+  'telegram': { icon: 'telegram', title: 'Telegram' },
+  'linkedin': { icon: 'linkedin', title: 'LinkedIn' },
+  'twitter': { icon: 'twitter', title: 'Twitter' },
+  'youtube': { icon: 'youtube', title: 'Youtube' },
+  'tiktok': { icon: 'tiktok', title: 'TikTok' },
+  'discord': { icon: 'discord', title: 'Discord' }
+} %}
+
+<ul class="social-list {{ class|default('') }}">
+  {% for url in items %}
+    {% set key = null %}
+
+    {% if url matches '/facebook/i' %}
+      {% set key = 'facebook' %}
+    {% elseif url matches '/instagram/i' %}
+      {% set key = 'instagram' %}
+    {% elseif url matches '/telegram/i' %}
+      {% set key = 'telegram' %}
+    {% elseif url matches '/linkedin/i' %}
+      {% set key = 'linkedin' %}
+    {% elseif url matches '/twitter/i' %}
+      {% set key = 'twitter' %}
+    {% elseif url matches '/youtube/i' %}
+      {% set key = 'youtube' %}
+    {% elseif url matches '/tiktok/i' %}
+      {% set key = 'tiktok' %}
+    {% elseif url matches '/discord/i' %}
+      {% set key = 'discord' %}
+    {% endif %}
+
+    {% if key %}
+      {% set icon = socialMap[key].icon ?? 'icon-placeholder' %} 
+	  {% set title = socialMap[key].title ?? 'Social' %}
+	  
+      <li class="social-list__item">
+        <a href="{{ url }}" class="social-list__link" target="_blank" rel="noopener noreferrer">
+          <svg class="icon social-list__link-icon" width="24" height="24">
+            <use href="/src/assets/sprite.svg#icon-{{ icon }}"></use>
+          </svg>
+          <span class="visually-hidden">{{ title }}</span>
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

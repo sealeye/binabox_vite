@@ -1,0 +1,24 @@
+{# {% from 'ui/picture.twig' import picture %} #}
+
+<section class="banner">
+	<div class="content-wrapper">
+		<h1 class="banner__heading">{{ banner.title.start }}
+			<span class="banner__highlight">{{ banner.title.highlight }}</span>
+			{{ banner.title.end }}</h1>
+		<p class="banner__text">
+			{{ banner.desc }}
+		</p>
+		<div class="banner__stats">
+			{% for item in banner.stat %}
+				<p class="banner__stat-label">{{ item.num }}</p>
+				<p class="banner__stat-value">{{ item.text }}</p>
+			{% endfor %}
+		</div>
+		<div class="banner__button-group">
+			{% for item in banner.buttons %}
+				<a class="banner__button button button--{{item.type}}" href="{{ item.action }}">{{ item.text }}</a>
+			{% endfor %}
+		</div>
+		{# {{ picture('banner__image', banner.image.src, banner.image.alt, 438, 526) }} #}
+	</div>
+</section>

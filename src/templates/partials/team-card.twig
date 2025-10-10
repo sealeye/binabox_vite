@@ -1,0 +1,8 @@
+{% from 'ui/picture.twig' import picture %}
+
+<article class="team-card">
+	{{ picture('team-card__image', item.img, item.img_alt) }}
+	<h3 class="team-card__name">{{ item.name }}</h3>
+	<p class="team-card__positon">{{ item.position }}</p>
+	{% include 'ui/social-list.twig' with { items: item.socials } %}
+</article>

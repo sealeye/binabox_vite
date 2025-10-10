@@ -1,0 +1,35 @@
+@use '../mixin/breakpoints'as *;
+
+.catalog-page {
+    @include desktop {
+        display: flex;
+        gap: 64px;
+        padding-top: 64px;
+    }
+
+    &__filter-button-close {
+        display: none;
+    }
+
+    &__filter-button {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        &.is-active {
+            margin-bottom: 21px;
+            
+            .catalog-page__filter-button-icon {
+                display: none;
+            }
+
+            .catalog-page__filter-button-close {
+                display: block;
+            }
+        }
+
+        @include desktop {
+            display: none;
+        }
+    }
+}
