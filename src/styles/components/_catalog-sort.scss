@@ -1,4 +1,10 @@
 .catalog-sort {
+min-width: 0; 
+
+label {
+    min-width: 0; 
+    display: flex; gap: 8px; 
+}
     &__select {
         
     }

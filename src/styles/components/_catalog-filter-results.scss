@@ -16,6 +16,10 @@
         flex-wrap: wrap;
         gap: 16px;
 
-        @include tablet {}
+        // @include tablet {}
+    }
+
+    &__button {
+        align-self: flex-start;
     }
 }

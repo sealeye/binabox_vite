@@ -39,7 +39,6 @@
     }
 
     &__burger {
-
         &.is-active {
             .page-header__burger-menu {
                 display: none;
@@ -124,6 +123,15 @@
     }
 
     &__button {
+        &:first-child {
+            @include tablet {
+                font-size: 0;
+                gap: 0;
+                padding: 10px;
+                display: block;
+            }
+        }
+
         @include mobile {
             font-size: 0;
             gap: 0;

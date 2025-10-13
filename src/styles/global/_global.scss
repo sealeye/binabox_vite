@@ -1,5 +1,6 @@
 @use 'variables'as *;
 @use '../mixin/breakpoints'as *;
+@use '../mixin/transition'as *;
 
 * {
   box-sizing: border-box;
@@ -22,6 +23,7 @@ a {
 
   &:hover {
     color: var(--link-hover-color);
+    @include transition(color);
   }
 
   &:focus {
@@ -31,6 +33,7 @@ a {
 
   &:active {
     color: var(--link-active-color);
+    @include transition(color);
   }
 
   &:disabled,
