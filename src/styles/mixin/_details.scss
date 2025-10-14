@@ -1,3 +1,5 @@
+@use '../mixin/transition'as *;
+
 @mixin details {
     summary {
         position: relative;
@@ -12,30 +14,33 @@
             border: 1px solid var(--color-primary);
             border-radius: 2px;
             height: 0;
-            width: 1rem;
+            width: 9px;
 
             inset-block-start: 50%;
             inset-inline-end: 0;
 
             position: absolute;
             position-area: top end;
+            @include transition(border-color);
         }
 
         &::after {
             transform: rotate(90deg);
             transform-origin: 50%;
+            @include transition((border-color, transform));
         }
 
         &:hover {
-
             &::before,
             &::after {
                 border-color: var(--color-focus-invert);
+                @include transition(border-color);
             }
         }
     }
 
     &[open] summary::after {
         transform: rotate(0deg);
+        @include transition((border-color, transform));
     }
 }

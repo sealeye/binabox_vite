@@ -1,3 +1,5 @@
+@use '../mixin/transition'as *;
+
 .toggle {
     --toggle-color: var(--color-disabled);
     --toggle-background: var(--color-primary-invert);
@@ -29,6 +31,7 @@
             border-radius: 19px;
             background-color: var(--toggle-color);
             box-sizing: border-box;
+            @include transition(background-color);
         }
 
         &:after {
@@ -41,6 +44,7 @@
             position: absolute;
             top: 6px;
             left: 6px;
+            @include transition(translate);
         }
     }
 
@@ -76,7 +80,7 @@
                 }
 
                 &:after {
-                    left: 25px;
+                    translate: 20px 0;
                 }
             }
 

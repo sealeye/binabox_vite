@@ -1,3 +1,5 @@
+@use '../mixin/transition'as *;
+
 .checkbox {
     --checkbox-boreder: var(--color-line);
     --checkbox-bg: var(--color-primary-invert);
@@ -28,6 +30,7 @@
             width: 16px;
             height: 16px;
             margin: 4px;
+            @include transition((background-color, border));
         }
 
         &:before {
@@ -52,7 +55,7 @@
 
     input {
         display: none;
-        
+
         &:checked {
             &+label {
                 &:before {
