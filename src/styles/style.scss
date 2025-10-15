@@ -12,11 +12,17 @@
 @use 'ui/logo'; 
 @use 'ui/logo-bullet-list'; 
 @use 'ui/content-wrapper'; 
+
+@use "components/social-list";
+@use "components/blockquote";
+
+@use "components/blog-card";
+@use "components/team-card";
+@use "components/item-card";
+
 @use "components/fieldset";
 @use "components/about";
 @use "components/banner";
-@use "components/blockquote";
-@use "components/blog-card";
 @use "components/blog-post";
 @use "components/blog-section";
 @use "components/breadcrumbs";
@@ -28,15 +34,12 @@
 @use "components/faq";
 @use "components/hero";
 @use "components/inner-header";
-@use "components/item-card";
 @use "components/main-nav";
 @use "components/numeric-list";
 @use "components/page-footer";
 @use "components/page-header";
 @use "components/question";
 @use "components/sidebar";
-@use "components/social-list";
-@use "components/team-card";
 @use "components/team"; 
 @use "components/contacts-form"; 
 @use "components/catalog-filter"; 

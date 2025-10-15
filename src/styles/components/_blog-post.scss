@@ -4,10 +4,12 @@
 
 .blog-post {
     color: #F8F7FF;
-    padding-bottom: 64px;
+    padding-bottom: 56px;
     // display: flex;
     // flex-direction: column;
     // gap: 32px;
+
+    padding-top: 20px;
 
     &__illustration {
         margin: 0;
@@ -82,9 +84,12 @@
     }
 
     &__meta {
-        margin-bottom: 32px;
+        margin-bottom: 30px;
         display: flex;
         gap: 8px;
+
+        font-size: 14px;
+        line-height: 20px;
 
         p {
             display: flex;
@@ -121,11 +126,14 @@
     }
 
     &__bullet-list {
-        margin-bottom: 32px;
         font-size: 18px;
         line-height: 28px;
         list-style: disc;
-        list-style-position: inside;
+        list-style-position: outside;
+
+        margin-bottom: 32px;
+        margin-top: 30px;
+        padding-left: 28px;
     }
 
     &__unordered-list {
@@ -138,6 +146,7 @@
         line-height: 36px;
 
         margin-bottom: 16px;
+        margin-top: 32px;
     }
 
     .blockquote {
@@ -148,22 +157,24 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+        margin-top: 32px;
 
         @include desktop {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            margin-top: 32px;
         }
     }
 
     &__footer-section {
         display: flex;
         gap: 12px;
+        margin-bottom: 8px;
+    }
 
-        p {
-            margin: 0;
-        }
+    &__footer-text {
+        font-size: 16px;
+        line-height: 30px;
     }
 
     &__tags-list,
@@ -174,10 +185,11 @@
 
     &__social-list {
         justify-content: flex-end;
+        gap: 12px;
 
         a {
             @extend .button;
-            padding: 8px;
+            padding: 6px;
         }
 
         svg {
