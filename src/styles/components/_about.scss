@@ -2,7 +2,11 @@
 
 .about {
     padding-block: 32px;
-    padding-top: 56px; //
+    padding-top: 56px;
+
+    @include tablet {
+        padding-top: 32px;
+    }
 
     @include desktop {
         padding-block: 64px;
@@ -36,6 +40,9 @@
 
     &__button {
         align-self: center;
-        width: 100%;
+
+        @include mobile {
+            width: 100%;
+        }
     }
 }

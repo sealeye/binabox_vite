@@ -16,7 +16,7 @@
   &__details {
     margin-bottom: 16px;
 
-    @include desktop {
+    @include tablet {
       margin-bottom: 24px;
     }
   }

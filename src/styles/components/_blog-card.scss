@@ -14,7 +14,11 @@
     align-items: flex-start;
 
     @include tablet {
-        padding: 24px;
+        padding: 22px;
+    }
+
+    picture {
+        width: 100%;
     }
 
     &__image {
@@ -23,7 +27,7 @@
 
         @include tablet {
             margin-bottom: 24px;
-
+            max-height: 210px;
         }
     }
 
@@ -71,6 +75,11 @@
         line-height: 32px;
 
         @include tablet {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        @include desktop {
             font-size: 36px;
             line-height: 44px;
         }

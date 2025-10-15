@@ -6,10 +6,13 @@
     overflow-y: auto;
     gap: 16px;
 
+    @include tablet {
+        gap: 24px;
+    }
+
     @include desktop {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 24px;
     }
 
     @include desktop-large {
@@ -37,6 +40,7 @@
 
             @include tablet {
                 width: 100%;
+                max-width: 255px;
                 height: 324px;
             }
 

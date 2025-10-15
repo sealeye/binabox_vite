@@ -33,7 +33,7 @@
         // margin-bottom: 36px;
 
         @include tablet {
-        margin-bottom: 24px;
+            // margin-bottom: 24px;
         }
 
         @include desktop {
@@ -53,6 +53,10 @@
 
     &__nav-list {
         column-count: 2;
+
+        @include tablet {
+            width: 55%;
+        }
     }
 
     &__nav-list-item {

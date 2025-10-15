@@ -10,6 +10,10 @@
     list-style: none;
     counter-reset: numeric;
 
+    @include tablet {
+        gap: 32px;
+    }
+
     @include desktop {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -18,7 +22,6 @@
     @include desktop-large {
         display: flex;
         flex-direction: row;
-        gap: 32px;
     }
 
     &__item {
@@ -28,6 +31,10 @@
         counter-increment: numeric;
 
         @include hover-corners;
+
+        @include tablet {
+            padding: 12px 30px 32px;
+        }
 
         @include desktop {
             padding: 32px;
