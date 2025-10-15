@@ -96,6 +96,7 @@
         margin-inline: 16px;
 
         @include desktop {
+            margin-top: 32px;
             align-self: center;
         }
     }

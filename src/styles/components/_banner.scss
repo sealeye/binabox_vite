@@ -90,6 +90,10 @@
         @include tablet {
             column-gap: 13px;
         }
+
+        @include desktop {
+            column-gap: 60px;
+        }
     }
 
     &__stat-label {
