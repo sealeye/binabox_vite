@@ -19,6 +19,7 @@
 
         @include tablet {
             padding: 24px;
+            margin-bottom: 24px;
         }
     }
 
@@ -37,9 +38,9 @@
         flex-direction: column;
         gap: 16px;
 
-        @include tablet {
-            gap: 8px;
-        }
+        // @include tablet {
+        //     gap: 8px;
+        // }
     }
 
     &__section-list-item {}

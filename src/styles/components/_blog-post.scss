@@ -11,6 +11,10 @@
 
     padding-top: 20px;
 
+    @include desktop {
+        padding-top: 0;
+    }
+
     &__illustration {
         margin: 0;
         margin-bottom: 32px;
@@ -32,6 +36,7 @@
         width: 100%;
 
         img {
+            height: auto;
             @include desktop {
                 height: auto;
             }
@@ -42,6 +47,10 @@
         width: 100%;
         height: auto;
         filter: sepia(0.4) hue-rotate(90deg) saturate(3) brightness(0.9);
+
+        @include tablet {
+            height: 234px;
+        }
 
         @include desktop {
             width: 100%;
@@ -159,7 +168,7 @@
         gap: 16px;
         margin-top: 32px;
 
-        @include desktop {
+        @include tablet {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;

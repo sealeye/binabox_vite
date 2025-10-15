@@ -4,11 +4,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 13px;
+    gap: 14px;
 
-    @include tablet {
-        gap: 8px;
-    }
+    // @include tablet {
+    //     gap: 8px;
+    // }
 
     &__item {
         &:not(:last-child):after {
