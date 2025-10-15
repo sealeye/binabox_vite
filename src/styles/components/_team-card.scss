@@ -1,13 +1,18 @@
 @use '../global/variables'as *;
+@use '../mixin/breakpoints'as *;
 
 .team-card {
     background-color: var(--color-alternative-2);
-    padding: 32px;
+    padding: 16px;
     text-align: center;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include desktop {
+        padding: 32px;
+    }
 
     &__image {
         border-radius: 50%;

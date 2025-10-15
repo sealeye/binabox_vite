@@ -2,6 +2,7 @@
 
 .faq {
   padding-block: 32px;
+  padding-bottom: 48px;
 
   @include desktop {
     padding-block: 64px 104px;
@@ -13,6 +14,10 @@
   }
 
   &__details {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+
+    @include desktop {
+      margin-bottom: 24px;
+    }
   }
 }

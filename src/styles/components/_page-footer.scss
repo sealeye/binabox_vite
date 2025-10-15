@@ -3,7 +3,7 @@
 .page-footer {
     background-color: var(--color-alternative);
     color: var(--color-primary);
-    padding-block: 64px 32px;
+    padding-block: 66px 32px;
 
     .content-wrapper {
         display: flex;
@@ -15,6 +15,12 @@
         }
     }
 
+    &__top {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 36px;
+    }
+
     &__logo {
         margin-bottom: 12px;
     }
@@ -23,27 +29,35 @@
         font-size: 14px;
         line-height: 20px;
         max-width: 320px;
-        margin-top: 12px;
+        // margin-top: 12px;
+        // margin-bottom: 36px;
 
+        @include tablet {
         margin-bottom: 24px;
+        }
 
         @include desktop {
             margin-bottom: 0;
         }
     }
 
-    &__nav {}
+    &__nav {
+        padding-inline: 8px;
+    }
 
     &__nav-title {
         font-size: 20px;
         line-height: 28px;
+        margin-bottom: 7px;
     }
 
     &__nav-list {
         column-count: 2;
     }
 
-    &__nav-list-item {}
+    &__nav-list-item {
+        margin-bottom: 8px;
+    }
 
     &__nav-list-link {
         font-size: 12px;
@@ -55,10 +69,9 @@
 
     &__bottom.content-wrapper {
         border-top: 1px solid var(--color-separator);
-        padding-top: 32px;
-        margin-top: 64px;
-        align-items: flex-end;
-
+        padding-top: 30px;
+        margin-top: 58px;
+        gap: 20px;
 
         @include tablet {
             flex-direction: row;

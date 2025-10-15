@@ -6,7 +6,7 @@
 .item-card {
     background-color: var(--color-alternative-2);
     @include hover-corners;
-    padding: 16px;
+    padding: 14px;
     position: relative;
 
     @include tablet {
@@ -48,22 +48,33 @@
     }
 
     &__image {
-        margin-bottom: 24px;
+        margin-bottom: 16px;
+
+        @include tablet {
+            margin-bottom: 24px;
+        }
     }
 
     &__label {
         position: absolute;
-        top: 32px;
-        right: 34px;
+        top: 38px;
+        right: 38px;
     }
 
     &__price {
         font-family: $accent-font;
-        font-size: 36px;
-        line-height: 48px;
-        letter-spacing: -0.5px;
         color: var(--color-primary);
         margin-bottom: 8px;
+
+        font-size: 28px;
+        line-height: 36px;
+
+        @include tablet {
+            font-size: 36px;
+            line-height: 48px;
+            letter-spacing: -0.5px;
+
+        }
     }
 
     &__name {
@@ -75,4 +86,3 @@
 
     &__link {}
 }
-

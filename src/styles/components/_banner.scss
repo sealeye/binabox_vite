@@ -44,7 +44,6 @@
 
     &__heading {
         font-family: $accent-font;
-        letter-spacing: -0.5px;
         color: var(--text-color);
         margin-bottom: 8px;
 
@@ -54,6 +53,7 @@
         @include tablet {
             font-size: 36px;
             line-height: 48px;
+                    letter-spacing: -0.5px;
         }
 
         @include desktop {
@@ -79,6 +79,7 @@
         margin-bottom: 32px;
         display: inline-grid;
         grid-template-columns: 1fr 1fr;
+        column-gap: 9px;
     }
 
     &__stat-label {

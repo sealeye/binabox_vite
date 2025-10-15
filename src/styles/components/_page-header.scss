@@ -8,18 +8,15 @@
     left: 0;
     right: 0;
     background-color: #0D0D15;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    animation-direction: alternate-reverse;
+    animation-direction: normal;
+    animation-fill-mode: both;
 
-    @include tablet {
-        animation-duration: 0.5s;
-        animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
-        animation-direction: alternate-reverse;
-        animation-direction: normal;
-        animation-fill-mode: both;
-
-        &.is-menu-open {
-            height: 100vh;
-            animation-name: slide-right;
-        }
+    &.is-menu-open {
+        height: 100vh;
+        animation-name: slide-right;
     }
 
     @include desktop {
@@ -35,10 +32,11 @@
         row-gap: 32px;
 
         @include tablet {
-            padding-inline: 32px;
+            padding-inline: 16px;
         }
 
         @include desktop {
+            padding-inline: 32px;
             flex-wrap: no-wrap;
         }
     }

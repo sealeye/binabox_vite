@@ -5,7 +5,7 @@
 .blog-card {
     background-color: var(--color-alternative-2);
     @include hover-corners;
-    padding: 16px;
+    padding: 14px;
     position: relative;
 
     height: 100%;
@@ -18,13 +18,19 @@
     }
 
     &__image {
-        margin-bottom: 24px;
+        height: 340px;
+        margin-bottom: 16px;
+
+        @include tablet {
+            margin-bottom: 24px;
+
+        }
     }
 
     &__label {
         position: absolute;
-        top: 32px;
-        right: 34px;
+        top: 38px;
+        right: 38px;
     }
 
     &__date,
@@ -58,10 +64,16 @@
 
     &__heading {
         font-family: $accent-font;
-        font-size: 36px;
-        line-height: 44px;
         color: var(--color-primary);
         margin-top: auto;
+
+        font-size: 24px;
+        line-height: 32px;
+
+        @include tablet {
+            font-size: 36px;
+            line-height: 44px;
+        }
     }
 
     &__text {
