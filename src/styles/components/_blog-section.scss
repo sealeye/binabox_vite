@@ -24,6 +24,10 @@
             grid-template-columns: 1fr 1fr;
             gap: 24px;
         }
+
+        @include desktop {
+            gap: 32px;
+        }
     }
 
     &__list-item {
@@ -46,8 +50,9 @@
         @include desktop {
             img {
                 // width: 512px;
-                aspect-ratio: 2.56 / 1;
+                aspect-ratio: 2.58 / 1;
                 height: auto;
+                max-height: 100%;
             }
 
             &:first-child {
@@ -62,7 +67,7 @@
             &:first-child,
             &:last-child {
                 img {
-                    aspect-ratio: 0.765 / 1;
+                    aspect-ratio: 0.77 / 1;
                 }
             }
         }

@@ -36,10 +36,6 @@
             padding: 12px 30px 32px;
         }
 
-        @include desktop {
-            padding: 32px;
-        }
-
         &:before {
             content: counters(numeric, ".", decimal-leading-zero);
             font-family: $accent-font;

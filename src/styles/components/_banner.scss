@@ -16,8 +16,8 @@
 
     @include desktop {
         min-height: 474px;
-        padding-block: 64px;
-        padding-inline: 100px;
+        padding-block: 56px;
+        padding-inline: 95px;
 
         &:after {
             content: '';
@@ -38,6 +38,7 @@
         background-size: auto, 641.8px 533.5px;
 
         min-height: 640px;
+        padding-block: 64px;
 
         &:after {
             left: 60vw;
@@ -85,7 +86,7 @@
         display: inline-grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 9px;
-        
+
         @include tablet {
             column-gap: 13px;
         }

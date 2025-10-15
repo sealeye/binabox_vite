@@ -134,8 +134,14 @@
             @include tablet {
                 font-size: 0;
                 gap: 0;
-                padding: 10px;
+                // padding: 10px;
                 display: block;
+            }
+
+            @include desktop {
+                font-size: inherit;
+                gap: inherit;
+                display: inherit;
             }
         }
 

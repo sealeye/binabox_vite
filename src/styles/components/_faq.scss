@@ -5,7 +5,7 @@
   padding-bottom: 48px;
 
   @include desktop {
-    padding-block: 64px 104px;
+    padding-block: 64px 80px;
   }
 
   &__title {
@@ -18,6 +18,10 @@
 
     @include tablet {
       margin-bottom: 24px;
+    }
+
+    @include desktop {
+      margin-bottom: 26px;
     }
   }
 }

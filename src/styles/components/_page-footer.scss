@@ -3,7 +3,7 @@
 .page-footer {
     background-color: var(--color-alternative);
     color: var(--color-primary);
-    padding-block: 66px 32px;
+    padding-block: 64px 32px;
 
     .content-wrapper {
         display: flex;
@@ -43,6 +43,11 @@
 
     &__nav {
         padding-inline: 8px;
+
+        @include desktop {
+            padding: 0;
+            flex-basis: 28%;
+        }
     }
 
     &__nav-title {
@@ -56,6 +61,10 @@
 
         @include tablet {
             width: 55%;
+        }
+
+        @include desktop {
+            width: auto;
         }
     }
 
