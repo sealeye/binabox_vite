@@ -1,26 +1,36 @@
 @use '../mixin/breakpoints'as *;
 
 .catalog-list {
-    // display: flex;
-    // flex-direction: column;
-            display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
 
     @include tablet {
-
-        gap: 24px;
+        gap: 30px;
     }
 
     @include desktop {
-        // grid-template-columns: repeat(3, 1fr);
         gap: 32px;
     }
 
     &__item {
         img {
             min-width: 272px;
-            height: 367.2px;
+            height: 400px;
+
+            @include tablet {
+                min-width: 251px;
+                height: 339px;
+            }
+
+            @include desktop {
+                min-width: 320px;
+                height: 432px;
+            }
+
+            @include desktop-large {
+                height: 453px;
+            }
         }
     }
 }

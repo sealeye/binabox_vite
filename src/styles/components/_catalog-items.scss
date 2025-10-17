@@ -9,6 +9,10 @@
     padding-bottom: 64px;
     padding-top: 64px;
 
+    @include tablet {
+        padding-top: 32px;
+    }
+
     @include desktop {
         padding-top: 0;
     }
@@ -19,24 +23,35 @@
         gap: 16px;
 
         @include tablet {
-            display: flex;
+            grid-template-columns: 1fr minmax(0, 1fr) 1fr;
+        }
+
+        @include desktop {
+            grid-template-columns: 1fr minmax(0, 1fr) 295px;
         }
     }
 
     &__title {
         font-family: $accent-font;
-        font-size: 36px;
-        line-height: 48px;
-        letter-spacing: -0.5px;
         color: #F8F7FF;
+        align-self: center;
+
+        font-size: 24px;
+        line-height: 32px;
 
         @include tablet {
-            margin-right: auto;
+            font-size: 36px;
+            line-height: 48px;
+            letter-spacing: -0.5px;
         }
     }
 
     &__search {
         grid-column: 1 / -1;
+
+        @include tablet {
+            grid-column: auto;
+        }
 
         @include desktop {
             flex-basis: 295px;
@@ -48,6 +63,12 @@
 
         input {
             width: 100%;
+            padding-left: 40px;
+            padding-block: 12px;
+
+            @include tablet {
+                min-width: 226px;
+            }
         }
     }
 }
