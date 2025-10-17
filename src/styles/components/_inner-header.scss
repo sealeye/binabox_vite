@@ -9,10 +9,11 @@
     background-position: bottom center;
     background-size: auto;
 
-    padding-block: 12px 44px;
+    padding-block: 16px 44px;
+    margin-bottom: 8px;
 
     @include tablet {
-        padding-block: 24px 44px;
+        padding-block: 16px 54px; // 24 44
         margin-bottom: 40px;
     }
 
@@ -39,7 +40,7 @@
         @include tablet {
             font-size: 36px;
             line-height: 48px;
-            margin-bottom: 8px;
+            margin-bottom: 4px; // 8
         }
 
         @include desktop {
