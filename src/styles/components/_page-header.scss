@@ -131,17 +131,11 @@
 
     &__button {
         &:first-child {
-            @include tablet {
+            @include max-desktop {
                 font-size: 0;
                 gap: 0;
-                // padding: 10px;
                 display: block;
-            }
-
-            @include desktop {
-                font-size: inherit;
-                gap: inherit;
-                display: inherit;
+                padding: 10px;
             }
         }
 
