@@ -1,29 +1,66 @@
 @use '../global/variables'as *;
+@use '../mixin/breakpoints'as *;
 
 .banner {
-    background-IMAGE:
-        radial-gradient(42.5% 42.5% at 22.28% -4.22%, rgba(2, 101, 220, 0.5) 0%, rgba(2, 101, 220, 0) 100%),
-        url(../assets/images/banner-cube.png?format=webp);
-
-    background-repeat: no-repeat;
-    background-position: top left, top 0 right 164px;
-    background-size: auto, 641.8px 533.5px;
-
-    min-height: 640px;
-    padding-inline: 100px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-block: 32px;
+    position: relative;
+    background-image:
+        radial-gradient(42.5% 42.5% at 22.28% -4.22%, rgba(2, 101, 220, 0.5) 0%, rgba(2, 101, 220, 0) 100%);
+
+    @include desktop {
+        min-height: 474px;
+        padding-block: 64px;
+        padding-inline: 100px;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 437.24px;
+            height: 526px;
+            position: absolute;
+            right: 120px;
+            top: -25.96px;
+            background-image: url(../assets/images/banner-cube.png?format=webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    @include desktop-large {
+        background-position: top left, top 0 right 164px;
+        background-size: auto, 641.8px 533.5px;
+
+        min-height: 640px;
+
+        &:after {
+            left: 60vw;
+            width: 533px;
+            height: 641.8px;
+        }
+    }
 
     &__heading {
         font-family: $accent-font;
-        font-size: 52px;
-        line-height: 62px;
         letter-spacing: -0.5px;
         color: var(--text-color);
         margin-bottom: 8px;
-        max-width: 605px;
+
+        font-size: 28px;
+        line-height: 36px;
+
+        @include tablet {
+            font-size: 36px;
+            line-height: 48px;
+        }
+
+        @include desktop {
+            font-size: 52px;
+            line-height: 62px;
+            max-width: 605px;
+        }
     }
 
     &__highlight {
@@ -40,15 +77,31 @@
 
     &__stats {
         margin-bottom: 32px;
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     &__stat-label {
         font-family: $accent-font;
-        font-size: 52px;
-        line-height: 62px;
         letter-spacing: -0.5px;
         color: var(--text-color);
         margin-bottom: 4px;
+
+        grid-row: 1 / 2;
+
+        font-size: 28px;
+        line-height: 36px;
+
+        @include tablet {
+            font-size: 36px;
+            line-height: 48px;
+        }
+
+        @include desktop {
+            font-size: 52px;
+            line-height: 62px;
+            max-width: 605px;
+        }
     }
 
     &__stat-value {
@@ -60,7 +113,12 @@
 
     &__button-group {
         display: flex;
+        flex-direction: column;
         gap: 16px;
+
+        @include tablet {
+            flex-direction: row;
+        }
     }
 
     &__button {}

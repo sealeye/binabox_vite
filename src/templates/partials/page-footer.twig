@@ -1,7 +1,7 @@
 {% from 'ui/icon.twig' import icon %}
 
 <footer class="page-footer">
-	<div class="content-wrapper">
+	<div class="content-wrapper content-wrapper--wide">
 		<div>
 			<a class="page-footer__logo logo" {% if path == 'index.html' %} {% else %} href="/" {% endif %}>
 				<img src="/src/assets/images/logo.svg" alt="Binabox Logo" class="logo__image" width="36" height="40"/>
@@ -21,7 +21,7 @@
 			</ul>
 		</nav>
 	</div>
-	<div class="content-wrapper page-footer__bottom">
+	<div class="content-wrapper content-wrapper--wide page-footer__bottom">
 		<p class="page-footer__text">{{ footer.copyright }}</p>
 
 		{% include 'ui/social-list.twig' with { items: footer.socials, class: "footer__social-list" } %}

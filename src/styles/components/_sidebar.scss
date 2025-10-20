@@ -1,12 +1,16 @@
 @use '../global/variables'as *;
+@use '../mixin/breakpoints'as *;
 
 .sidebar {
-    position: sticky;
-    top: var(--header-height);
-    left: 0;
-    height: max-content;
-    width: 328px;
-    flex-shrink: 0;
+    @include desktop {
+        position: sticky;
+        top: var(--header-height);
+        left: 0;
+        height: max-content;
+        width: 328px;
+        flex-shrink: 0;
+        padding-bottom: 43px;
+    }
 
     &__section {
         background-color: var(--color-alternative-2);

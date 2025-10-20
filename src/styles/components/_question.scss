@@ -1,8 +1,11 @@
 @use '../global/variables' as *;
+@use '../mixin/details' as *;
 
 .question {
     background-color: var(--color-alternative-2);
     padding: 24px;
+
+    @include details;
 
     &__title {
         font-family: $accent-font;

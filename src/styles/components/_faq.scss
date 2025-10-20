@@ -1,5 +1,11 @@
+@use '../mixin/breakpoints'as *;
+
 .faq {
-  padding-block: 64px 104px;
+  padding-block: 32px;
+
+  @include desktop {
+    padding-block: 64px 104px;
+  }
 
   &__title {
     margin-bottom: 40px;

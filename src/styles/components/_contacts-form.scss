@@ -1,15 +1,27 @@
-@use '../global/variables' as *;
+@use '../global/variables'as *;
+@use '../mixin/breakpoints'as *;
 
 .contacts-form {
-    padding: 64px;
+    padding-block: 32px 64px;
+
+    @include tablet {
+        padding-block: 64px 104px;
+    }
 
     &__title {
         font-family: $accent-font;
-        font-size: 36px;
-        line-height: 48px;
         letter-spacing: -0.5px;
         text-align: center;
         color: #F8F7FF;
+
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 8px;
+
+        @include tablet {
+            font-size: 36px;
+            line-height: 48px;
+        }
     }
 
     &__desc {

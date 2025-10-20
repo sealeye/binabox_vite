@@ -1,5 +1,7 @@
+@use '../mixin/breakpoints'as *;
+
 .page-header {
-    padding-block: 32px;
+    padding-block: 16px;
     position: sticky;
     z-index: 2;
     top: 0;
@@ -7,21 +9,126 @@
     right: 0;
     background-color: #0D0D15;
 
+    &.is-menu-open {
+        height: 100vh;
+    }
+
+    @include desktop {
+        padding-block: 32px;
+    }
+
     .content-wrapper {
-        padding-inline: 32px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        flex-wrap: wrap;
+        row-gap: 32px;
+
+        @include tablet {
+            padding-inline: 32px;
+        }
+
+        @include desktop {
+            flex-wrap: no-wrap;
+        }
     }
 
-    &__logo {}
+    &__burger-close {
+        display: none;
+    }
 
-    &__nav {}
+    &__burger {
+
+        &.is-active {
+            .page-header__burger-menu {
+                display: none;
+            }
+
+            .page-header__burger-close {
+                display: block;
+            }
+        }
+
+        @include desktop {
+            display: none;
+        }
+    }
+
+    &__logo {
+        margin-right: auto;
+        margin-left: 16px;
+
+        @include desktop {
+            margin-left: 0;
+        }
+
+
+        .logo__image-text {
+            display: none;
+
+            @include desktop-large {
+                display: block;
+            }
+        }
+    }
+
+    &__nav {
+        display: none;
+
+        &.is-open {
+            display: block;
+            order: 2;
+            width: 100%;
+        }
+
+        @include desktop {
+            display: block;
+        }
+    }
 
     &__wrap {
         display: flex;
         gap: 16px;
     }
 
-    &__button {}
+    &__search {
+        display: none;
+
+        &.is-open {
+            display: block;
+            width: 100%;
+            order: 1;
+        }
+
+        @include desktop {
+            display: block;
+            margin-left: auto;
+            margin-right: 32px;
+            position: relative;
+
+            &:after {
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                width: 2px;
+                height: 24px;
+                border-radius: 2px;
+                background-color: #D0D7FB2B;
+
+                position: absolute;
+                right: -18px;
+                top: 8px;
+            }
+        }
+    }
+
+    &__button {
+        @include mobile {
+            font-size: 0;
+            gap: 0;
+            padding: 10px;
+            display: block;
+        }
+    }
 }

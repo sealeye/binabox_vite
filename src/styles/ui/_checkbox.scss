@@ -16,14 +16,15 @@
         color: var(--text-color);
         position: relative;
 
-        display: flex;
+        // display: flex;
         gap: 4px;
         align-items: center;
 
         &:before,
         &:after {
             content: '';
-            display: block;
+            display: inline-block;
+            vertical-align: middle;
             width: 16px;
             height: 16px;
             margin: 4px;
@@ -50,6 +51,8 @@
     }
 
     input {
+        display: none;
+        
         &:checked {
             &+label {
                 &:before {

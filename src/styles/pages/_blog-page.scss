@@ -1,5 +1,9 @@
+@use '../mixin/breakpoints'as *;
+
 .blog-page {
-    display: flex;
-    gap: 32px;
-    padding-top: 64px;
+    @include desktop {
+        display: flex;
+        gap: 32px;
+        padding-top: 64px;
+    }
 }

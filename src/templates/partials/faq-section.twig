@@ -1,10 +1,12 @@
 <section class="faq">
-	<h2 class="faq__title main-title">{{ faq_section.title }}</h2>
-	{% for item in faq_list %}
-		<details class="faq__details question">
-			<summary class="question__title">What are the NFTs?</summary>
-			<p class="question__text">Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna
-							          volutpat venenatis, risus faucibus.</p>
-		</details>
-	{% endfor %}
+	<div class="content-wrapper content-wrapper--wide">
+		<h2 class="faq__title main-title">{{ faq_section.title }}</h2>
+		{% for item in faq_list %}
+			<details class="faq__details question">
+				<summary class="question__title">What are the NFTs?</summary>
+				<p class="question__text">Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna
+												          volutpat venenatis, risus faucibus.</p>
+			</details>
+		{% endfor %}
+	</div>
 </section>
