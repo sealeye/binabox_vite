@@ -1,4 +1,9 @@
 .catalog-list {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+
     &__item {
         img {
             width: 272px;
