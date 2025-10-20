@@ -27,5 +27,13 @@
     &__list-item {
         flex-basis: 293px;
         flex-shrink: 0;
+
+        @include desktop {
+            flex-basis: calc((100% - 40px * 3) / 3);
+        }
+
+        @include desktop-large {
+            flex-basis: calc((100% - 40px * 3) / 4);
+        }
     }
 }
