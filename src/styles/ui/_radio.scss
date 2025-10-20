@@ -35,11 +35,15 @@
             @include transition((background-color, border));
             flex-shrink: 0;
         }
+
+        span {
+            align-self: center;
+        }
     }
 
     input {
         display: none;
-        
+
         &:hover+label:before {
             background-color: var(--radio-hover);
         }

@@ -69,7 +69,7 @@
         left: 24px;
         bottom: 16px;
         max-width: calc(100% - 16px * 2);
-        @include text-ellipsis(8);
+        @include text-ellipsis(7);
     }
 
     &__main-title {

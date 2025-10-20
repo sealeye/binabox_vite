@@ -20,8 +20,8 @@
     }
 
     @include desktop-large {
-        display: flex;
-        flex-direction: row;
+        grid-template-columns: repeat(4, 1fr);
+
     }
 
     &__item {
@@ -53,8 +53,8 @@
             margin-left: -4px;
         }
 
-        &:last-child {
-            @include desktop {
+        &:nth-child(4n + 4) {
+            @include max-desktop-large {
                 grid-column: 1/-1;
             }
         }

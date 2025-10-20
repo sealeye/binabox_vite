@@ -36,6 +36,11 @@
         padding: 40px 32px;
         display: block;
         padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
 
         @include tablet {
             padding: 40px 32px;
