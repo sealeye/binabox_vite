@@ -23,11 +23,11 @@
         gap: 16px;
 
         @include tablet {
-            grid-template-columns: 1fr minmax(0, 1fr) 1fr;
+            grid-template-columns: 1fr minmax(0, max-content) 1fr;
         }
 
         @include desktop {
-            grid-template-columns: 1fr minmax(0, 1fr) 295px;
+            grid-template-columns: 1fr minmax(0, max-content) 295px;
         }
     }
 

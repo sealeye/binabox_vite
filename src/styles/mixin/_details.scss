@@ -3,6 +3,7 @@
 @mixin details {
     summary {
         position: relative;
+        padding-right: 30px;
 
         &::marker {
             content: "";

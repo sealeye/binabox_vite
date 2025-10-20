@@ -1,6 +1,7 @@
 @use '../global/variables'as *;
 @use '../ui/button'as *;
 @use '../mixin/breakpoints'as *;
+@use '../mixin/text-ellipsis'as *;
 
 .blog-post {
     color: #F8F7FF;
@@ -33,6 +34,7 @@
 
         img {
             height: auto;
+
             @include desktop {
                 height: auto;
             }
@@ -66,6 +68,8 @@
         position: absolute;
         left: 24px;
         bottom: 16px;
+        max-width: calc(100% - 16px * 2);
+        @include text-ellipsis(8);
     }
 
     &__main-title {
@@ -116,6 +120,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
+            flex-shrink: 0;
 
             svg {
                 color: #E7F1FD7D;
@@ -167,7 +172,7 @@
         @include tablet {
             flex-direction: row;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
         }
     }
 
@@ -175,6 +180,9 @@
         display: flex;
         gap: 12px;
         margin-bottom: 8px;
+
+        @include tablet {
+            flex-basis: 50%;        }
     }
 
     &__footer-text {
@@ -186,11 +194,15 @@
     &__social-list {
         display: flex;
         gap: 12px;
+        flex-wrap: wrap;
     }
 
     &__social-list {
-        justify-content: flex-end;
         gap: 12px;
+
+        @include tablet {
+            justify-content: flex-end;
+        }
 
         a {
             @extend .button;

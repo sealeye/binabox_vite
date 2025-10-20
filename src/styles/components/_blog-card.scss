@@ -1,6 +1,7 @@
 @use '../global/variables'as *;
 @use '../mixin/hover-corners'as *;
 @use '../mixin/breakpoints'as *;
+@use '../mixin/text-ellipsis'as *;
 
 .blog-card {
     background-color: var(--color-alternative-2);
@@ -73,6 +74,7 @@
 
         font-size: 24px;
         line-height: 32px;
+        @include text-ellipsis(2);
 
         @include tablet {
             font-size: 28px;
@@ -90,14 +92,8 @@
         font-size: 16px;
         line-height: 24px;
         color: var(--color-secondary);
-
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        overflow: hidden;
-        white-space: normal;
-
         margin-bottom: 16px;
+        @include text-ellipsis(2);
 
         @include tablet {
             -webkit-line-clamp: 1;

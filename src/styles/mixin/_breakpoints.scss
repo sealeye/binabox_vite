@@ -13,6 +13,12 @@ $breakpoints: (
   }
 }
 
+@mixin max-tablet {
+  @media (max-width: map.get($breakpoints, "tablet")) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (min-width: map.get($breakpoints, "tablet")) {
     @content;

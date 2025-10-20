@@ -11,6 +11,7 @@
     &__header {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
 
         row-gap: 32px;
         column-gap: 16px;
@@ -51,13 +52,12 @@
             content: "";
             display: inline-block;
             vertical-align: middle;
-            width: 100%;
+            width: auto;
             height: 2px;
             border-radius: 2px;
             background-color: #D0D7FB2B;
-            // mixin? 
-
             margin-inline: 32px;
+            flex-grow: 1;
         }
     }
 
@@ -80,7 +80,8 @@
 
             position: absolute;
             right: -18px;
-            top: 8px;
+            top: 50%;
+            translate: 0 -50%;
         }
     }
 

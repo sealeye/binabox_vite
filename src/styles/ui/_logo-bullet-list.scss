@@ -7,11 +7,13 @@
         font-size: 18px;
         line-height: 28px;
         color: #F8F7FF;
+        display: flex;
 
         &::before {
             content: "";
             display: inline-block;
             vertical-align: middle;
+            flex-shrink: 0;
             width: 24px;
             height: 24px;
             margin-right: 8px;

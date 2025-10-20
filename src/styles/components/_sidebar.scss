@@ -50,8 +50,8 @@
         line-height: 20px;
         color: var(--text-color);
         font-weight: 600;
-
-        padding: 8px 12px;
+        display: inline-block;
+        padding-inline: 12px;
     }
 
     &__section-tags {

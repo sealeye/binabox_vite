@@ -22,6 +22,14 @@
     &__item {
         flex-shrink: 0;
 
+        @include max-tablet {
+            max-width: 328px;
+        }
+
+        @include max-desktop {
+            max-width: 303px;
+        }
+
         @include desktop {
             &:nth-child(n + 5) {
                 display: none;
@@ -29,8 +37,8 @@
         }
 
         @include desktop-large {
-            &:nth-child(n + 5) {
-                display: block;
+            &:nth-child(n + 6) {
+                display: none;
             }
         }
 

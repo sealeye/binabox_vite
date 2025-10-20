@@ -20,7 +20,7 @@
 
         display: flex;
         gap: 4px;
-        align-items: center;
+        align-items: flex-start;
 
         &:before {
             content: '';
@@ -33,6 +33,7 @@
             background-color: var(--radio-background);
             box-sizing: border-box;
             @include transition((background-color, border));
+            flex-shrink: 0;
         }
     }
 
