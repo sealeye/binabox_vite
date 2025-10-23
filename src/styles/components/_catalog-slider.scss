@@ -66,7 +66,7 @@
         position: relative;
         flex-shrink: 0;
 
-        @include mobile {
+        @include max-tablet {
             flex-grow: 1;
         }
 

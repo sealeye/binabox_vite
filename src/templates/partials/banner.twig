@@ -10,8 +10,10 @@
 		</p>
 		<div class="banner__stats">
 			{% for item in banner.stat %}
-				<p class="banner__stat-label">{{ item.num }}</p>
-				<p class="banner__stat-value">{{ item.text }}</p>
+				<div>
+					<p class="banner__stat-label">{{ item.num }}</p>
+					<p class="banner__stat-value">{{ item.text }}</p>
+				</div>
 			{% endfor %}
 		</div>
 		<div class="banner__button-group">

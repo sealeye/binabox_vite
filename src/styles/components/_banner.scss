@@ -84,8 +84,8 @@
     &__stats {
         margin-bottom: 32px;
         display: inline-grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 9px;
+        grid-template-columns: auto auto;
+        column-gap: 65px;
 
         @include tablet {
             column-gap: 13px;

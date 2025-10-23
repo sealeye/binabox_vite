@@ -66,7 +66,7 @@ $breakpoints: ("mobile": 360px,
 }
 
 @mixin mobile {
-  @include down("mobile") {
+  @include down("tablet") {
     @content;
   }
 }
