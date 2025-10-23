@@ -1,6 +1,7 @@
 @use '../global/variables'as *;
 @use '../mixin/hover-corners'as *;
 @use '../mixin/breakpoints'as *;
+@use '../mixin/transition'as *;
 
 .item-card {
     background-color: var(--color-alternative-2);
@@ -16,6 +17,8 @@
         &:hover {
             .item-card__overlay {
                 opacity: 1;
+                @include transition(opacity);
+                animation: scale-up-ver-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
             }
         }
     }
@@ -41,6 +44,7 @@
         justify-content: center;
         gap: 24px;
         padding: 24px;
+        @include transition(opacity);
     }
 
     &__image {
@@ -71,3 +75,4 @@
 
     &__link {}
 }
+

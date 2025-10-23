@@ -4,8 +4,8 @@
 	<div class="catalog-items__wrap">
 		<h2 class="catalog-items__title">All item</h2>
 		<form action="#" class="catalog-sort">
-			<label class="select button">
-				<select name="sort-select" class="select__button catalog-sort__select">
+			<label class="select button" for="select-sort">
+				<select name="sort-select" class="select__button catalog-sort__select" id="select-sort">
 					{% for item in catalog.filter_select %}
 						<option value="{{ item|lower|replace({' ': '-'}) }}">{{ item }}</option>
 					{% endfor %}

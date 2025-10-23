@@ -14,9 +14,12 @@
     }
 
     &__wrap {
+        display: grid;
+        grid-template-columns: 1fr minmax(0, 1fr);
+        gap: 16px;
+
         @include tablet {
             display: flex;
-            gap: 16px;
         }
     }
 
@@ -26,11 +29,22 @@
         line-height: 48px;
         letter-spacing: -0.5px;
         color: #F8F7FF;
-        margin-right: auto;
+
+        @include tablet {
+            margin-right: auto;
+        }
     }
 
     &__search {
-        flex-basis: 423px;
+        grid-column: 1 / -1;
+
+        @include desktop {
+            flex-basis: 295px;
+        }
+
+        @include desktop-large {
+            flex-basis: 423px;
+        }
 
         input {
             width: 100%;
