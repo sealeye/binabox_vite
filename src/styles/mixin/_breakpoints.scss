@@ -70,3 +70,15 @@ $breakpoints: ("mobile": 360px,
     @content;
   }
 }
+
+@mixin mouse-device {
+  @media (pointer: fine) {
+    @content;
+  }
+}
+
+@mixin touch-device {
+  @media (pointer: coarse) {
+    @content;
+  }
+}
