@@ -1,8 +1,10 @@
-.breadcrumbs {
+@use '../mixin/breakpoints'as *;
 
+.breadcrumbs {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
+    gap: 14px;
 
     &__item {
         &:not(:last-child):after {

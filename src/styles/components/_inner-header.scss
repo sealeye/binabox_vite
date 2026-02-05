@@ -9,10 +9,12 @@
     background-position: bottom center;
     background-size: auto;
 
-    padding-block: 16px 48px;
+    padding-block: 16px 44px;
+    margin-bottom: 8px;
 
     @include tablet {
-        padding-block: 16px 56px;
+        padding-block: 16px 54px; // 24 44
+        margin-bottom: 40px;
     }
 
     @include desktop {
@@ -30,7 +32,7 @@
     &__title {
         font-family: $accent-font;
         letter-spacing: -0.5px;
-        margin-bottom: 20px;
+        margin-bottom: 4px;
 
         font-size: 28px;
         line-height: 36px;
@@ -38,11 +40,13 @@
         @include tablet {
             font-size: 36px;
             line-height: 48px;
+            margin-bottom: 4px; // 8
         }
 
         @include desktop {
             font-size: 52px;
             line-height: 62px;
+            margin-bottom: 20px;
         }
     }
 }

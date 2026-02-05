@@ -3,7 +3,7 @@
     "site_title": "Binabox Catalog",
     "path": "catalog.html",
     "header": {
-      "title": "Catalog",
+      "title": "Explore Catalog",
       "breadcrumbs": [
         {
           "text": "Home",
@@ -28,7 +28,7 @@
       },
       {
         "title": "Face",
-        "type": "radio",
+        "type": "checkbox",
         "list": ["Yellow 1", "Green 1", "Mix 1", "Orange 1"]
       },
       {

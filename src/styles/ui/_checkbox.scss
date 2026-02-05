@@ -17,10 +17,9 @@
         line-height: 20px;
         color: var(--text-color);
         position: relative;
-
-        // display: flex;
+        display: flex;
         gap: 4px;
-        align-items: center;
+        align-items: flex-start;
 
         &:before,
         &:after {
@@ -31,6 +30,7 @@
             height: 16px;
             margin: 4px;
             @include transition((background-color, border));
+            flex-shrink: 0;
         }
 
         &:before {
@@ -50,6 +50,10 @@
             top: 0;
             z-index: 1;
             opacity: 0;
+        }
+
+        span {
+            align-self: center;
         }
     }
 

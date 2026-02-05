@@ -1,38 +1,84 @@
 @use "sass:map";
 
-$breakpoints: (
-  "mobile": 360px,
+$breakpoints: ("mobile": 360px,
   "tablet": 677px,
   "desktop": 1279px,
-  "desktop-large": 1727px
-);
+  "desktop-large": 1727px) !default;
 
-@mixin mobile {
-  @media (max-width: map.get($breakpoints, "tablet")) {
+@function bp($name) {
+  @return map.get($breakpoints, $name);
+}
+
+@mixin up($name) {
+  @media (min-width: bp($name)) {
     @content;
   }
 }
 
+@mixin down($name) {
+  @media (max-width: calc(#{bp($name)} - 0.02px)) {
+    @content;
+  }
+}
+
+@mixin between($from, $to) {
+  @media (min-width: bp($from)) and (max-width: calc(#{bp($to)} - 0.02px)) {
+    @content;
+  }
+}
+
+// min-width
 @mixin tablet {
-  @media (min-width: map.get($breakpoints, "tablet")) {
+  @include up("tablet") {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: map.get($breakpoints, "desktop")) {
+  @include up("desktop") {
     @content;
   }
 }
 
 @mixin desktop-large {
-  @media (min-width: map.get($breakpoints, "desktop-large")) {
+  @include up("desktop-large") {
     @content;
   }
 }
 
-@mixin breakpoint($bp: 0) {
-  @media (min-width: $bp) {
+// max-width
+@mixin max-desktop-large {
+  @include down("desktop-large") {
+    @content;
+  }
+}
+
+@mixin max-desktop {
+  @include down("desktop") {
+    @content;
+  }
+}
+
+@mixin max-tablet {
+  @include down("tablet") {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @include down("tablet") {
+    @content;
+  }
+}
+
+@mixin mouse-device {
+  @media (pointer: fine) {
+    @content;
+  }
+}
+
+@mixin touch-device {
+  @media (pointer: coarse) {
     @content;
   }
 }

@@ -3,12 +3,8 @@
 
 .contacts-section {
 
-    @include tablet {
-        padding-top: 32px;
-    }
-
     @include desktop {
-        padding-top: 64px;
+        padding-top: 24px;
     }
 
     &__list {
@@ -40,6 +36,11 @@
         padding: 40px 32px;
         display: block;
         padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
 
         @include tablet {
             padding: 40px 32px;
@@ -48,11 +49,18 @@
 
     &__heading {
         font-family: $accent-font;
-        font-size: 36px;
-        line-height: 48px;
-        letter-spacing: -0.5px;
         color: #F8F7FF;
-        margin-top: 24px;
+        margin-top: 16px;
+
+        font-size: 24px;
+        line-height: 32px;
+
+        @include tablet {
+            font-size: 36px;
+            line-height: 48px;
+            letter-spacing: -0.5px;
+            margin-top: 24px;
+        }
     }
 
     &__text {

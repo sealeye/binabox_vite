@@ -8,18 +8,15 @@
     left: 0;
     right: 0;
     background-color: #0D0D15;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    animation-direction: alternate-reverse;
+    animation-direction: normal;
+    animation-fill-mode: both;
 
-    @include tablet {
-        animation-duration: 0.5s;
-        animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
-        animation-direction: alternate-reverse;
-        animation-direction: normal;
-        animation-fill-mode: both;
-
-        &.is-menu-open {
-            height: 100vh;
-            animation-name: slide-right;
-        }
+    &.is-menu-open {
+        height: 100vh;
+        animation-name: slide-right;
     }
 
     @include desktop {
@@ -35,11 +32,12 @@
         row-gap: 32px;
 
         @include tablet {
-            padding-inline: 32px;
+            padding-inline: 16px;
         }
 
         @include desktop {
-            flex-wrap: no-wrap;
+            padding-inline: 32px;
+            flex-wrap: nowrap;
         }
     }
 
@@ -66,11 +64,11 @@
     &__logo {
         margin-right: auto;
         margin-left: 16px;
+        flex-shrink: 0;
 
         @include desktop {
             margin-left: 0;
         }
-
 
         .logo__image-text {
             display: none;
@@ -98,6 +96,7 @@
     &__wrap {
         display: flex;
         gap: 16px;
+        flex-shrink: 0;
     }
 
     &__search {
@@ -107,6 +106,10 @@
             display: block;
             width: 100%;
             order: 1;
+
+            input {
+                width: 100%;
+            }
         }
 
         @include desktop {
@@ -133,11 +136,11 @@
 
     &__button {
         &:first-child {
-            @include tablet {
+            @include max-desktop {
                 font-size: 0;
                 gap: 0;
-                padding: 10px;
                 display: block;
+                padding: 10px;
             }
         }
 

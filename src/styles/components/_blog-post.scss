@@ -1,13 +1,16 @@
 @use '../global/variables'as *;
 @use '../ui/button'as *;
 @use '../mixin/breakpoints'as *;
+@use '../mixin/text-ellipsis'as *;
 
 .blog-post {
     color: #F8F7FF;
-    padding-bottom: 64px;
-    // display: flex;
-    // flex-direction: column;
-    // gap: 32px;
+    padding-bottom: 56px;
+    padding-top: 20px;
+
+    @include desktop {
+        padding-top: 0;
+    }
 
     &__illustration {
         margin: 0;
@@ -30,6 +33,8 @@
         width: 100%;
 
         img {
+            height: auto;
+
             @include desktop {
                 height: auto;
             }
@@ -40,6 +45,10 @@
         width: 100%;
         height: auto;
         filter: sepia(0.4) hue-rotate(90deg) saturate(3) brightness(0.9);
+
+        @include tablet {
+            height: 234px;
+        }
 
         @include desktop {
             width: 100%;
@@ -59,6 +68,8 @@
         position: absolute;
         left: 24px;
         bottom: 16px;
+        max-width: calc(100% - 16px * 2);
+        @include text-ellipsis(7);
     }
 
     &__main-title {
@@ -82,9 +93,12 @@
     }
 
     &__meta {
-        margin-bottom: 32px;
+        margin-bottom: 30px;
         display: flex;
         gap: 8px;
+
+        font-size: 14px;
+        line-height: 20px;
 
         p {
             display: flex;
@@ -106,6 +120,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
+            flex-shrink: 0;
 
             svg {
                 color: #E7F1FD7D;
@@ -121,11 +136,14 @@
     }
 
     &__bullet-list {
-        margin-bottom: 32px;
         font-size: 18px;
         line-height: 28px;
         list-style: disc;
-        list-style-position: inside;
+        list-style-position: outside;
+
+        margin-bottom: 32px;
+        margin-top: 30px;
+        padding-left: 28px;
     }
 
     &__unordered-list {
@@ -138,6 +156,7 @@
         line-height: 36px;
 
         margin-bottom: 16px;
+        margin-top: 32px;
     }
 
     .blockquote {
@@ -148,36 +167,46 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+        margin-top: 32px;
 
-        @include desktop {
+        @include tablet {
             flex-direction: row;
             justify-content: space-between;
-            align-items: center;
-            margin-top: 32px;
+            align-items: flex-start;
         }
     }
 
     &__footer-section {
         display: flex;
         gap: 12px;
+        margin-bottom: 8px;
 
-        p {
-            margin: 0;
-        }
+        @include tablet {
+            flex-basis: 50%;        }
+    }
+
+    &__footer-text {
+        font-size: 16px;
+        line-height: 30px;
     }
 
     &__tags-list,
     &__social-list {
         display: flex;
         gap: 12px;
+        flex-wrap: wrap;
     }
 
     &__social-list {
-        justify-content: flex-end;
+        gap: 12px;
+
+        @include tablet {
+            justify-content: flex-end;
+        }
 
         a {
             @extend .button;
-            padding: 8px;
+            padding: 6px;
         }
 
         svg {

@@ -11,13 +11,16 @@
     &__header {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
 
-        gap: 16px;
+        row-gap: 32px;
+        column-gap: 16px;
         margin-bottom: 40px;
 
         @include tablet {
             justify-content: space-between;
             flex-wrap: nowrap;
+            gap: 16px;
         }
     }
 
@@ -37,6 +40,8 @@
 
         @include tablet {
             width: auto;
+            font-size: 28px;
+            line-height: 36px;
         }
 
         .icon {
@@ -47,21 +52,21 @@
             content: "";
             display: inline-block;
             vertical-align: middle;
-            width: 100%;
+            width: auto;
             height: 2px;
             border-radius: 2px;
             background-color: #D0D7FB2B;
-            // mixin? 
-
             margin-inline: 32px;
+            flex-grow: 1;
         }
     }
 
     &__link {
         margin-right: 16px;
         position: relative;
+        flex-shrink: 0;
 
-        @include mobile {
+        @include max-tablet {
             flex-grow: 1;
         }
 
@@ -76,7 +81,8 @@
 
             position: absolute;
             right: -18px;
-            top: 8px;
+            top: 50%;
+            translate: 0 -50%;
         }
     }
 
@@ -84,6 +90,5 @@
 
     &__list {}
 
-    &__item {
-    }
+    &__item {}
 }

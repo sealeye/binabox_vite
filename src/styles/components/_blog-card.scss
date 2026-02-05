@@ -1,11 +1,12 @@
 @use '../global/variables'as *;
 @use '../mixin/hover-corners'as *;
 @use '../mixin/breakpoints'as *;
+@use '../mixin/text-ellipsis'as *;
 
 .blog-card {
     background-color: var(--color-alternative-2);
     @include hover-corners;
-    padding: 16px;
+    padding: 14px;
     position: relative;
 
     height: 100%;
@@ -14,17 +15,27 @@
     align-items: flex-start;
 
     @include tablet {
-        padding: 24px;
+        padding: 22px;
+    }
+
+    picture {
+        width: 100%;
     }
 
     &__image {
-        margin-bottom: 24px;
+        height: 340px;
+        margin-bottom: 16px;
+
+        @include tablet {
+            margin-bottom: 24px;
+            max-height: 210px;
+        }
     }
 
     &__label {
         position: absolute;
-        top: 32px;
-        right: 34px;
+        top: 38px;
+        right: 38px;
     }
 
     &__date,
@@ -58,24 +69,31 @@
 
     &__heading {
         font-family: $accent-font;
-        font-size: 36px;
-        line-height: 44px;
         color: var(--color-primary);
         margin-top: auto;
+
+        font-size: 24px;
+        line-height: 32px;
+        @include text-ellipsis(2);
+
+        @include tablet {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        @include desktop {
+            font-size: 36px;
+            line-height: 44px;
+            margin-bottom: 2px;
+        }
     }
 
     &__text {
         font-size: 16px;
         line-height: 24px;
         color: var(--color-secondary);
-
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        overflow: hidden;
-        white-space: normal;
-
         margin-bottom: 16px;
+        @include text-ellipsis(2);
 
         @include tablet {
             -webkit-line-clamp: 1;

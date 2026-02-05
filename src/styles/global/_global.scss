@@ -20,6 +20,8 @@ body {
 a {
   text-decoration: none;
   color: var(--link-color);
+  @include transition(color);
+
 
   &:hover {
     color: var(--link-hover-color);
@@ -34,6 +36,7 @@ a {
   &:active {
     color: var(--link-active-color);
     @include transition(color);
+    transition: color 0.2s ease;
   }
 
   &:disabled,
@@ -99,4 +102,8 @@ textarea {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.icon {
+  flex-shrink: 0;
 }

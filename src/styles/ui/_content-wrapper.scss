@@ -10,8 +10,12 @@
         padding-inline: 24px;
     }
 
+    @include desktop {
+        padding-inline: 64px;
+    }
+
     @include desktop-large {
-        padding-inline: 64px; 
+        padding-inline: 64px;
     }
 
     &--wide {

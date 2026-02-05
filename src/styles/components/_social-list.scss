@@ -1,14 +1,15 @@
-@use '../mixin/icon-link' as *;
+@use '../mixin/icon-link'as *;
 
 .social-list {
     display: flex;
-    gap: 8px;
+    gap: 8px; // 10 in footer
+    flex-wrap: wrap;
 
     &__item {}
 
     &__link {
         color: var(--color-white);
-        padding: 8px;
+        padding: 7px;
         @include icon-link;
 
         svg {

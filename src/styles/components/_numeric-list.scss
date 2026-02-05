@@ -10,43 +10,50 @@
     list-style: none;
     counter-reset: numeric;
 
+    @include tablet {
+        gap: 32px;
+    }
+
     @include desktop {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
     @include desktop-large {
-        display: flex;
-        flex-direction: row;
-        gap: 32px;
+        grid-template-columns: repeat(4, 1fr);
+
     }
 
     &__item {
         background-color: var(--color-alternative);
-        padding: 32px;
+        padding: 4px 22px 23px;
 
         counter-increment: numeric;
 
         @include hover-corners;
 
+        @include tablet {
+            padding: 12px 30px 32px;
+        }
+
         &:before {
             content: counters(numeric, ".", decimal-leading-zero);
             font-family: $accent-font;
-            font-size: 70px;
+            font-size: 82px;
             line-height: 1;
             opacity: 0.5;
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke-width: 2px;
             -webkit-text-stroke-color: var(--color-marina-800);
 
-
             display: inline-block;
             vertical-align: bottom;
-            margin-bottom: -30px;
+            margin-bottom: -33px;
+            margin-left: -4px;
         }
 
-        &:last-child {
-            @include desktop {
+        &:nth-child(4n + 4) {
+            @include max-desktop-large {
                 grid-column: 1/-1;
             }
         }

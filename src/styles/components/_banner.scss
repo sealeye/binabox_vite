@@ -10,10 +10,14 @@
     background-image:
         radial-gradient(42.5% 42.5% at 22.28% -4.22%, rgba(2, 101, 220, 0.5) 0%, rgba(2, 101, 220, 0) 100%);
 
+    @include tablet {
+        padding-top: 65px;
+    }
+
     @include desktop {
         min-height: 474px;
-        padding-block: 64px;
-        padding-inline: 100px;
+        padding-block: 56px;
+        padding-inline: 95px;
 
         &:after {
             content: '';
@@ -34,6 +38,7 @@
         background-size: auto, 641.8px 533.5px;
 
         min-height: 640px;
+        padding-block: 64px;
 
         &:after {
             left: 60vw;
@@ -44,7 +49,6 @@
 
     &__heading {
         font-family: $accent-font;
-        letter-spacing: -0.5px;
         color: var(--text-color);
         margin-bottom: 8px;
 
@@ -54,6 +58,8 @@
         @include tablet {
             font-size: 36px;
             line-height: 48px;
+            letter-spacing: -0.5px;
+            max-width: 70%;
         }
 
         @include desktop {
@@ -78,7 +84,16 @@
     &__stats {
         margin-bottom: 32px;
         display: inline-grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto auto;
+        column-gap: 65px;
+
+        @include tablet {
+            column-gap: 13px;
+        }
+
+        @include desktop {
+            column-gap: 60px;
+        }
     }
 
     &__stat-label {

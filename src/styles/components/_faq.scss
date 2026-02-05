@@ -2,9 +2,10 @@
 
 .faq {
   padding-block: 32px;
+  padding-bottom: 48px;
 
   @include desktop {
-    padding-block: 64px 104px;
+    padding-block: 64px 80px;
   }
 
   &__title {
@@ -13,6 +14,14 @@
   }
 
   &__details {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+
+    @include tablet {
+      margin-bottom: 24px;
+    }
+
+    @include desktop {
+      margin-bottom: 26px;
+    }
   }
 }

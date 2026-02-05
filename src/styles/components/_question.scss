@@ -1,11 +1,16 @@
-@use '../global/variables' as *;
-@use '../mixin/details' as *;
+@use '../global/variables'as *;
+@use '../mixin/details'as *;
+@use '../mixin/breakpoints'as *;
 
 .question {
     background-color: var(--color-alternative-2);
-    padding: 24px;
+    padding: 16px;
 
     @include details;
+
+    @include tablet {
+        padding: 24px;
+    }
 
     &__title {
         font-family: $accent-font;
@@ -21,5 +26,9 @@
         color: var(--text-color);
         margin-top: 24px;
         padding-top: 16px;
+
+        @include tablet {
+            padding-bottom: 8px;
+        }
     }
 }
