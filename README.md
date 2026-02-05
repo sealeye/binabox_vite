@@ -1,36 +1,24 @@
 # Binabox
 
-## First install
+## Project Structure
 
-After cloning the repo, run:
+* `src/assets/icons` - SVG icons for your project
+* `src/assets/images` - Images for your project
+* `src/styles` - SCSS stylesheets
+* `src/data` - JSON data
+* `src/templates/layouts` - Twig layouts
+* `src/templates/partials` - Twig partials
 
-```bash
-npm ci
-```
+## Available Commands
 
-## Commands
+* `npm start` - Start development server
+* `npm run build` - Build for production
+* `npm run preview` - Preview production build
+* `npm run lint` - Checks your HTML for mistakes
+* `npm run lint:fix` - Will fix most popular of them
+* `npm run stylelint` - Checks your CSS/SCSS for mistakes
+* `npm run stylelint:fix` - Will fix most popular of them
+* `npm run format` - Will fix code style things
+* `npm run format:check` - Will fix code style things
+* `npm run format:lint` - Will fix code style things and then most popular mistakes
 
-Use these commands to build or run your project locally.
-
-**General:**
-
-* `npm start` — runs the development server with hot reload (same as `vite dev`)
-* `npm run build` — builds the project for production and outputs files to the `dist` folder
-* `npm run preview` — serves the built project from the `dist` folder for local preview
-
-**Linting:**
-
-* `npm run lint` — runs ESLint for JavaScript/TypeScript files
-* `npm run lint:fix` — runs ESLint and automatically fixes issues
-* `npm run stylelint` — checks all `.scss` files with Stylelint
-* `npm run stylelint:fix` — same as above, but also fixes fixable style issues
-
-## Notes
-
-This project uses `Vite` as the build tool and supports `workspaces`, meaning you may have separate packages inside the `packages/` directory. Make sure each sub-package has its own dependencies properly installed.
-
-Also, `husky` is included for git hooks. If it’s not set up yet, run:
-
-```bash
-npm run prepare
-```

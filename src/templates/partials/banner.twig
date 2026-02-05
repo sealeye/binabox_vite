@@ -1,4 +1,22 @@
-<section class="main-banner">
+<section class="banner">
+  <h1 class="banner__heading">{{ banner.title.start }} <span class="banner__highlight">{{ banner.title.highlight }}</span> {{ banner.title.end }}</h1>
+  <p class="banner__text">
+          {{ banner.desc }}
+  </p>
+  <div class="banner__stats">
+   {% for item in banner.stat %}
+    <p class="banner__stat-label">{{ item.num }}</p>
+    <p class="banner__stat-value">{{ item.text }}</p>
+    {% endfor %}
+  </div>
+  <div class="banner__button-group">
+  {% for item in banner.buttons %}
+    <a class="banner__button" href="{{ item.action }}">{{ item.text }}</a>
+     {% endfor %}
+  </div>
+</section>
+
+{# <section class="main-banner">
 
     <div class="main-banner__illustration">
         <img
@@ -42,17 +60,6 @@
 
         {{ picture('/src/assets/images/main-banner-1.png', 'main-banner__img main-banner__img--fifth') }}
 
-
-
-        {#
-        <img
-            class="main-banner__img main-banner__img--fifth"
-            src="/src/assets/images/color-pallet.svg"
-            alt=""
-        >
-        #}
-        {#        {{ icon('pen', 'main-banner__img main-banner__img--fourth') }} #}
-
         <svg class="main-banner__img main-banner__img--fifth">
             <use href="/src/assets/sprite.svg#icon-pen"/>
         </svg>
@@ -74,4 +81,13 @@
         </button>
     </div>
 
-</section>
+</section> #}
+
+        {#
+        <img
+            class="main-banner__img main-banner__img--fifth"
+            src="/src/assets/images/color-pallet.svg"
+            alt=""
+        >
+        #}
+        {#        {{ icon('pen', 'main-banner__img main-banner__img--fourth') }} #}

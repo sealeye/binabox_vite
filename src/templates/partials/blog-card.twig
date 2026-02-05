@@ -1,0 +1,11 @@
+<a class="blog-section__link" href="{{ item.link }}">
+	<article class="blog-card">
+		<img class="blog-card__image" src="{{ item.img }}" alt="{{ item.img_alt }}">
+		<span class="blog-card__label">{{ item.label }}</span>
+		<p class="blog-card__name">{{ item.author }}</p>
+		<time class="blog-card__date" datetime="{{ item.date }}">{{ item.visible_data }}</time>
+		<h3 class="blog-card__heading">{{ item.title }}</h3>
+		<p class="blog-card__text">{{ item.text}}</p>
+		<p class="blog-card__button button button--primary">{{ item.button_text }}</p>
+	</article>
+</a>

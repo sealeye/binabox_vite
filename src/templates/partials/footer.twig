@@ -1,0 +1,24 @@
+<footer class="page-footer">
+	<a class="page-footer__logo logo" href="index.html">
+		<img class="logo__image" src="{{ footer.logo.img }}" alt="{{ footer.logo.alt }}">
+	</a>
+
+	<p class="page-footer__text">{{ footer.description }}</p>
+
+	{% for section in footer.navigation %}
+		<nav class="page-footer__nav">
+			<h2 class="page-footer__nav-title">{{ section.title }}</h2>
+			<ul class="page-footer__nav-list">
+				{% for link in section.links %}
+					<li class="page-footer__nav-list-item">
+						<a class="page-footer__nav-list-link" href="{{ link.url }}">{{ link.text }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</nav>
+	{% endfor %}
+
+	<p class="page-footer__text">{{ footer.copyright }}</p>
+
+	{% include 'ui/social-list.twig' with { items: footer.socials, class: "footer__social-list" } %}
+</footer>

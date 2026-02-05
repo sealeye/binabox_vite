@@ -1,0 +1,10 @@
+<section class="blog-section">
+	<h2 class="blog-section__title main-title">{{ blog_section.title }}</h2>
+	<ul class="blog-section__list">
+		{% for item in blog_items %}
+			<li class="blog-section__list-item">
+				{% include 'blog-card.twig' %}
+			</li>
+		{% endfor %}
+	</ul>
+</section>

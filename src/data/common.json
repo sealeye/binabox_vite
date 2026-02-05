@@ -1,5 +1,77 @@
 {
-  "common": {
-    "siteTitle": "Pixmart Website"
+  "nav": [
+    {
+      "url": "index.html",
+      "text": "Home"
+    },
+    {
+      "url": "/blog-page.html",
+      "text": "Blog"
+    },
+    {
+      "url": "/catalog.html",
+      "text": "Catalog"
+    },
+    {
+      "url": "/contucts.html",
+      "text": "Contuct Us"
+    }
+  ],
+  "footer": {
+    "logo": {
+      "img": "img/logo.svg",
+      "alt": "Binabox Logo"
+    },
+    "description": "We are the best way to check the rarity of NFT collection.",
+    "navigation": [
+      {
+        "title": "Subscribe",
+        "links": [
+          {
+            "text": "Home",
+            "url": "#"
+          },
+          {
+            "text": "Blog",
+            "url": "#"
+          },
+          {
+            "text": "Catalog",
+            "url": "#"
+          },
+          {
+            "text": "Contact Us",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          {
+            "text": "Terms Conditions",
+            "url": "#"
+          },
+          {
+            "text": "Privacy Policy",
+            "url": "#"
+          },
+          {
+            "text": "Whitepaper",
+            "url": "#"
+          },
+          {
+            "text": "Help Center",
+            "url": "#"
+          }
+        ]
+      }
+    ],
+    "copyright": "BINABOX 2022 - ALL rights reserved",
+    "socials": [
+        "facebook.com/f",
+        "link",
+        "link"
+      ]
   }
 }
